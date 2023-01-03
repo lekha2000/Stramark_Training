@@ -9,3 +9,6 @@ Basics OF HTML
 4.  A Page to display the recent photos and places that U visited.
 
 5.  The App should be elagant and should not have any broken links. U can use the basic CSS if required.
+
+Steps To Run The File 
+  1. Click Home.html and open it with default browser.
