@@ -1,3 +1,3 @@
 # Stramark_Training
 
-Day 1: Basics of HTML 
+## Day 1: Basics of HTML 
