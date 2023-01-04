@@ -1,0 +1,33 @@
+h1{
+    padding: 20px;
+    text-align: center;
+    background-color: #CCFFCC;
+    color: black;
+}
+body{
+    font-family:cursive;
+}
+div{
+    background-color:#CCFFCC;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    border: 2px solid blueviolet ;
+    text-align: center;
+    
+}
+p{
+    padding: 10px;
+    font-family:cursive;
+    border: 2px dashed lightblue;
+}
+button{
+    text-decoration: none;
+    border: none;
+    padding: 10px 30px;
+    font-family:cursive;
+    background-color:red;
+    color: black;
+    border-radius: 5px;
+}
