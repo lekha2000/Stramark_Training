@@ -1,0 +1,79 @@
+.food{
+    display: inline-flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+body{
+    font-family: cursive;
+}
+div{
+    padding: 1px;
+    margin: auto;
+    display: grid;
+    text-align: center;
+
+}
+.bor{
+    border: 2px solid black;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+section:h1{
+    border: 2px solid black;
+    padding: 1px;
+    font-family: cursive;
+    margin: 100px;
+    width: 100px;
+}
+h1{
+    font-family: cursive;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: lightblue;
+    color: black
+}
+nav{
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    color: black;
+}
+a{
+    border: 2px solid lightcoral;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    color: black;
+}
+p{
+    border: 2px solid lightblue;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+}
+button{
+    text-decoration: none;
+    border: none;
+    text-align: left;
+    padding: 10px 30px;
+    font-family:cursive;
+    background-color:#CCFF99;
+    color: black;
+    border-radius: 5px;
+}
+table{
+float: right;
+}
+.dispbtn{
+    text-align: center;
+}
+

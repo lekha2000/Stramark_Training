@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Ordering App</title>
+    <script src="./jquerylib.min.js"></script>
+
+    <link rel="stylesheet" href="./food.css">
+    <script>
+        let Totalamount = 0;
+
+        let Idliamt = 0;
+        let Dosaamt = 0;
+        let Padduamt = 0;
+        let Uttapaamt = 0;
+        let Upmaamt = 0;
+        let pooriamt = 0;
+        let Shemiyaamt = 0;
+        let schezwanamt = 0;
+        let Vadaamt = 0;
+
+        function init(){
+            $("section").hide();
+            $("a:first").click(onLoginPage);
+            $("a:eq(1)").click(onToCart);
+            $("a:eq(2)").click(onAbout);
+
+            $("#Login").click(Login)
+            $(".btn1").click(addIdli);
+            $(".btn2").click(addDosa);
+            $(".btn3").click(addPaddu);
+            $(".btn4").click(addUttapa);
+            $(".btn5").click(addUpma);
+            $(".btn6").click(addPoori);
+            $(".btn7").click(addShemiya);
+            $(".btn8").click(addschezwan);
+            $(".btn9").click(addVada);
+            $(".bill").click(Dae)
+
+            //$("#order").click(Dae);
+        }
+        $().ready(init);
+
+        function onLoginPage(){
+            $("section").hide();
+            $(".login").show(2000);
+        }
+
+        function onToCart(){
+            $("section").hide();
+            $(".Cart").show(2000);
+            document.getElementById("disp").innerHTML = Totalamount + " Rs";
+            console.log("Totalamount = "+Totalamount);
+           
+        }
+        function Dae(){
+            console.log("1");
+            const dt = new Date();
+                
+                dt.setMinutes(dt.getMinutes() + 30);
+                const msg = `The Delivery will be ready in 30 Min. U can come to our location by ${getTime(dt)} today`;
+                $(".Cart > p:eq(2)").find("span").text(msg)
+                const thx = `Thanks For Placing Order With Us. Hope You Liked It, Do Rate Us back !!`;
+                $(".Cart > p:last").find("span").text(thx)
+                LocateMe();
+                  
+        }
+            function LocateMe(){
+                const successCallback = (position) => {
+                console.log("Current Location");
+                console.log(position);
+
+                };
+
+                const errorCallback = (error) => {
+                console.log(error);
+                };
+
+                navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+                
+            }
+            
+
+        function onAbout(){
+            $("section").hide();
+            $(".About").show(2000);
+        }
+        
+        function addIdli(){
+            const itemname1 = document.getElementById("Idli").textContent;
+            const qunt1 = parseInt(document.getElementById("txtQty1").value);
+            Idliamt = 40 * qunt1;
+            alert("item added");
+            console.log(itemname1,"Quantity [",qunt1,"]"," = ",Idliamt);
+            Totalamount += Idliamt;
+        }
+        function addDosa(){
+            const itemname2 = document.getElementById("Dosa").textContent;
+            const qunt2 = parseInt(document.getElementById("txtQty2").value);
+            Dosaamt = 50 * qunt2;
+            alert("item added");
+            console.log(itemname2,"Quantity [",qunt2,"]"," = ",Dosaamt);
+            Totalamount += Dosaamt;
+        }
+        function addPaddu(){
+            const itemname3 = document.getElementById("Paddu").textContent;
+            const qunt3 = parseInt(document.getElementById("txtQty3").value);
+            Padduamt = 40 * qunt3;
+            alert("item added");
+            console.log(itemname3,"Quantity [",qunt3,"]"," = ",Padduamt);
+            Totalamount += Padduamt;
+        }
+        function addUttapa(){
+            const itemname4 = document.getElementById("Uttapa").textContent;
+            const qunt4 = parseInt(document.getElementById("txtQty4").value);
+            Uttapaamt = 35 * qunt4;
+            alert("item added");
+            console.log(itemname4,"Quantity [",qunt4,"]"," = ",Uttapaamt);
+            Totalamount += Uttapaamt;
+        }
+        function addUpma(){
+            const itemname5 = document.getElementById("Upma").textContent;
+            const qunt5 = parseInt(document.getElementById("txtQty5").value);
+            Upmaamt = 25 * qunt5;
+            alert("item added");
+            console.log(itemname5,"Quantity [",qunt5,"]"," = ",Upmaamt);
+            Totalamount += Upmaamt;
+        }
+        function addPoori(){
+            const itemname6 = document.getElementById("Poori").textContent;
+            const qunt6 = parseInt(document.getElementById("txtQty6").value);
+            Pooriamt = 50 * qunt6;
+            alert("item added");
+            console.log(itemname6,"Quantity [",qunt6,"]"," = ",Pooriamt);
+            Totalamount += Pooriamt;
+        }
+        function addShemiya(){
+            const itemname7 = document.getElementById("Shemiya").textContent;
+            const qunt7 = parseInt(document.getElementById("txtQty7").value);
+            Shemiyaamt = 45 * qunt7;
+            alert("item added");
+            console.log(itemname7,"Quantity [",qunt7,"]"," = ",Shemiyaamt);
+            Totalamount += Shemiyaamt;
+        }
+        function addschezwan(){
+            const itemname8 = document.getElementById("schezwan").textContent;
+            const qunt8 = parseInt(document.getElementById("txtQty8").value);
+            schezwanamt = 150 * qunt8;
+            alert("item added");
+            console.log(itemname8,"Quantity [",qunt8,"]"," = ",schezwanamt);
+            Totalamount += schezwanamt;
+        } 
+        function addVada(){
+            const itemname9 = document.getElementById("Vada").textContent;
+            const qunt9 = parseInt(document.getElementById("txtQty9").value);
+            Vadaamt = 20 * qunt9;
+            alert("item added");
+            console.log(itemname9,"Quantity [",qunt9,"]"," = ",Vadaamt);
+            Totalamount += Vadaamt;
+        } 
+
+        function Login(){
+            const mobileno = document.getElementById("txtName").value;
+            const address = document.getElementById("txtPassword").value;
+            localStorage.setItem('username',mobileno);
+            localStorage.setItem('address',address);
+            const v = localStorage.getItem('username');
+            const f = localStorage.getItem('address')
+            if (localStorage.getItem('username')) {
+                if (v == mobileno && f == address) {
+                    localStorage.setItem('username',mobileno);
+                    localStorage.setItem('address',address);
+                    const msgs = "Login successful"
+                    document.getElementById("msg").innerHTML = msgs;
+                    console.log('Login successful')
+                    $(".login").hide();
+                    $("#heading").show();
+                    $(".food").show();
+                } else {
+                    const msgs = "Wrong credentials"
+                    document.getElementById("msg").innerHTML = msgs;
+                    console.log('Wrong credentials')
+                }
+            } else {
+                const msgs = "Not a registered user"
+                    document.getElementById("msg").innerHTML = msgs;
+                console.log('Not a registered user')
+            }          
+        }
+
+        function getTime(dt){
+            return `${dt.getHours()}:${dt.getMinutes()}`;
+        }
+
+        
+        
+    </script>
+</head>
+<body>
+    <h1 >Online Food Ordering App</h1>
+    <hr>
+    <nav>
+        <a href="#">Login</a>&nbsp;&nbsp;   
+        <a href="#">To Cart</a>&nbsp;&nbsp;
+        <a href="#">About Us</a>
+        <table>
+            <tr>
+                <td>Branch : </td>
+                <td> 
+                <select>
+                    <option>-------------------Select Branch-------------------</option>
+                    <option>Priyadarshini Grand Basaveshwara Nagar</option>
+                    <option>Krishna Vaibhava Vijay Nagar</option>
+                    <option>Kadamba Veg Rajajinagar</option>
+                    <option>Paakashala CV Raman Nagar </option>
+                </select>
+                 </td>
+            </tr>
+        </table>     
+    </nav>
+    
+    <section  class="login">
+        <h2 style="text-align:center">Login</h2>
+        
+            <p>
+                Mobile Number: <input required type="text" placeholder="Enter Mobile Number" id="txtName"><br><br>
+                Address: <input required type="text" placeholder="Enter Address" id="txtPassword"><br><br>
+                <button id="Login">Login</button>
+            </p>
+            <br>
+            <p id="msg" style="color: red;">
+
+            </p>
+            
+       <br>
+    </section>
+
+    <section id="heading">
+        <div>
+                <h1>Welcome To Food Store</h1>
+                <hr>
+        </div>
+    </section>
+    <section class="food">
+        <div class="bor">
+            <div>
+            <img src="https://images.pexels.com/photos/4331489/pexels-photo-4331489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" >
+            </div>
+            <div>
+                <p id="Idli" value="Idli">Idli</p>
+                Quantity:
+                <input id="txtQty1" type="number" value="0" placeholder="Quantity"><br>
+                <button class="btn1">Add Cart</button>
+            </div>
+        </div>
+        <div class="bor">
+            <div><img src="https://media.istockphoto.com/id/909906350/photo/masala-dosa-south-indian-food.jpg?b=1&s=612x612&w=0&k=20&c=8K_k4WilPE4OEk0ZEJdloTGPqpE2KyUUR_01f7Chwfw="></div>
+            <div>
+                <p id="Dosa" value="Dosa">Dosa</p>
+                Quantity:
+                <input type="number" id="txtQty2" value="0" placeholder="Quantity"><br>
+                <button class="btn2">Add Cart</button>
+            </div>
+        </div>
+        <div class="bor">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuGggFGxpMCXC7cSacvsnuAr9AB4LGf0u5gQ&usqp=CAU"></div>
+                <div>
+                        <p id="Paddu" value="Paddu">Paddu</p>
+                        Quantity:
+                        <input type="number" id="txtQty3" value="0" placeholder="Quantity"><br>
+                        <button class="btn3">Add Cart</button>
+                </div>
+        </div>
+        <div class="bor">
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIiyUsaRbDhgGgVKqaarXQfMz_3LbUbNiSvw&usqp=CAU"></div>
+                <div>
+                   <p id="Uttapa" value="Uttapa">Uttapa</p> 
+                    Quantity:
+                    <input type="number" id="txtQty4" value="0" placeholder="Quantity"><br>
+                    <button class="btn4">Add Cart</button>
+            </div>
+        </div>
+        <div class="bor">
+                <div><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2009/08/upma-recipe-2.jpg"></div> 
+                <div>
+                     <p id="Upma" value="Upma">Upma</p>
+                     Quantity:
+                     <input type="number" id="txtQty5" value="0" placeholder="Quantity"><br>
+                     <button class="btn5">Add Cart</button>
+ 
+                </div>
+                 
+         </div>
+         <div class="bor">
+                <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxw_JKJx95sJ54AGC7GKAPDaE21xder3I5NA&usqp=CAU">
+                </div>
+                <div>
+                        <p id="Poori" value="Poori">Poori Bhaji</p>
+                        Quantity:
+                        <input type="number" id="txtQty6" value="0" placeholder="Quantity"><br>
+                        <button class="btn6">Add Cart</button>
+    
+                </div>
+            </div>
+            <div class="bor">
+                    <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIkYMBdNl2BOfdcxgGcmfxNb2-7IcsoOERDA&usqp=CAU">
+                    </div>
+                    <div>
+                            <p id="Shemiya" value="Shemiya">Shemiya Upama</p>
+                            Quantity:
+                            <input type="number" id="txtQty7" value="0" placeholder="Quantity"><br>
+                            <button class="btn7">Add Cart</button>
+        
+                    </div>
+                </div>
+                <div class="bor">
+                        <div>
+                                <img src="https://img.freepik.com/premium-photo/schezwan-noodles-szechwan-vegetable-hakka-noodles-chow-mein-is-popular-indo-chinese-recipes-served-bowl-plate-with-wooden-chopsticks_466689-74771.jpg">
+                        </div>
+                        <div>
+                                <p id="schezwan" value="schezwan">Schezwan Fried Rice</p>
+                                Quantity:
+                                <input type="number" id="txtQty8" value="0" placeholder="Quantity"><br>
+                                <button class="btn8">Add Cart</button>
+            
+                        </div>
+                    </div>
+                    <div class="bor">
+                        <div>
+                                <img src="https://th-i.thgim.com/public/migration_catalog/article11471169.ece/alternates/FREE_1200/21MP_Vada1.jpg">
+                        </div>
+                        <div>
+                                <p id="Vada" value="Vada">Vada</p>
+                                Quantity:
+                                <input type="number" id="txtQty9" value="0" placeholder="Quantity"><br>
+                                <button class="btn9">Add Cart</button>
+            
+                        </div>
+                    </div>
+    </section>
+    <section class=Cart>
+          <p>
+            The Total Bill : <label id="disp"></label>
+          </p >
+          <p class="dispbtn">
+            <button class="bill" >Place the Order</button>
+          </p>
+          <p>
+            <span style="color:indianred"></span>
+            </p>
+            <p class="bill">
+                <span style="color:rgb(120, 92, 205)"></span>
+            </p>
+        
+
+    </section>
+    <section class="About">
+            <h2 style="padding: 10px;">We are available online, Order Now!!!</h2>
+            <hr>
+            <h2 style="padding: 10px;">Our Location:</h2>
+                <p>
+                    <span>
+                        315, 6th Main Rd,West of Chord Road 3rd Stage, Basaveshwar Nagar, 
+                        Bengaluru, Karnataka 560079
+                    </span>
+                </p>
+               
+
+    </section>
+</body>
+</html>
