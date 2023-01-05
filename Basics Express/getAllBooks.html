@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <title>Document</title>
+        <style>
+            h1{
+        text-align: center;
+        background-color: lightblue;
+        color: black
+    }
+    table{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+th{
+    background-color:rgb(222, 204, 255) ;
+    color: black;
+    padding: 20px;
+}
+td{
+    background-color: rgb(255, 227, 253);
+    color: black;
+    padding: 20px;
+    margin: auto;
+}
+    nav{
+        width: auto;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        background-color: beige;
+        color: black;
+    }
+    a{
+        border: 2px solid lightcoral;
+        display: inline-block;
+        width: 100px;
+        height: 25px;
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        background-color: beige;
+        color: black;
+    }
+        </style>
+        <script>
+            $().ready(function(){
+                const url = "/";
+                $("table").find("tr:gt(0)").remove();
+                $.get(url, (data)=>{
+                    //console.log(data);
+                    for(const obj of data){
+                        //console.log(obj.Bid);
+                        const row = `<tr>
+                            <td>${obj.Bid}</td>
+                            <td>${obj.Bname}</td>
+                            <td>${obj.Bauthor}</td>
+                            <td>${obj.Bprice}</td>
+                            </tr>`
+                        $("table").append(row)
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+            <h1 style="text-align:center">Display Books  </h1>
+            <hr>
+            <div >
+                <nav>
+                        <a href="Book">Home</a>
+                        <a href="AddBook">New Book</a>
+                        <a href="TableBook">Display Book</a>
+                        <!-- <a href="FindById">Find Book</a>   -->
+                </nav>
+                <!-- <h2>Nodejs Program</h2> -->    
+            </div>
+            <br>
+        <table border="1">
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Book Address</th>
+                <th>Book Salary</th>
+            </tr>
+        </table>
+    </body>
+    </html>

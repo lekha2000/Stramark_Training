@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./book.css"> -->
+    <style>
+        h1{
+    text-align: center;
+    background-color: lightblue;
+    color: black
+}
+nav{
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    color: black;
+}
+a{
+    border: 2px solid lightcoral;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background-color: beige;
+    color: black;
+}
+table{
+    background-color:#E5CCFF;
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+td{
+    padding: 20px;
+    margin: auto;
+}
+tr{
+    padding: 5px;
+}
+button{
+    text-decoration: none;
+    border: none;
+    padding: 20px 30px;
+
+    font-family:Times New Roman;
+    background-color:#FF9999;
+    color: black;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Add New Books To Library </h1>
+    <hr>
+    <div >
+        <nav>
+                <a href="Book">Home</a>
+                <a href="AddBook">New Book</a>
+                <a href="TableBook">Display Book</a>
+                <!-- <a href="FindById">Find Book</a>   -->
+        </nav>
+        <!-- <h2>Nodejs Program</h2> -->    
+    </div>
+    <br>
+    
+    <form method="POST" action="addPost">
+        <div style="text-align: center;">
+            <table >
+                <tr>
+                  <td align="left">Enter Bid:</td>
+                  <td align="left"><input type="text" name="txtbid" placeholder="Enter book Id"></td>
+                </tr>
+                <tr>
+                  <td align="left">Enter Bname:</td>
+                  <td align="left"><input type="text" name="txtbname" placeholder="Enter book Name"></td>
+                </tr>
+                <tr>
+                  <td align="left">Enter Bauthor:</td>
+                  <td align="left"><input type="text" name="txtbauthor" placeholder="Enter book Author"></td>
+                </tr>
+                <tr>
+                    <td align="left">Enter Bprice:</td>
+                    <td align="left"><input type="text" name="txtbprice" placeholder="Enter book Price"></td>
+                  </tr>
+              </table>
+            <br>
+            <button><b>Add Book</b></button>
+        </div>
+    </form>
+</body>
+</html>

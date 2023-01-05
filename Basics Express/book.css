@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    background-color: lightblue;
+    color: black
+}
+nav{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    color: black;
+}
+a{
+    border: 2px solid lightcoral;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    color: black;
+}
