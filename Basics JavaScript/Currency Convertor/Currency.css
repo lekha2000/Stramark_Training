@@ -1,0 +1,35 @@
+h1{
+    padding: 20px;
+    text-align: center;
+    background-color: lightyellow;
+    color: black;
+}
+body{
+    font-family:Times New Roman;
+}
+div{
+    background-color: lightyellow;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    height: 250px;
+    border: 2px dashed blueviolet;
+    text-align: center;
+    
+}
+p{
+    padding: 10px;
+    font-family:Times New Roman;
+    border: 2px dashed lightpink;
+}
+button{
+    text-decoration: none;
+    border: none;
+    padding: 10px 30px;
+    /* font-size: 16px; */
+    /* font-weight: 200px; */
+    font-family:Times New Roman;
+    background-color:#FF9999;
+    color: black;
+    border-radius: 5px;
+}
