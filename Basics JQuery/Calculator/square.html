@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Square</title>
+    <link rel="stylesheet" href="./cal.css">
+    <script>
+
+        function square(){
+            const a = parseInt(document.getElementById("textid").value);
+            const b = parseInt(document.getElementById("textid2").value);
+            const square = a ** b;
+            console.log("square = "+ square);
+            localStorage.setItem("square",square);
+            document.getElementById("pDisplay").innerHTML = square;
+            
+            let table = document.getElementById("myTable");
+   
+
+      let row = table.insertRow(-1); 
+   
+      let c1 = row.insertCell(0);
+      let c2 = row.insertCell(1);
+      let c3 = row.insertCell(2);
+      let c4 = row.insertCell(3);
+      c1.innerText = parseInt(document.getElementById("textid").value);
+      c2.innerText = parseInt(document.getElementById("textid2").value);
+      c3.innerText = document.getElementById("sel").value;
+      c4.innerText = square;
+          }
+    </script>
+    <link rel="stylesheet" href="./cal.css">
+</head>
+<body>
+    <h1>Square</h1>
+    <div>
+        <nav>
+            <a href="cal.html">Home</a>
+            <a href="Add.html">Add</a>
+            <a href="Sub.html">Sub</a>
+            <a href="Mul.html">Mul</a>
+            <a href="Div.html">Div</a>
+            <a href="square.html">Square</a>
+            <a href="SquareRoot.html">SquareRoot</a>
+
+        </nav>
+    </div>
+    <div>
+            <p>
+                <input type="number" id="textid"placeholder="Enter Number">
+                <select id="sel">
+                    <option value="Square">Square</option>
+                </select>
+                <input type="number" id="textid2" placeholder="Enter Number">
+                <button type="submit" onclick="square()">Square</button>
+                <label> = </label>
+                <label id="pDisplay"></label>
+            </p>
+            <table id="myTable" border="1px" >
+                <tr>
+                    <th>Number 1</th>
+                    <th>Number 2</th>
+                    <th>Operation</th>
+                    <th>Result</th>
+                </tr>
+              
+            </table>
+    </div>
+</body>
+</html>

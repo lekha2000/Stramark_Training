@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    background-color: lightblue;
+    color: black
+}
+nav{
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background-color: beige;
+    color: black;
+}
+/* div{
+    display: inline-block;
+} */
+a{
+    border: 2px solid lightcoral;
+    display: inline-block;
+    width: 10%;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    color: black;
+}
+p{
+    border: 2px solid lightblue;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+}
+table{
+    text-align: center;
+    margin:auto;
+
+}
+th{
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+}
+td{
+    background-color: lightpink;
+    color: black;
+    padding: 10px;
+}
