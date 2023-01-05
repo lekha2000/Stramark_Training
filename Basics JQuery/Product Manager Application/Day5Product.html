@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./Day5ProductManageAss.js"></script>
+    <link rel="stylesheet" href="./day5Product.css">
+    <script>
+        function createRow(emp){
+            let row = document.createElement("tr");
+            row.innerHTML = `<td>${emp.proId}</td>
+            <td>${emp.proName}</td>
+            <td>${emp.proPrice}</td>
+            `;
+            return row;
+        }
+        function populate(){
+            const table = document.querySelector("#tblReocrds");
+            const firstRow = document.querySelector("#theading");
+            table.innerHTML = "";
+            table.appendChild(firstRow);
+            for(const emp of Record){
+                let row = createRow(emp);
+                table.appendChild(row);
+            }
+        }
+        window.addEventListener('load',function(){
+            populate();
+  
+        })
+        function onEdit(){
+            const id = prompt("Enter the Id of the Employee to Edit");
+            try{
+                const foundrecord = instance.getEmployee(id)
+                document.getElementById("txtId").value = foundrecord.proId;
+                document.getElementById("txtName").value = foundrecord.proName;
+                document.getElementById("txtPrice").value = foundrecord.proPrice;                            
+            }catch(ex){
+                alert(ex);
+            }
+        }
+        function onSaveChanges(){
+            const id = document.getElementById("txtId").value;
+            const name = document.getElementById("txtName").value;
+            const price = document.getElementById("txtPrice").value;
+        
+            const emp = new ProductDetails(id, name, price);
+            try {
+                instance.updateEmployee(emp);
+                alert("Successfully updated");
+                populate();
+            } catch (ex) {
+                alert(ex);
+            }
+            if(!localStorage){
+                alert("upgrade ur system");
+                return;
+            }
+            const emp2 = {};
+            emp2.proId = document.getElementById("txtId").value;
+            emp2.proName = document.getElementById("txtName").value;
+            emp2.proPrice = document.getElementById("txtPrice").value;
+            const jsonData = JSON.stringify(emp2);
+            localStorage.setItem("empDetails",jsonData);
+
+        }
+
+        function onView(){
+            if(localStorage.getItem("name") == null){
+                alert("No data Found");
+                return;
+            }
+            document.getElementById("pDisplay").innerText =  localStorage.getItem("empDetails");
+        }
+
+        function onAddChanges(){
+            const id = document.getElementById("txtid").value;
+            const name = document.getElementById("txtname").value;
+            const price = document.getElementById("txtprice").value;
+            const emp = new ProductDetails(id, name, price);
+            try {
+                instance.addEmp(emp);
+            alert("Added successfully");
+            populate();
+                
+            } catch (error) {
+                alert(ex);
+            }
+
+        }
+  
+
+    </script>
+
+</head>
+<body>
+    <h1>Product Monitoring System</h1>
+    <nav>
+        <a href="#" onclick="onEdit()">Edit Records</a>
+   
+    </nav>
+    <hr>
+    <div>
+        <h2>List of Product</h2>
+        <hr>
+        <table id="tblReocrds" border="1">
+            <tr id="theading">
+                <th>ProductID</th>
+                <th>ProductName</th>
+                <th>ProductPrice</th>
+
+            </tr>
+            <tr>
+
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Details of Product</h2>
+        <table border="1">
+            <tr>
+              <td align="left">Product ID</td>
+              <td align="left"><input readonly type="number" id="txtId" /></td>
+            </tr>
+            <tr>
+              <td align="left">Product Name:</td>
+              <td align="left"><input type="text" id="txtName" /></td>
+            </tr>
+            <tr>
+              <td align="left">Product Price:</td>
+              <td align="left"><input type="number" id="txtPrice" /></td>
+            </tr>
+          </table>
+       
+          <br>
+            <button id="Save Changes" onclick="onSaveChanges()">Save Changes</button>
+        
+        
+    </div>
+    <div>
+        <h2>Add Details of Product</h2>
+        <table border="1">
+            <tr>
+              <td align="left">Product ID</td>
+              <td align="left"><input type="number" id="txtid" /></td>
+            </tr>
+            <tr>
+              <td align="left">Product Name:</td>
+              <td align="left"><input type="text" id="txtname" /></td>
+            </tr>
+            <tr>
+              <td align="left">Product Price:</td>
+              <td align="left"><input type="number" id="txtprice" /></td>
+            </tr>
+          </table><br>
+
+          <button id="Add Changes" onclick="onAddChanges()">Add Changes</button>
+
+    </div>
+
+</body>
+</html>
