@@ -1,0 +1,7 @@
+D:\starmark3316\DotNetFiles\Assignment6Class\Assignment6\obj\Debug\Assignment6.csprojAssemblyReference.cache
+D:\starmark3316\DotNetFiles\Assignment6Class\Assignment6\obj\Debug\Assignment6.csproj.CoreCompileInputs.cache
+D:\starmark3316\DotNetFiles\Assignment6Class\Assignment6\bin\Debug\Assignment6.exe.config
+D:\starmark3316\DotNetFiles\Assignment6Class\Assignment6\bin\Debug\Assignment6.exe
+D:\starmark3316\DotNetFiles\Assignment6Class\Assignment6\bin\Debug\Assignment6.pdb
+D:\starmark3316\DotNetFiles\Assignment6Class\Assignment6\obj\Debug\Assignment6.exe
+D:\starmark3316\DotNetFiles\Assignment6Class\Assignment6\obj\Debug\Assignment6.pdb
