@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 
@@ -95,6 +95,7 @@ namespace Assignment6
                 //Checks if array not null and array i should match with user input i
                 if (std[i] != null && std[i].StdID == Std.StdID)
                 {
+                    std[i].StdID = Std.StdID;
                     std[i].StdName = Std.StdName;
                     std[i].StdGrade = Std.StdGrade;
                     std[i].StdFavSub = Std.StdFavSub;
@@ -178,7 +179,7 @@ namespace Assignment6
                     findingStudentHelper();
                     break;
                 case 4:
-                    throw new Exception("Do it URSELF!!");
+                    deleteStudentHelper();
                 default:
                     return false;
             }
@@ -226,6 +227,7 @@ namespace Assignment6
 
             Student std = new Student
             {
+                StdID = id,
                 StdName = name,
                 StdGrade = grade,
                 StdFavSub = favsub
@@ -256,6 +258,23 @@ namespace Assignment6
             }
 
         }
+        private static void  deleteStudentHelper() 
+        { 
+            Console.Write("Enter the Id of Student : ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                Student std = msg.FindStudent(id);
+                Console.WriteLine($"The Student Details with Id : {std.StdID} Has Been Deleted ");
+                Console.WriteLine("Press Enter to Clear the Screen");
+                Console.Clear();
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+        }
 
 
     }
@@ -267,4 +286,6 @@ namespace Assignment6
         }
     }
 }
+
+
 
