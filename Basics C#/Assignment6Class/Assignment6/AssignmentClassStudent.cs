@@ -264,7 +264,7 @@ namespace Assignment6
             int id = Convert.ToInt32(Console.ReadLine());
             try
             {
-                Student std = msg.FindStudent(id);
+                Student std = msg.DeleteStudent(id);
                 Console.WriteLine($"The Student Details with Id : {std.StdID} Has Been Deleted ");
                 Console.WriteLine("Press Enter to Clear the Screen");
                 Console.Clear();
