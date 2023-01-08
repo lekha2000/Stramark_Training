@@ -233,5 +233,11 @@ namespace Assignment12
             }
         }
     }
-    
+    class Assignment12
+    {
+        static void Main(string[] args)
+        {
+            UIStudent.DisplayMenu();
+        }
+    }
 }
