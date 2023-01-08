@@ -9,8 +9,8 @@
 
     2. Open the Currency Conversion App folder in VS Code
 
-    3. Right Click Temperature.html file and open in default browser.
+    3. Right Click Currency.html file and open in default browser.
 
-    4. UI Page will open, which asks the user to select the currency to convert to.
+    4. UI Page will open, which asks the user to select the currency to convert t and enter the amount 
     
-    5. On clicking the convert button it will give a promt message converted to Farenheit
+    5. On clicking the convertamt button it will give a display of amount converted
