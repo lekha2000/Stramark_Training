@@ -9,8 +9,8 @@
 
     2. Open the Currency Conversion App folder in VS Code
 
-    3. Right Click Currency.html file and open in default browser.
+    3. Right Click Book.html file and open in default browser.
 
-    4. UI Page will open, which asks the user to select the currency to convert t and enter the amount 
+    4. UI Page will open, which asks the user to enter their Fav book. 
     
-    5. On clicking the convertamt button it will give a display of amount converted
+    5. On clicking the convertamt button it will give a display of added books in tabel format.
