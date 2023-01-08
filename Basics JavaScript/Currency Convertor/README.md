@@ -13,4 +13,4 @@
 
     4. UI Page will open, which asks the user to select the currency to convert t and enter the amount 
     
-    5. On clicking the convertamt button it will give a display of amount converted
+    5. On clicking the convertamt button it will give a display of amount converted.
