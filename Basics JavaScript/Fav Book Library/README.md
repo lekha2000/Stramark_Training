@@ -5,12 +5,12 @@
     
 ## Steps To Run The File
 
-    1. Download the Currency Conversion App Zip file
+    1. Download the Fav Book Library Zip file
 
-    2. Open the Currency Conversion App folder in VS Code
+    2. Open theFav Book Library folder in VS Code
 
     3. Right Click Book.html file and open in default browser.
 
     4. UI Page will open, which asks the user to enter their Fav book. 
     
-    5. On clicking the convertamt button it will give a display of added books in tabel format.
+    5. On clicking the submit button it will give a display of added books in tabel format.
