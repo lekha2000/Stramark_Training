@@ -15,3 +15,34 @@ namespace Assignment12
         public string CustomerAddress { get; set; }
 
     }
+  class CustomerManage
+    {
+        private Customer[] ctd = null;
+        private int Size = 0;
+
+        //Constructor for class
+        public CustomerManage(int size)
+        {
+            Size = size;
+            ctd = new Customer[Size];
+        }
+
+        public void AddCtdDetails(Customer Ctd)
+        {
+
+            for (int i = 0; i < Size; i++)
+            {
+                if (ctd[i] == null)
+                {
+                    ctd[i] = new Customer
+                    {
+                        CustomerId = Ctd.CustomerId,
+                        CustomerName = Ctd.CustomerName,
+                        CustomerAge = Ctd.CustomerAge,
+                        CustomerAddress = Ctd.CustomerAddress
+                    };
+                    return;
+                }
+            }
+        }
+
