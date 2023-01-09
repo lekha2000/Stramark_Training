@@ -164,3 +164,73 @@ namespace Assignment12
             //Console.WriteLine("Press Enter to Clear the Screen");
             //Console.Clear();
         }
+private static void UpdatingCustomerHelper()
+        {
+            Console.Write("\nEnter the Id of Customer : ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the Name of Customer : ");
+            string name = Console.ReadLine();
+            Console.Write("Enter the Date Of Age of Customer : ");
+            int Age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the Address of Customer : ");
+            string Address = Console.ReadLine();
+
+            Customer ctd = new Customer
+            {
+                CustomerId = id,
+                CustomerName = name,
+                CustomerAge = Age,
+                CustomerAddress = Address,
+            };
+
+            msg.UpdateCtdDetails(ctd);
+            Console.WriteLine("Student Details Updated Succesfully\n");
+            //Console.WriteLine("Press Enter to Clear the Screen");
+            // Console.Clear();
+        }
+
+        private static void FindingCustomerHelper()
+        {
+            Console.Write("\nEnter the Id of Customer : ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            try
+            {
+                Customer ctd = msg.FindCustomer(id);
+                Console.WriteLine("The Details of the Student are as follows:");
+                string content = $"\nThe Student No: {ctd.CustomerId}\nThe Name: {ctd.CustomerName}\nThe Age : {ctd.CustomerAge}\nThe Address : {ctd.CustomerAddress}\n";
+                Console.WriteLine(content);
+                //Console.WriteLine("Press Enter to Clear the Screen");
+                //Console.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+        }
+        public static void DeleteCustomerHelper()
+        {
+            Console.Write("\nEnter the Id of Customer : ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            try
+            {
+                Customer ctd = msg.DeleteCustomer(id);
+                Console.WriteLine("Press Enter to Clear the Screen");
+                //Console.Clear();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+    class Assignment12
+    {
+        static void Main(string[] args)
+        {
+            UIStudent.DisplayMenu();
+        }
+    }
+}
