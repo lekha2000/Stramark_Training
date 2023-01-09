@@ -140,3 +140,27 @@ namespace Assignment12
             }
             return true;
         }
+      private static void AddingCustomerHelper()
+        {
+            Console.Write("\nEnter the Id of Customer : ");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the Name of Customer : ");
+            string name = Console.ReadLine();
+            Console.Write("Enter the Date Of Age of Customer : ");
+            int Age = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the Address of Customer : ");
+            string Address = Console.ReadLine();
+
+            Customer ctd = new Customer
+            {
+                CustomerId = id,
+                CustomerName = name,
+                CustomerAge = Age,
+                CustomerAddress = Address,
+            };
+            msg.AddCtdDetails(ctd);
+            Console.WriteLine("Customer Details Added Succesfully\n");
+
+            //Console.WriteLine("Press Enter to Clear the Screen");
+            //Console.Clear();
+        }
