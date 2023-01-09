@@ -73,3 +73,31 @@ namespace Assignment12
             throw new Exception("No Customer found");
 
         }
+    //Function To Delete Student Details based on id
+        //std[i].StdID array id passed to std
+        //Std.StdID user entered id passed to Std
+        public Customer DeleteCustomer(int id)
+        {
+            for (int i = 0; i < Size; i++)
+            {
+                //Checks if array not null and array i should match with user input i
+                if (ctd[i] != null && ctd[i].CustomerId == id)
+                {
+                    ctd[i] = null;
+                    Console.WriteLine($"The Details of the Customer with id {id} has been deleted\n ");
+                }
+            }
+            throw new Exception("No Customer found to delete");
+        }
+    }
+
+    class UIStudent
+    {
+        public static CustomerManage msg = null;
+
+        public static void DisplayMenu()
+        {
+            Console.WriteLine("Enter the Size : ");
+            int size = Convert.ToInt32(Console.ReadLine());
+            msg = new CustomerManage(size);
+            bool process = true;
