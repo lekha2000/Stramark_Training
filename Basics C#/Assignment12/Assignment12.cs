@@ -45,4 +45,31 @@ namespace Assignment12
                 }
             }
         }
+    public void UpdateCtdDetails(Customer Ctd)
+        {
+            for (int i = 0; i < Size; i++)
+            {
+                //Checks if array not null and array i should match with user input i
+                if (ctd[i] != null && ctd[i].CustomerId == Ctd.CustomerId)
+                {
+                    ctd[i].CustomerId = Ctd.CustomerId;
+                    ctd[i].CustomerName = Ctd.CustomerName;
+                    ctd[i].CustomerAge = Ctd.CustomerAge;
+                    ctd[i].CustomerAddress = Ctd.CustomerAddress;
+                    return;
+                }
+            }
+            throw new Exception("Customer ID not found to Update");
+        }
 
+
+        public Customer FindCustomer(int id)
+        {
+            foreach (Customer i in ctd)
+            {
+                if (i != null && i.CustomerId == id)
+                    return i;
+            }
+            throw new Exception("No Customer found");
+
+        }
