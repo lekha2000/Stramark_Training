@@ -101,3 +101,42 @@ namespace Assignment12
             int size = Convert.ToInt32(Console.ReadLine());
             msg = new CustomerManage(size);
             bool process = true;
+          
+          do
+            {
+                Console.WriteLine("==================Customer Management System===================");
+                Console.WriteLine("1...............Add Customer Record");
+                Console.WriteLine("2...............Modify Customer Record");
+                Console.WriteLine("3...............Find Customer Record");
+                Console.WriteLine("4...............Delete Customer Record");
+                Console.WriteLine("5...............Exit");
+                Console.Write("Select option (between 1 to 5) : ");
+
+                int option = Convert.ToInt32(Console.ReadLine());
+                process = ProcessMenu(option);
+
+            } while (process);
+            Console.WriteLine("Thanks for using our application");
+        }
+
+        private static bool ProcessMenu(int option)
+        {
+            switch (option)
+            {
+                case 1:
+                    AddingCustomerHelper();
+                    break;
+                case 2:
+                    UpdatingCustomerHelper();
+                    break;
+                case 3:
+                    FindingCustomerHelper();
+                    break;
+                case 4:
+                    DeleteCustomerHelper();
+                    break;
+                default:
+                    return false;
+            }
+            return true;
+        }
