@@ -18,6 +18,7 @@
     
 ## Hackathon 
     1. String Encription (HMTL, CSS and JS)
+    2. Medical Research Application (C#)
     
 ## Basics Of SQL
     Assignment 
