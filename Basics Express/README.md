@@ -20,10 +20,21 @@
     Open Terminal in Vs code or cmd to the respective folder and type Node Book.js
     
     After Running Book.js in Terminal You Should get a Display message saying "Server is available"
+    
+    Open Any Browser and in url part type localhost:1390 and Press Enter
+    
+    Display of All the Books will be showed.
+    
+    Then In url part of the browser type localhost:1390/Book 
+        This will display the home page of the application.
+        
+    UI part of the home Page has a Navigation Bar which has href links on click it will open new page with respective details:-
+
+    i. Book ii. New Book iii. Display Book
+        
+    
     Right Click Home.html file and open in default browser.
 
     Home Page will open, which Tell's about me i.e, Qualification, schooling, Favourite Stuff etc.
 
-    There is a Navigation Bar which has href links on click it will open new page with respective details:-
-
-    i. Favourite ii. BestFriends iii. Places
+    
