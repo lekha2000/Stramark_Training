@@ -14,7 +14,10 @@
         server : 192.168.171.36
         Database : 3316
         driver : msnodesqlv8
-        
+    
+    Download Node js in Vs Codes if not downloaded using npm install node
+    
+    
     Right Click Home.html file and open in default browser.
 
     Home Page will open, which Tell's about me i.e, Qualification, schooling, Favourite Stuff etc.
