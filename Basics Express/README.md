@@ -17,9 +17,9 @@
     
     Download Node js in Vs Codes if not downloaded using npm install node
     
-    Open Terminal in Vs code or cmd to the respective folder 
-        and type Node Book.js 
-        
+    Open Terminal in Vs code or cmd to the respective folder and type Node Book.js
+    
+    After Running Book.js in Terminal You Should get a Display message saying "Server is available"
     Right Click Home.html file and open in default browser.
 
     Home Page will open, which Tell's about me i.e, Qualification, schooling, Favourite Stuff etc.
