@@ -32,9 +32,11 @@
 
     i. Book ii. New Book iii. Display Book
         
+    On Click on New Book button 
+        Text fields to add Book Will Open and a Add button which on click adds books to table
     
-    Right Click Home.html file and open in default browser.
-
-    Home Page will open, which Tell's about me i.e, Qualification, schooling, Favourite Stuff etc.
+    On click on Display Book 
+        All the book entered by user will be displayed in table format.
+    
 
     
