@@ -8,7 +8,7 @@
     
     The function should check if the parameter values constitute a valid calendar date or not. Accordingly return true or false.
 
-    ## For example,
+## For example,
 
     year=2018, month=13, day=1 is an invalid date as the possible values for month is 1 to 12.
 
