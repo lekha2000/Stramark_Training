@@ -14,4 +14,7 @@ Write a C# program to call the above function multiple times with different valu
     Then
     Display should be 3 is prime 
     
+    Here in checkprime what it does is it takes user input as parameter
+    then checks the condition if condition matching then returns true else false
+    
     
