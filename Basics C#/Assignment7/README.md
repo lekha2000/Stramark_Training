@@ -12,4 +12,6 @@ Write a C# program to call the above function multiple times with different valu
 ## For Example 
     User Input Number : 3
     Then
+    Display should be 3 is prime 
+    
     
