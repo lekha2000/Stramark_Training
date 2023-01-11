@@ -25,7 +25,7 @@
         v. Sub
         vi. square
         vii. SquareRoot
-    6. on click of each button mentioned in step 5 a new page will open and asks the user to enter input of two numbers.
-    7. Open Any Browser and in url part type localhost:1390 and Press Enter
-    8. Display of All the Books will be showed.
-    9. Then In url part of the browser type localhost:1390/Book 
+    6. On click of each button mentioned in step 5 a new page will open and asks the user to enter input of two numbers.
+    7. After the user enters the number and clicks on Add,Sub,Div,Mul,Square,SquareRoot button 
+        - then the calculated value will be displayed both in label format as tabel format.
+        - And the values will be stored in Local Storage.
