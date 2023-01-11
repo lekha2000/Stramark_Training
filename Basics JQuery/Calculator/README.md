@@ -16,8 +16,8 @@
         vi. square.html
         vii. SquareRoot.html
         viii. cal.css
-    4. Download Node js in Vs Codes if not downloaded using npm install node
-    5. Open Terminal in Vs code or cmd to the respective folder and type Node Book.js
+    4. Right click on cal.html and open it in Default browser i.e, Chrome,edge etc.
+    5. 
     6. After Running Book.js in Terminal You Should get a Display message saying "Server is available"
     7. Open Any Browser and in url part type localhost:1390 and Press Enter
     8. Display of All the Books will be showed.
