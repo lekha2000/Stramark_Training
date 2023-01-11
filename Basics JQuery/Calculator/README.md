@@ -25,7 +25,7 @@
         v. Sub
         vi. square
         vii. SquareRoot
-    6. After Running Book.js in Terminal You Should get a Display message saying "Server is available"
+    6. on click of each button mentioned in step 5 a new page will open and asks the user to enter input of two numbers.
     7. Open Any Browser and in url part type localhost:1390 and Press Enter
     8. Display of All the Books will be showed.
     9. Then In url part of the browser type localhost:1390/Book 
