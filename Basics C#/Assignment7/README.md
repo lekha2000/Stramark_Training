@@ -8,3 +8,8 @@
 The function should check and return true only if the number passed as argument is a prime number.
 
 Write a C# program to call the above function multiple times with different values.
+
+## For Example 
+    User Input Number : 3
+    Then
+    
