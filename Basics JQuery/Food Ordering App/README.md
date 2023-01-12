@@ -24,16 +24,19 @@
         i. FoodOnlneApp.html 
         ii. jquerylib.min.js
         iii. food.css
-    4. Right click on cal.html and open it in Default browser i.e, Chrome,edge etc.
-    5. Calculator home page will open which has Navigation bar that contains specific buttons such as 
-        i. Home
-        ii. Add
-        iii. Mul
-        iv. Div
-        v. Sub
-        vi. square
-        vii. SquareRoot
-    6. On click of each button mentioned in step 5 a new page will open and asks the user to enter input of two numbers.
-    7. After the user enters the number and clicks on Add,Sub,Div,Mul,Square,SquareRoot button 
-        - then the calculated value will be displayed both in label format as tabel format.
-        - And the values will be stored in Local Storage.
+    4. Right click on FoodOnlneApp.html and open it in Default browser i.e, Chrome,edge etc.
+    5. Food Application Home page will open which has Navigation bar that contains specific buttons such as 
+        i. Login
+        ii. To Cart
+        iii. About Us
+        iv. Drop Down of Hotels i.e, Branch
+    6. On click of each button mentioned in step 5 a new page will open and asks the user to enter input to the required field.
+    
+ ## Login Page 
+    1. User is asked to Enter Mobile Number as Address and click on Login
+    ## Use Case
+        i. MobileNo and Address of user is stored in Local Storage
+        ii. If Entered Correct Mobile No and Address and it is already in Local Storage then Login Successfull.
+        iii. Else Wrong Credentials error will be displayed
+        iv. If Entered Mobile No and Address Are not matched it passes a message saying Not a registered user.
+        v. After Corrrectly Logging in It Enters to Home Page of Food App where all Food Items will be displayed.
