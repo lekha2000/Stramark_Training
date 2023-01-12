@@ -51,3 +51,4 @@
     2. On Click on Place The Order button.
     3.  Message will de displayed saying "The Delivery will be ready in 30 Min. U can come to our location by 21:4 today".
     4. "The Delivery will be ready in 30 Min. U can come to our location by 21:4 today"
+    5. And it will ask for the user to allow his/her Location so that our application get the order ready by time.
