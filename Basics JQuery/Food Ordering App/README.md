@@ -40,3 +40,8 @@
         iii. Else Wrong Credentials error will be displayed
         iv. If Entered Mobile No and Address Are not matched it passes a message saying Not a registered user.
         v. After Corrrectly Logging in It Enters to Home Page of Food App where all Food Items will be displayed.
+
+## Home Page 
+    1. This page displayes all varieties of Food item available in this application.
+    2. On Clicking Add Button we can add Item to cart
+    3. After Clicking Add Button Message Pops up saying item added Successfully
