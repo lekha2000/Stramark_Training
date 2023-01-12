@@ -52,3 +52,6 @@
     3.  Message will de displayed saying "The Delivery will be ready in 30 Min. U can come to our location by 21:4 today".
     4. "The Delivery will be ready in 30 Min. U can come to our location by 21:4 today"
     5. And it will ask for the user to allow his/her Location so that our application get the order ready by time.
+
+## About US
+    On clicking About us Button it will describe about our Application and the hotel current location. so that user can come and collect their food which is ready .
