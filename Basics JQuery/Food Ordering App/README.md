@@ -12,6 +12,10 @@
 ## Things to have
     Links, Images, Data in the form of Arrays, Classes, Implementing localStorage etc. CSS should be implemented.
     
+## Install 
+    1. Downlaod https://jquery.com/download i.e, mified version of the file (jquerylib.min.js)
+    2. Once downloaded link it with FoodOnlneApp.html
+    
 ## Steps To Run The File
 
     1. Download the Food Ordering App Zip file
