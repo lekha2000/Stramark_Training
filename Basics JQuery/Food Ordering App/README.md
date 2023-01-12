@@ -59,4 +59,6 @@
 ## To See What All Items Added 
     1. Right Click anywhere on the Application.
     2. In the Bar either Click on >> and select Console/ if Console is directly visible then click on that.
-    3. You Get to See 
+    3. You Get to See Item , Quantity and respect price with total amount to be paid.
+    
+## Thanks For Spending Time in Reading this ReadMe document Hope You Enjoyed the Application 
