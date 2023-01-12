@@ -45,3 +45,9 @@
     1. This page displayes all varieties of Food item available in this application.
     2. On Clicking Add Button we can add Item to cart
     3. After Clicking Add Button Message Pops up saying item added Successfully
+
+## To Cart 
+    1. This page shows total Amount of to be paid in Rs.
+    2. On Click on Place The Order button.
+    3.  Message will de displayed saying "The Delivery will be ready in 30 Min. U can come to our location by 21:4 today".
+    4. "The Delivery will be ready in 30 Min. U can come to our location by 21:4 today"
