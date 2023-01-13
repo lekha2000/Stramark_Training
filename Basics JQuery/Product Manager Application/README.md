@@ -22,5 +22,5 @@
     7. After Writing the Id and clicking ok, the specific Id record details will be displayed in Display product field. 
     8. After changing the details of Employee Click on Save changes Button.
     9. This Save changes button will reflect the changes in List of product table.
-
+    10. Add Details will add new record of product
 
