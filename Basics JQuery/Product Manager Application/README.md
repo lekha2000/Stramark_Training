@@ -7,3 +7,14 @@
     5. searching for products
     6. adding new product
     7. updating product details. The App should also be able to have CSS incorporated in it.
+
+## Steps To Run The File
+    1. Download the Product Manager Application Zip file
+    2. Open the Product Manager Application folder in VS Code
+    3. Calculator Folder includes 
+        i. Day5Product.html 
+        ii. day5Product.css
+        iii. Day5ProductManageAss.js
+
+    4. Right click on cal.html and open it in Default browser i.e, Chrome,edge etc.
+    5. Calculator home page will open which has Navigation bar that contain
