@@ -20,4 +20,5 @@
     5. Product home page will open which has Navigation bar that contain Edit Records Button
     6. On click on Edit Records Button User is asked to enter the Product ID on which he/she wants to perform changes of records.
     7. After Writing the Id and clicking ok, the specific Id record details will be displayed in Display product field. 
-    8. After 
+    8. After changing the details of Employee Click on Save changes Button.
+
