@@ -122,3 +122,4 @@ CREATE TABLE JOBS(
     MAX_SALARY money
 );
 
+
