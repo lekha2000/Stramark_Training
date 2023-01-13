@@ -16,5 +16,5 @@
         ii. day5Product.css
         iii. Day5ProductManageAss.js
 
-    4. Right click on cal.html and open it in Default browser i.e, Chrome,edge etc.
-    5. Calculator home page will open which has Navigation bar that contain
+    4. Right click on Day5Product.html and open it in Default browser i.e, Chrome,edge etc.
+    5. Product home page will open which has Navigation bar that contain Edit Records Button
