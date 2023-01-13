@@ -18,3 +18,4 @@
 
     4. Right click on Day5Product.html and open it in Default browser i.e, Chrome,edge etc.
     5. Product home page will open which has Navigation bar that contain Edit Records Button
+    6. On click on Edit Records Button User is asked to enter the Employee ID on which he/she wants to perform changes of records.
