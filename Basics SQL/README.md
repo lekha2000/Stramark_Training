@@ -25,3 +25,6 @@
   19. Write a query to display the lastname, and hiredate of any employee in the department as the employee "Zlotkey". Exclude "Zlotkey". 
   20.Create a query to display the employee numbers and lastnames of all employees who earn more than the average salary. Sort the result in ascending order of            salary.
   21. Write a query that displays the employee number and lastname of all employees who work in a department with any employee whose lastname contains a "u".
+  22. Display the lastname, department number, and job id of all employees whose department location id is 1700.
+  23. Display the lastname and salary of every employee who reports to "King".
+  24. Display the department number, lastname, and job id for every employee in the "Executive" department.
