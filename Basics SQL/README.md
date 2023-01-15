@@ -22,3 +22,6 @@
   16. Write a query that displays the difference between the highest and the lowes salaries. Label the column as "Difference".
   17. Display the manager number and the salary of the lowest paid employee for that manager. Exclude anyone whose manager is not known. Exclude any group where the       minimum salary is less than $6000. Sort the output in descending order of salary.
   18. Write a query to display each department's name, location, number of employees, and the average salary for all employees in that department. Label the columns       "Name", "Location", "No.of people", and "SAlary" respectively. Round the average salary to two decimal places.
+  19. Write a query to display the lastname, and hiredate of any employee in the department as the employee "Zlotkey". Exclude "Zlotkey". 
+  20.Create a query to display the employee numbers and lastnames of all employees who earn more than the average salary. Sort the result in ascending order of            salary.
+  21. Write a query that displays the employee number and lastname of all employees who work in a department with any employee whose lastname contains a "u".
