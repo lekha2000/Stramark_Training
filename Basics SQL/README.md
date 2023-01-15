@@ -16,3 +16,7 @@
   10. Create a query to display the name and hiredate of any employee hired after employee "Davies"
   11. Display the names and hire dates for all employees who were hired before their managers, along with their manager's names and hiredates. Label the columns           "Employee", "Emp hired", "Manager", and "Manager hired" respectively.
   12. Display the highest, lowest, sum and average salary of all employees. Label the columns "Maximum", "Minimum", "Sum", and "Average" respectively.
+  13. Modify the above query to display the same data for each job type.
+  14. Write a query to display the number of people with the same job.
+  15. Determine the number of managers without listing them. Label the column "Number of Managers". [Hint: use the MANAGER_ID column to determine the number of       managers]
+  16. 
