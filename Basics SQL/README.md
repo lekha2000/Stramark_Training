@@ -28,3 +28,6 @@
   22. Display the lastname, department number, and job id of all employees whose department location id is 1700.
   23. Display the lastname and salary of every employee who reports to "King".
   24. Display the department number, lastname, and job id for every employee in the "Executive" department.
+  25. Display the employee number, lastname, and salary of all employees who earn more than the average salary and who work in a department with any employee with       a "u" in their lastname.
+  26. Write a query to get unique department ID from employee table.
+  27. Write a query to get all employee details from the employee table order by first name, descending.
