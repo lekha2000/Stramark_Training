@@ -31,3 +31,6 @@
   25. Display the employee number, lastname, and salary of all employees who earn more than the average salary and who work in a department with any employee with       a "u" in their lastname.
   26. Write a query to get unique department ID from employee table.
   27. Write a query to get all employee details from the employee table order by first name, descending.
+  28. Write a query to get the names (first_name, last_name), salary, PF of all the employees (PF is calculated as 15% of salary).
+  29. Write a query to get the employee ID, names (first_name, last_name), salary in ascending order of salary.
+  30. Write a query to get the total salaries payable to employees.
