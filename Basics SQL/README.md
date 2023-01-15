@@ -18,7 +18,7 @@
   12. Display the highest, lowest, sum and average salary of all employees. Label the columns "Maximum", "Minimum", "Sum", and "Average" respectively.
   13. Modify the above query to display the same data for each job type.
   14. Write a query to display the number of people with the same job.
-  15. Determine the number of managers without listing them. Label the column "Number of Managers". [Hint: use the MANAGER_ID column to determine the number of       managers]
+  15. Determine the number of managers without listing them. Label the column "Number of Managers". [Hint: use the MANAGER_ID column to determine the number of managers]
   16. Write a query that displays the difference between the highest and the lowes salaries. Label the column as "Difference".
   17. Display the manager number and the salary of the lowest paid employee for that manager. Exclude anyone whose manager is not known. Exclude any group where the       minimum salary is less than $6000. Sort the output in descending order of salary.
   18. Write a query to display each department's name, location, number of employees, and the average salary for all employees in that department. Label the columns       "Name", "Location", "No.of people", and "SAlary" respectively. Round the average salary to two decimal places.
