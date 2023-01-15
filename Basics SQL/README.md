@@ -13,3 +13,6 @@
   7. Modify the above to display the same columns for all employees (including "King", who has no manager). Order the result by the employee number.
   8. Create query that displays employee lastnames, department numbers, and all the employees who work in the same department as a given employee. Give each column        an appropriate label.
   9. Create a query that displays the name, job, department name, salary and grade for all employees.
+  10. Create a query to display the name and hiredate of any employee hired after employee "Davies"
+  11. Display the names and hire dates for all employees who were hired before their managers, along with their manager's names and hiredates. Label the columns           "Employee", "Emp hired", "Manager", and "Manager hired" respectively.
+  12. Display the highest, lowest, sum and average salary of all employees. Label the columns "Maximum", "Minimum", "Sum", and "Average" respectively.
