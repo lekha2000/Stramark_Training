@@ -44,3 +44,5 @@
   38. Write a query to get first name from employees table after removing white spaces from both side.
   40. Write a query to get the length of the employee names (first_name, last_name) from employees table.
   41. Write a query to check if the first_name fields of the employees table contains numbers.
+  42. Write a query to select first 10 records from a table.
+  43. Write a query to get monthly salary (round 2 decimal places) of each and every employee.
