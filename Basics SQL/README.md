@@ -54,3 +54,5 @@
   48. Write a query to display the last name, job, and salary for all employees whose job is that of a Programmer or a Shipping Clerk, and whose salary is not equal to $4,500, $10,000, or $15,000.
   49. Write a query to display the last name of employees whose names have exactly 6 characters.
   50. Write a query to display the last name of employees having 'e' as the third character.
+  51. Write a query to display the jobs/designations available in the employees table.
+  52. Write a query to display the name (first_name, last_name), salary and PF (15% of salary) of all employees.
