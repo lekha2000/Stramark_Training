@@ -36,3 +36,5 @@
   30. Write a query to get the total salaries payable to employees.
   31. Write a query to get the maximum and minimum salary from employees table.
   32. Write a query to get the average salary and number of employees in the employees table.
+  33. Write a query to get the number of employees working with the company.
+  34. Write a query to get the number of jobs available in the employees table.
