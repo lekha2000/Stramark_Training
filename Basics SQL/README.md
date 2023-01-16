@@ -56,3 +56,5 @@
   50. Write a query to display the last name of employees having 'e' as the third character.
   51. Write a query to display the jobs/designations available in the employees table.
   52. Write a query to display the name (first_name, last_name), salary and PF (15% of salary) of all employees.
+  53. Write a query to select all record from employees where last name in 'BLAKE', 'SCOTT', 'KING' and 'FORD'.
+  54. Write a query to list the number of jobs available in the employees table.
