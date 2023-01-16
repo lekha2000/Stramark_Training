@@ -60,3 +60,5 @@
   54. Write a query to list the number of jobs available in the employees table.
   55. Write a query to get the total salaries payable to employees.
   56. Write a query to get the minimum salary from employees table.
+  57. Write a query to get the maximum salary of an employee working as a Programmer.
+  58. Write a query to get the average salary and number of employees working the department 90.
