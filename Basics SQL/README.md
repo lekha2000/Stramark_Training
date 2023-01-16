@@ -38,3 +38,5 @@
   32. Write a query to get the average salary and number of employees in the employees table.
   33. Write a query to get the number of employees working with the company.
   34. Write a query to get the number of jobs available in the employees table.
+  35. Write a query get all first name from employees table in upper case.
+  36. Write a query to get the first 3 characters of first name from employees table.
