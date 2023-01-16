@@ -62,3 +62,5 @@
   56. Write a query to get the minimum salary from employees table.
   57. Write a query to get the maximum salary of an employee working as a Programmer.
   58. Write a query to get the average salary and number of employees working the department 90.
+  60. Write a query to get the highest, lowest, sum, and average salary of all employees.
+  61. Write a query to get the number of employees with the same job.
