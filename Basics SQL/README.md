@@ -34,3 +34,5 @@
   28. Write a query to get the names (first_name, last_name), salary, PF of all the employees (PF is calculated as 15% of salary).
   29. Write a query to get the employee ID, names (first_name, last_name), salary in ascending order of salary.
   30. Write a query to get the total salaries payable to employees.
+  31. Write a query to get the maximum and minimum salary from employees table.
+  32. Write a query to get the average salary and number of employees in the employees table.
