@@ -48,3 +48,5 @@
   42. Write a query to get monthly salary (round 2 decimal places) of each and every employee.
   43. Write a query to display the name (first_name, last_name) and salary for all employees whose salary is not in the range $10,000 through $15,000.
   44. Write a query to display the name (first_name, last_name) and department ID of all employees in departments 30 or 100 in ascending order.
+  45. Write a query to display the name (first_name, last_name) and salary for all employees whose salary is not in the range $10,000 through $15,000 and are in department 30 or 100.
+  46. Write a query to display the name (first_name, last_name) and hire date for all employees who were hired in 1987.
