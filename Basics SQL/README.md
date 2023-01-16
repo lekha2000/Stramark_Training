@@ -42,7 +42,9 @@
   36. Write a query to get the first 3 characters of first name from employees table.
   37. Write a query to get the names (for example Ellen Abel, Sundar Ande etc.) of all the employees from employees table.
   38. Write a query to get first name from employees table after removing white spaces from both side.
-  40. Write a query to get the length of the employee names (first_name, last_name) from employees table.
-  41. Write a query to check if the first_name fields of the employees table contains numbers.
-  42. Write a query to select first 10 records from a table.
-  43. Write a query to get monthly salary (round 2 decimal places) of each and every employee.
+  39. Write a query to get the length of the employee names (first_name, last_name) from employees table.
+  40. Write a query to check if the first_name fields of the employees table contains numbers.
+  41. Write a query to select first 10 records from a table.
+  42. Write a query to get monthly salary (round 2 decimal places) of each and every employee.
+  43. Write a query to display the name (first_name, last_name) and salary for all employees whose salary is not in the range $10,000 through $15,000.
+  44. Write a query to display the name (first_name, last_name) and department ID of all employees in departments 30 or 100 in ascending order.
