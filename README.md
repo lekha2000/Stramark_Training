@@ -31,3 +31,4 @@
     5. Create a CRUD based App for developing a Student Database software.
     6. Write a program that validates Date (year,month,day) entered by user.
     7. Write a program that checks entered number is Prime or not.
+    9. Write a program that reverse a sentence by words.
