@@ -8,5 +8,11 @@
       return null;
     }
     
+## For example,
+    String out = reverseByWords("my name is vinod and i live in bangalore");
+
+    // the variable "out" should be equal to "bangalore in live i and vinod is name my".
+
+    Call the function in main, multiple times by supplying multiple values and verify the same
 
   
