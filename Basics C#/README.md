@@ -5,7 +5,7 @@
   3.  Write a Math Calc Program
   4.  Write a program that creates an array and displays.
   
-## Assignment6Class: Assignment 5
+## Assignment6Class: Assignment6: Assignment 5
 
   Create a CRUD based App for developing a Student Database software
   
