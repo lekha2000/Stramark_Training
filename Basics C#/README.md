@@ -13,5 +13,8 @@
 
   Create a CRUD based App for developing a Customer Database software
   
- ## Assignment7 
+## Assignment6 
+Write a C# program that Validates the user entered day/month/year function multiple times with different values.
+
+## Assignment7 
  Write a C# program to call the CheckPrime(user defined) function multiple times with different values.
