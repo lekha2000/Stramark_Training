@@ -12,3 +12,6 @@
 ## Assignment12: Assignment 12
 
   Create a CRUD based App for developing a Customer Database software
+  
+ ## Assignment7 
+ Write a C# program to call the CheckPrime(user defined) function multiple times with different values.
