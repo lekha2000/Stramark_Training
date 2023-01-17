@@ -28,4 +28,5 @@
     2. Write a function that takes an array of numbers and it should display the Odd and Even numbers
     3. Write a Math Calc Program
     4. Write a program that creates an array and displays.
-    5. Create a CRUD based App for developing a Student Database software
+    5. Create a CRUD based App for developing a Student Database software.
+    6. Write a program that validates Date (year,month,day) entered by user.
