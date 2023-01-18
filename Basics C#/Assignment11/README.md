@@ -18,4 +18,6 @@
     Enter the Intrest Rate : 2.5
     Enter the Time : 3
     
+## Output 
+    Simple Intrest :  3750.00
 
