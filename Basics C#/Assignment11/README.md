@@ -13,3 +13,5 @@
     8. Wait for the execution.
     9. User Input will be asked so please enter the asked fields.
  
+## Sample Example 
+    Enter the Principal Amount : 50000
