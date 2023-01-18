@@ -15,3 +15,4 @@
  
 ## Sample Example 
     Enter the Principal Amount : 50000
+    Enter the Intrest Rate : 2.5
