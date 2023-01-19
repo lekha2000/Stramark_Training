@@ -27,6 +27,7 @@
     6. Set the Properties to namesapce.ValidateDate6
     7. Click on Debug.
     8. Then Click on start without debugging
+    9. Wait for the execution.
 
 
 
