@@ -17,4 +17,6 @@
     3. Set the namespace according to ur folder
     4. Left Click on Project in header of VS 2022.
     5. Set the Properties to namesapce.Assignment12
+    6. Click on Debug.
+
 
