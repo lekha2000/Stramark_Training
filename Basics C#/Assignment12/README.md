@@ -10,3 +10,9 @@
     Hint: Create separate classes for Customer, CustomerRepo which have functions of Operations, 
     and UI Class that will handle the UI of the Application. Make the       
     App as modular as possible.
+
+## Steps To Run The File
+    1. Download the Basic C# Zip file
+    2. Open the Basic C# folder in VS 2022.
+    3. Set the namespace according to ur folder
+    4. Left Click on Project in header of VS 2022.
