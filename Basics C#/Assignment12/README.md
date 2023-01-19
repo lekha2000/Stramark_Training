@@ -14,11 +14,12 @@
 ## Steps To Run The File
     1. Download the Basic C# Zip file
     2. Open the Basic C# folder in VS 2022.
-    3. Set the namespace according to ur folder
-    4. Left Click on Project in header of VS 2022.
-    5. Set the Properties to namesapce.Assignment12
-    6. Click on Debug.
-    7. Then Click on start without debugging
-    8. Wait for the execution.
-    9. User Input will be asked so please enter the asked fields.
-    10. According to users input customer recordxs will be added ,updated,delted and found.
+    3. Inside that open Assignment12 folders solution 
+    4. Set the namespace according to ur folder
+    5. Left Click on Project in header of VS 2022.
+    6. Set the Properties to namesapce.Assignment12
+    7. Click on Debug.
+    8. Then Click on start without debugging
+    9. Wait for the execution.
+    10. User Input will be asked so please enter the asked fields.
+    11. According to users input customer recordxs will be added ,updated,delted and found.
