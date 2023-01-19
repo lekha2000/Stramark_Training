@@ -19,5 +19,6 @@
     5. Set the Properties to namesapce.Assignment12
     6. Click on Debug.
     7. Then Click on start without debugging
+    8. Wait for the execution.
 
 
