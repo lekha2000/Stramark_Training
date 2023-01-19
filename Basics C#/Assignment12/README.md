@@ -21,4 +21,4 @@
     7. Then Click on start without debugging
     8. Wait for the execution.
     9. User Input will be asked so please enter the asked fields.
-
+    10. According to users input customer recordxs will be added ,updated,delted and found.
