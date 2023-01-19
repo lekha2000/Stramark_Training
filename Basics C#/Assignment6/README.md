@@ -17,3 +17,10 @@
     year=2016, month=2, day=29 is a valid date.
 
     Write a C# program to call the above function multiple times with different values.
+    
+## Steps To Run The File
+    1. Download the Basic C# Zip file
+    2. Open the Basic C# folder in VS 2022.
+    3. Set the namespace according to ur fileName
+    4. Left Click on Project in header of VS 2022.
+
