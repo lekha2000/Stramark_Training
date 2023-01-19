@@ -18,5 +18,6 @@
     4. Left Click on Project in header of VS 2022.
     5. Set the Properties to namesapce.Assignment12
     6. Click on Debug.
+    7. Then Click on start without debugging
 
 
