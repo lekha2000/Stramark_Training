@@ -16,3 +16,5 @@
     2. Open the Basic C# folder in VS 2022.
     3. Set the namespace according to ur folder
     4. Left Click on Project in header of VS 2022.
+    5. Set the Properties to namesapce.Assignment12
+
