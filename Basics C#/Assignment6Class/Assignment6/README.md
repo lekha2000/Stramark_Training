@@ -6,4 +6,6 @@
   5. Inside that open Assignment5 folders solution 
   6. Set the namespace according to ur folder
   7. Left Click on Project in header of VS 2022.
+  8. Set the Properties to namesapce.Assignment6
+  9. Click on Debug.
 
