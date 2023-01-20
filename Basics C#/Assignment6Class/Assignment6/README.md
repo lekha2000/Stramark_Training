@@ -13,5 +13,6 @@
     12. User Input will be asked so please enter the asked fields.
 
 ## Assignment 5:
-    Create a CRUD based App for developing a student Database software where the user can add, remove and update movies of his Video library. 
+    Create a CRUD based App for developing a student Database software.
+    Where the user can add, remove and update movies of his Video library. 
     It should be a menu driven program that has 4 use cases for add, removing, finding and updating movie info in the application.
