@@ -8,4 +8,6 @@
   7. Left Click on Project in header of VS 2022.
   8. Set the Properties to namesapce.Assignment6
   9. Click on Debug.
-
+  10. Then Click on start without debugging
+  11. Wait for the execution.
+  12. User Input will be asked so please enter the asked fields.
