@@ -21,3 +21,5 @@
     2. Open the Basic C# folder in VS 2022.
     3. Inside that open Assignment9 folders solution 
     4. Set the namespace according to ur fileName
+    5. Left Click on Project in header of VS 2022.
+    6. Set the Properties to namesapce.reverseStr
