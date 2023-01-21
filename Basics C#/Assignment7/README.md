@@ -23,3 +23,8 @@ Write a C# program to call the above function multiple times with different valu
     3. Inside that open Assignment7 folders solution 
     4. Set the namespace according to ur fileName
     5. Left Click on Project in header of VS 2022.
+    6. Set the Properties to namesapce.Chkprime
+    7. Click on Debug.
+    8. Then Click on start without debugging
+    9. Wait for the execution.
+    10. User Input will be asked so please enter the asked fields.
