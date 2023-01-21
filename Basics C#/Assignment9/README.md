@@ -23,3 +23,4 @@
     4. Set the namespace according to ur fileName
     5. Left Click on Project in header of VS 2022.
     6. Set the Properties to namesapce.reverseStr
+    7. Click on Debug.
