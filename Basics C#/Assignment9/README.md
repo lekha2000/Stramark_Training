@@ -24,3 +24,4 @@
     5. Left Click on Project in header of VS 2022.
     6. Set the Properties to namesapce.reverseStr
     7. Click on Debug.
+    8. Then Click on start without debugging
