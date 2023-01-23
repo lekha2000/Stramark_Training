@@ -14,3 +14,6 @@
     6. Set the Properties to namesapce.AssignmentFunction
     7. Click on Debug.
     8. Then Click on start without debugging
+    9. Wait for the execution.
+    10. User Input will be asked so please enter the asked fields.
+    11. According to users input customer records will be displayed
