@@ -4,3 +4,7 @@
     The CalculateInterest will be an abstract method.
     Implement this method in the Subclasses like SB Account, RD Account, and FD Account.
     Using Runtime polymorphism, create objects of the Account class and examine how the CalculateInterest function is called.
+
+## Steps To Run The File
+    1. Download the Basic C# Zip file
+    2. Open the Basic C# folder in VS 2022.
