@@ -3,3 +3,7 @@
     Create Function to write the Patient Details to a File.
     Create a Function to read the details of the Patient from the File.
     Test the Functions with different Values and observe the Functionality.
+
+## Steps To Run The File
+    1. Download the Basic C# Zip file
+    2. Open the Basic C# folder in VS 2022.
