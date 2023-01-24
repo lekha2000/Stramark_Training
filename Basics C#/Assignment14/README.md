@@ -10,7 +10,7 @@
     3. Inside that open Assignment14 folders solution 
     4. Set the namespace according to ur folder
     5. Left Click on Project in header of VS 2022.
-    6. Set the Properties to namesapce.AssignmentFunction
+    6. Set the Properties to namesapce.AssignmentBillProgram
     7. Click on Debug.
     8. Then Click on start without debugging
     9. Wait for the execution.
