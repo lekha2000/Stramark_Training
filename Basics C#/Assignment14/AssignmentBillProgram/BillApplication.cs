@@ -57,3 +57,16 @@ namespace AssignmentBillProgram
             return $"{ItemID} \t {ItemName} \t {ItemQuantity}  \t {ItemAmount}";
         }
     }
+    class BillApplication
+    {
+        static Bill bill = new Bill();
+        int TotalAmount = 0;
+        static Item itm = new Item();
+        static void Main(string[] args)
+        {
+            ArrayList arrayList = new ArrayList();
+            HashSet<Item> itembill = new HashSet<Item>();          
+            Console.Write("Bill Holder Name : ");
+            string name = Console.ReadLine();
+            bill.BillholderName = name;
+            Console.WriteLine();
