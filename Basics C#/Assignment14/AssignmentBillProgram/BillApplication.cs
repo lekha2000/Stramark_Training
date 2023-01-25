@@ -41,3 +41,19 @@ namespace AssignmentBillProgram
         {
             return ItemID.GetHashCode();
         }
+        public override bool Equals(object obj)
+        {
+            if (obj is Item)
+            {
+                var unBoxed = obj as Item;
+                if (ItemID == unBoxed.ItemID && ItemName == unBoxed.ItemName && ItemQuantity == unBoxed.ItemQuantity && ItemAmount == unBoxed.ItemAmount) ;
+                return true;
+            }
+            return false;
+        }
+
+        public override string ToString()
+        {
+            return $"{ItemID} \t {ItemName} \t {ItemQuantity}  \t {ItemAmount}";
+        }
+    }
