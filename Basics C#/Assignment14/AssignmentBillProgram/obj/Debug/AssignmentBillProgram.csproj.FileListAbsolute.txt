@@ -1,0 +1,7 @@
+D:\starmark3316\DotNetFiles\AssignmentBillProgram\AssignmentBillProgram\bin\Debug\AssignmentBillProgram.exe.config
+D:\starmark3316\DotNetFiles\AssignmentBillProgram\AssignmentBillProgram\bin\Debug\AssignmentBillProgram.exe
+D:\starmark3316\DotNetFiles\AssignmentBillProgram\AssignmentBillProgram\bin\Debug\AssignmentBillProgram.pdb
+D:\starmark3316\DotNetFiles\AssignmentBillProgram\AssignmentBillProgram\obj\Debug\AssignmentBillProgram.csprojAssemblyReference.cache
+D:\starmark3316\DotNetFiles\AssignmentBillProgram\AssignmentBillProgram\obj\Debug\AssignmentBillProgram.csproj.CoreCompileInputs.cache
+D:\starmark3316\DotNetFiles\AssignmentBillProgram\AssignmentBillProgram\obj\Debug\AssignmentBillProgram.exe
+D:\starmark3316\DotNetFiles\AssignmentBillProgram\AssignmentBillProgram\obj\Debug\AssignmentBillProgram.pdb
