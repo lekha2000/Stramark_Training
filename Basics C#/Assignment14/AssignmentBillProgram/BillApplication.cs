@@ -30,3 +30,14 @@ namespace AssignmentBillProgram
         }
 
     }
+    class Item
+    {
+        public int ItemID { get; set; }
+        public string ItemName { get; set; }
+        public int ItemQuantity { get; set; } = 1;
+        public int ItemAmount { get; set; }
+
+        public override int GetHashCode()
+        {
+            return ItemID.GetHashCode();
+        }
