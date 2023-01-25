@@ -19,3 +19,14 @@ namespace AssignmentBillProgram
             Console.Write(date.ToShortDateString());
             Console.WriteLine();
         }
+        public int generateId()
+        {
+            Random random = new Random();
+            int id = random.Next(52);
+            Console.Write("Bill No : ");
+            Console.Write(id + "\n");
+            return id;
+
+        }
+
+    }
