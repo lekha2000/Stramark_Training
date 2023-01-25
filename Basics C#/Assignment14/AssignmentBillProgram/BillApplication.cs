@@ -113,3 +113,25 @@ namespace AssignmentBillProgram
                 }
                 }
                 }
+                private static void GenerateBill()
+        {
+            Console.WriteLine("\n---------------------------------------------------");
+            Console.WriteLine("---------------------- BILL -----------------------");
+            Console.WriteLine("---------------------------------------------------");
+            bill.GenrateDate();
+            bill.generateId();
+            Console.WriteLine("---------------------------------------------------");
+            foreach (var j in item)
+            {
+                if (j.ItemID == IId)
+                {
+
+                    int price = j.ItemAmount * qty;
+                    Console.WriteLine(j.ItemName + "\t" + qty + "\t" + price);
+                    //itembill.Add(new Item(j.ItemName,qty,price));
+                    Console.WriteLine("---------------------------------------------------");
+                    TotalAmount += price;
+                    Console.WriteLine("Total Amount Rs : " + TotalAmount);
+                }
+            }
+        }
