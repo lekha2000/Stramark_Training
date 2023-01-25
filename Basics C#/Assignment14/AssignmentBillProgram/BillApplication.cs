@@ -83,3 +83,33 @@ namespace AssignmentBillProgram
                 Console.WriteLine(items.ToString());
             }
             Console.WriteLine();
+            while (true)
+            {
+                Console.WriteLine("\nPress 1 to Add Item");
+                Console.Write("Enter Your choice: ");
+                var ch = Console.ReadLine();
+                switch (ch)
+                {
+                    case "1":
+
+                        Console.Write("\nEntre the Item ID To Add : ");
+                        int IId = Convert.ToInt16(Console.ReadLine());
+                        itm.ItemID = IId;
+                        Console.Write("Enter the Quantity : ");
+                        int qty = Convert.ToInt16(Console.ReadLine());
+                        itm.ItemQuantity = qty;
+                        foreach (var j in item)
+                        {
+                            if (j.ItemID == IId)
+                            {
+                                Console.WriteLine(j.ItemName + "\t" + qty + "\t" + j.ItemAmount);
+                            }
+                        }
+                        break;
+                    case "2":
+                        GenerateBill();
+                        break;
+
+                }
+                }
+                }
