@@ -70,3 +70,16 @@ namespace AssignmentBillProgram
             string name = Console.ReadLine();
             bill.BillholderName = name;
             Console.WriteLine();
+        Console.WriteLine("---------List Of Items---------");
+            HashSet<Item> item = new HashSet<Item>();
+            item.Add(new Item { ItemID = 1, ItemName = "Idli", ItemAmount = 50 });
+            item.Add(new Item { ItemID = 2, ItemName = "Dosa", ItemAmount = 30 });
+            item.Add(new Item { ItemID = 3, ItemName = "Vada", ItemAmount = 20 });
+            item.Add(new Item { ItemID = 4, ItemName = "Poori", ItemAmount = 100 });
+            item.Add(new Item { ItemID = 5, ItemName = "Upama", ItemAmount = 40 });
+
+            foreach (Item items in item)
+            {
+                Console.WriteLine(items.ToString());
+            }
+            Console.WriteLine();
