@@ -1,8 +1,8 @@
-## Assignment 14
-    Create an Class called Patient with Properties as ID, Name, Phone No, BillAmount
-    Create Function to write the Patient Details to a File.
-    Create a Function to read the details of the Patient from the File.
-    Test the Functions with different Values and observe the Functionality.
+## Association Program
+    Create a Class by name Bill
+    Bill has properties: BillNo, BillDate, BillHolder, BillAmount
+    Create a class called Item: Id, Perticulars, UnitPrice, Quantity
+    Create a Program the provides Itemized billing for a given Customer.
 
 ## Steps To Run The File
     1. Download the Basic C# Zip file
