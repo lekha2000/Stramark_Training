@@ -1,0 +1,7 @@
+D:\starmark3316\DotNetFiles\SampleDataAccessApp\SampleDataAccessApp\bin\Debug\SampleDataAccessApp.exe.config
+D:\starmark3316\DotNetFiles\SampleDataAccessApp\SampleDataAccessApp\bin\Debug\SampleDataAccessApp.exe
+D:\starmark3316\DotNetFiles\SampleDataAccessApp\SampleDataAccessApp\bin\Debug\SampleDataAccessApp.pdb
+D:\starmark3316\DotNetFiles\SampleDataAccessApp\SampleDataAccessApp\obj\Debug\SampleDataAccessApp.csprojAssemblyReference.cache
+D:\starmark3316\DotNetFiles\SampleDataAccessApp\SampleDataAccessApp\obj\Debug\SampleDataAccessApp.csproj.CoreCompileInputs.cache
+D:\starmark3316\DotNetFiles\SampleDataAccessApp\SampleDataAccessApp\obj\Debug\SampleDataAccessApp.exe
+D:\starmark3316\DotNetFiles\SampleDataAccessApp\SampleDataAccessApp\obj\Debug\SampleDataAccessApp.pdb
