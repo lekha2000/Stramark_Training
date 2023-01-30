@@ -47,3 +47,16 @@ namespace SampleDataAccessApp.Practical
             const string STRDELETE = "DELETE FROM TBLEMPLOYEE WHERE EMPID = @id";
             #endregion
 
+            #region HELPERS
+            private void NonQueryExecute(string query, SqlParameter[] parameters, CommandType type)
+            {
+                SqlConnection con = new SqlConnection(strCon);
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = type;
+                if (parameters != null)
+                {
+                    foreach (SqlParameter parameter in parameters)
+                    {
+                        cmd.Parameters.Add(parameter);
+                    }
+                }
