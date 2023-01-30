@@ -5,3 +5,16 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+
+namespace SampleDataAccessApp.Practical
+{
+    namespace Entities
+    {
+        class Employee
+        {
+            public int EmpId { get; set; }
+            public string EmpName { get; set; }
+            public string EmpAddress { get; set; }
+            public int EmpSalary { get; set; }
+            public int DeptId { get; set; }
+        }
