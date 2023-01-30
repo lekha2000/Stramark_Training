@@ -35,3 +35,15 @@ namespace SampleDataAccessApp.Practical
             List<Employee> GetAllEmployees();
             List<Dept> GetAllDepts();
         }
+        class DataComponent : IDataAccessComponent
+        {
+            private string strCon = string.Empty;
+
+            #region SqlStatements
+            const string STRINSERT = "InsertEmployee";
+            const string STRUPDATE = "Update tblEmployee Set EmpName = @EmpName, EmpAddress = @EmpAddress, EmpSalary = @EmpSalary WHERE EmpId = @EmpId";
+            const string STRALL = "SELECT * FROM TBLEMPLOYEE";
+            const string STRALLDEPTS = "SELECT * FROM TBLDEPT";
+            const string STRDELETE = "DELETE FROM TBLEMPLOYEE WHERE EMPID = @id";
+            #endregion
+
