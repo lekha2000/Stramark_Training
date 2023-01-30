@@ -18,3 +18,10 @@ namespace SampleDataAccessApp.Practical
             public int EmpSalary { get; set; }
             public int DeptId { get; set; }
         }
+        class Dept
+        {
+            public int DeptId { get; set; }
+            public string DeptName { get; set; }
+        }
+
+    }
