@@ -108,5 +108,15 @@ namespace SampleDataAccessApp.Practical
             {
                 strCon = connectionString;
             }
+            #region IDataAccessComponentImpl
+            public void AddNewEmployee(Employee emp)
+            {
+                List<SqlParameter> parameters = new List<SqlParameter>();
+                parameters.Add(new SqlParameter("@EmpName", emp.EmpName));
+                parameters.Add(new SqlParameter("@EmpAddress", emp.EmpAddress));
+                parameters.Add(new SqlParameter("@EmpSalary", emp.EmpSalary));
+                parameters.Add(new SqlParameter("@Department", emp.DeptId));
+                parameters.Add(new SqlParameter("@EmpId", emp.EmpId));
+
 
 
