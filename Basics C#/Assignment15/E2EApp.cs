@@ -74,4 +74,34 @@ namespace SampleDataAccessApp.Practical
                     con.Close();
                 }
             }
+            private DataTable GetRecords(string query, SqlParameter[] parameters, CommandType type = CommandType.Text)
+            {
+                SqlConnection con = new SqlConnection(strCon);
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = type;
+                if (parameters != null)
+                {
+                    foreach (SqlParameter parameter in parameters)
+                    {
+                        cmd.Parameters.Add(parameter);
+                    }
+                }
+                try
+                {
+                    con.Open();
+                    var reader = cmd.ExecuteReader();
+                    DataTable table = new DataTable("Records");
+                    table.Load(reader);
+                    return table;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+            #endregion
 
