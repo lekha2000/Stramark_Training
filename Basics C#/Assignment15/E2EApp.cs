@@ -126,6 +126,20 @@ namespace SampleDataAccessApp.Practical
                     Console.WriteLine(ex.Message);
                 }
             }
+            public void DeleteEmployee(int id)
+            {
+                List<SqlParameter> parameters = new List<SqlParameter>();
+                parameters.Add(new SqlParameter("@id", id));
+
+                try
+                {
+                    NonQueryExecute(STRDELETE, parameters.ToArray(), CommandType.Text);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
 
 
 
