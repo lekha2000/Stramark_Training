@@ -25,3 +25,13 @@ namespace SampleDataAccessApp.Practical
         }
 
     }
+    namespace Dalayer
+    {
+        interface IDataAccessComponent
+        {
+            void AddNewEmployee(Employee emp);
+            void UpdateEmployee(Employee emp);
+            void DeleteEmployee(int id);
+            List<Employee> GetAllEmployees();
+            List<Dept> GetAllDepts();
+        }
