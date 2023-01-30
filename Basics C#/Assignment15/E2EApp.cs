@@ -104,4 +104,9 @@ namespace SampleDataAccessApp.Practical
                 }
             }
             #endregion
+            public DataComponent(string connectionString)
+            {
+                strCon = connectionString;
+            }
+
 
