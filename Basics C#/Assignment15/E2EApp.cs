@@ -117,6 +117,15 @@ namespace SampleDataAccessApp.Practical
                 parameters.Add(new SqlParameter("@EmpSalary", emp.EmpSalary));
                 parameters.Add(new SqlParameter("@Department", emp.DeptId));
                 parameters.Add(new SqlParameter("@EmpId", emp.EmpId));
+                try
+                {
+                    NonQueryExecute(STRINSERT, parameters.ToArray(), CommandType.StoredProcedure);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
 
 
 
