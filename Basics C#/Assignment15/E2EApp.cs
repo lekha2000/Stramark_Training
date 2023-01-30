@@ -60,3 +60,18 @@ namespace SampleDataAccessApp.Practical
                         cmd.Parameters.Add(parameter);
                     }
                 }
+                try
+                {
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+
