@@ -171,5 +171,9 @@ namespace SampleDataAccessApp.Practical
                         EmpSalary = Convert.ToInt32(row[3]),
                         DeptId = row.IsNull(4) ? 0 : (int)row[4]
                     };
+                    emplist.Add(emp);
+                }
+                return emplist;
+            }
 
 
