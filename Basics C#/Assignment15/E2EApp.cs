@@ -206,3 +206,14 @@ public void UpdateEmployee(Employee emp)
         {
             static IDataAccessComponent component = null;
             static string connectionString = ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString;
+            static void Main(string[] args)
+            {
+                component = new DataComponent(connectionString);
+
+                component.AddNewEmployee(new Employee
+                {
+                    EmpName = Utilities.Prompt("Enter the EmpName"),
+                    EmpAddress = Utilities.Prompt("Enter the Address"),
+                    EmpSalary = Utilities.GetNumber("Enter the salary"),
+                    DeptId = Utilities.GetNumber("Enter the DeptId")
+                });
