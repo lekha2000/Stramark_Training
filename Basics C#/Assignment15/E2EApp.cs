@@ -197,3 +197,12 @@ public void UpdateEmployee(Employee emp)
         }
     }
 
+        namespace UILayer
+    {
+        using System.Configuration;
+        using Utility;
+
+        class MainProgram
+        {
+            static IDataAccessComponent component = null;
+            static string connectionString = ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString;
