@@ -163,5 +163,13 @@ namespace SampleDataAccessApp.Practical
                 {
                     //var deptId = (SqlInt32)row[4];
 
+                    Employee emp = new Employee
+                    {
+                        EmpId = (int)row[0],
+                        EmpName = row[1].ToString(),
+                        EmpAddress = row[2].ToString(),
+                        EmpSalary = Convert.ToInt32(row[3]),
+                        DeptId = row.IsNull(4) ? 0 : (int)row[4]
+                    };
 
 
