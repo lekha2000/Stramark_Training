@@ -176,4 +176,11 @@ namespace SampleDataAccessApp.Practical
                 return emplist;
             }
 
+public void UpdateEmployee(Employee emp)
+            {
+                List<SqlParameter> parameters = new List<SqlParameter>();
+                parameters.Add(new SqlParameter("@EmpName", emp.EmpName));
+                parameters.Add(new SqlParameter("@EmpAddress", emp.EmpAddress));
+                parameters.Add(new SqlParameter("@EmpSalary", emp.EmpSalary));
+                parameters.Add(new SqlParameter("@EmpId", emp.EmpId));
 
