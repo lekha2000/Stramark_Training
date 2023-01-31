@@ -228,3 +228,7 @@ public void UpdateEmployee(Employee emp)
                 var data = component.GetAllDepts();
                 foreach (var dept in data)
                     Console.WriteLine(dept.DeptName);
+
+                var data1 = component.GetAllEmployees();
+                foreach (var emp in data1)
+                    Console.WriteLine(emp.EmpName+"\n"+emp.EmpAddress+"\n"+emp.EmpSalary+"\n\n");
