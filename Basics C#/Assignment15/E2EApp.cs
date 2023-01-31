@@ -140,6 +140,21 @@ namespace SampleDataAccessApp.Practical
                     Console.WriteLine(ex.Message);
                 }
             }
+            public List<Dept> GetAllDepts()
+            {
+                var table = GetRecords(STRALLDEPTS, null);
+                List<Dept> depts = new List<Dept>();
+                foreach (DataRow row in table.Rows)
+                {
+                    Dept dept = new Dept
+                    {
+                        DeptId = Convert.ToInt32(row[0]),
+                        DeptName = row[1].ToString()
+                    };
+                    depts.Add(dept);
+                }
+                return depts;
+
 
 
 
