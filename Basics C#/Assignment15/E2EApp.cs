@@ -154,7 +154,14 @@ namespace SampleDataAccessApp.Practical
                     depts.Add(dept);
                 }
                 return depts;
-
+            }
+            public List<Employee> GetAllEmployees()
+            {
+                var table = GetRecords(STRALL, null);
+                List<Employee> emplist = new List<Employee>();
+                foreach (DataRow row in table.Rows)
+                {
+                    //var deptId = (SqlInt32)row[4];
 
 
 
