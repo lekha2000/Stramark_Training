@@ -224,3 +224,4 @@ public void UpdateEmployee(Employee emp)
                     EmpAddress = "LA",
                     EmpSalary = 60000
                 });
+                component.DeleteEmployee(1196);
