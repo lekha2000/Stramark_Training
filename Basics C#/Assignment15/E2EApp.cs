@@ -183,4 +183,17 @@ public void UpdateEmployee(Employee emp)
                 parameters.Add(new SqlParameter("@EmpAddress", emp.EmpAddress));
                 parameters.Add(new SqlParameter("@EmpSalary", emp.EmpSalary));
                 parameters.Add(new SqlParameter("@EmpId", emp.EmpId));
+                try
+                {
+                    NonQueryExecute(STRUPDATE, parameters.ToArray(), CommandType.Text);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+            #endregion 
+        }
+    }
 
