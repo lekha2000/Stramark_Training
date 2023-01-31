@@ -225,3 +225,6 @@ public void UpdateEmployee(Employee emp)
                     EmpSalary = 60000
                 });
                 component.DeleteEmployee(1196);
+                var data = component.GetAllDepts();
+                foreach (var dept in data)
+                    Console.WriteLine(dept.DeptName);
