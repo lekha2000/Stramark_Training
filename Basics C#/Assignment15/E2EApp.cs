@@ -217,3 +217,10 @@ public void UpdateEmployee(Employee emp)
                     EmpSalary = Utilities.GetNumber("Enter the salary"),
                     DeptId = Utilities.GetNumber("Enter the DeptId")
                 });
+                component.UpdateEmployee(new Employee
+                {
+                    EmpId = 1196,
+                    EmpName = "Samuel L Jackson",
+                    EmpAddress = "LA",
+                    EmpSalary = 60000
+                });
