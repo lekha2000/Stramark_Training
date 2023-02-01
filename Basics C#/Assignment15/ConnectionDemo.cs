@@ -16,3 +16,18 @@ namespace SampleDataAccessApp
         const string STRQUERY = "SELECT * FROM tblEmployee  ";
         const string STRQRY = "SELECT * FROM Dept ";
         const string STRQUER = "SELECT * FROM tblEmployee WHERE DeptName = @dname ";
+        public static DataTable GetAllRecords()
+        {
+            SqlConnection con = new SqlConnection(STRCONNECTION);
+            SqlCommand cmd = new SqlCommand(STRQUERY, con);
+            try
+            {
+                con.Open();
+                var reader = cmd.ExecuteReader();
+                DataTable table = new DataTable("EmpRecords");
+                table.Load(reader);
+                return table;
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
