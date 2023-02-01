@@ -70,4 +70,12 @@ namespace SampleDataAccessApp
 
         const string STRINSERTPROG = "InsertEmployee";
 
+const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,@did)";
+        private static void ReadData()
+        {
+            SqlConnection sqlCon = new SqlConnection();
+            sqlCon.ConnectionString = STRCONNECTION;
+            SqlCommand sqlCommand = sqlCon.CreateCommand();
+            sqlCommand.CommandText = STRQUERY;
+
 
