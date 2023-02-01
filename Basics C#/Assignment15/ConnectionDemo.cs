@@ -50,4 +50,16 @@ namespace SampleDataAccessApp
                 table.Load(reader);
                 return table;
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            return null;
+        }
+    }
 
