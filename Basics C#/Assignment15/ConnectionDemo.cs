@@ -152,6 +152,17 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
             //DisplayAsTable();
 
             DisplayDept();
+            int did = Utilities.GetNumber("Enter The Department ID: ");
+            string name = Utilities.Prompt("Enter The Name: ");
+            string address = Utilities.Prompt("Enter The Address : ");
+            int salary = Utilities.GetNumber("Enter The Salary : ");
+            //int deptid = Utilities.GetNumber("Enter the Department ID : ");
+
+            AddNewRecord(name, address, salary, did);
+            //AddNewRecordUsingStoredProc(name, address, salary, did);
+            DisplayAsTable();
+           
+        }
 
 
 
