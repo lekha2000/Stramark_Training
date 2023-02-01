@@ -98,5 +98,24 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
                 }
             }
         }
+        private static void DisplayByName(string name)
+        {
+            const string STRCONNECTION = "Data Source=192.168.171.36;Initial Catalog=3316;Integrated Security=True";
+
+            string STRQUERY = $"SELECT * FROM tblEmployee WHERE EmpName LIKE '%{name}%' ";
+            SqlConnection con = new SqlConnection(STRCONNECTION);
+            SqlCommand cmd = new SqlCommand(STRQUERY, con);
+            try
+            {
+                con.Open();
+                var reader = cmd.ExecuteReader();
+                var table = Database.GetAllRecords();
+                while (reader.Read())
+                {
+                    Console.WriteLine($"{reader["EmpName"]} \t {reader["EmpAddress"]}");
+                }
+                
+            }
+
 
 
