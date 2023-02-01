@@ -62,4 +62,12 @@ namespace SampleDataAccessApp
             return null;
         }
     }
+    class ConnectionDemo
+    {
+        const string STRCONNECTION = "Data Source=192.168.171.36;Initial Catalog=3316;Integrated Security=True";
+
+        const string STRQUERY = "SELECT * FROM Dept WHERE DeptName = @dname ";
+
+        const string STRINSERTPROG = "InsertEmployee";
+
 
