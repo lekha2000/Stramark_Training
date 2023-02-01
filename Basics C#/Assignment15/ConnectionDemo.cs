@@ -31,3 +31,11 @@ namespace SampleDataAccessApp
             {
                 Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                if(con.State == ConnectionState.Open)
+                con.Close();
+            }
+            return null;
+        }
+
