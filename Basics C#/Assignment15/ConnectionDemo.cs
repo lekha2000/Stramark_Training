@@ -116,6 +116,26 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
                 }
                 
             }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        private static void DisplayAsTable()
+        {
+            try
+            {
+                var table = Database.GetAllRecords();
+                foreach (DataRow row in table.Rows)
+                {
+                    Console.WriteLine($"EmpName: {row[1]}\nEmpAddress: {row[2]}\nEmpSalary : {row[3]}\nDepartment : {row[4]}");
+                }
+            }catch(SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
+        }
 
 
 
