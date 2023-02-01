@@ -38,4 +38,16 @@ namespace SampleDataAccessApp
             }
             return null;
         }
+        public static DataTable GetRecords()
+        {
+            SqlConnection con = new SqlConnection(STRCONNECTION);
+            SqlCommand cmd = new SqlCommand(STRQRY, con);
+            try
+            {
+                con.Open();
+                var reader = cmd.ExecuteReader();
+                DataTable table = new DataTable("EmpRecords");
+                table.Load(reader);
+                return table;
+            }
 
