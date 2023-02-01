@@ -77,5 +77,26 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
             sqlCon.ConnectionString = STRCONNECTION;
             SqlCommand sqlCommand = sqlCon.CreateCommand();
             sqlCommand.CommandText = STRQUERY;
+        try
+            {
+                sqlCon.Open();
+                SqlDataReader reader = sqlCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine($"{reader["EmpName"]} \t {reader["EmpAddress"]}");
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                if (sqlCon.State == System.Data.ConnectionState.Open)
+                {
+                    sqlCon.Close();
+                }
+            }
+        }
 
 
