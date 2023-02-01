@@ -136,6 +136,23 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
             }
             
         }
+        static void Main(string[] args)
+        {
+            //ReadData();
+            //DisplayAsTable();
+            //DisplayByName("Lekha");
+            //DisplayUsingParameter("Lekha");
+
+            /*string name = Utilities.Prompt("Enter The Name: ");
+            string address = Utilities.Prompt("Enter The Address : ");
+            int salary = Utilities.GetNumber("Enter The Salary : ");
+            int deptid = Utilities.GetNumber("Enter the Department ID : ");*/
+
+            //AddNewRecord(name, address, salary, deptid);
+            //DisplayAsTable();
+
+            DisplayDept();
+
 
 
 
