@@ -163,7 +163,32 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
             DisplayAsTable();
            
         }
-
+        private static void AddNewRecordUsingStoredProc(string name, string address, int salary, int did)
+        {
+            int empId = 0;
+            SqlCommand cmd = new SqlCommand(STRINSERTPROG, new SqlConnection(STRCONNECTION));
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@EmpName", name);
+            cmd.Parameters.AddWithValue("@EmpAddress", address);
+            cmd.Parameters.AddWithValue("@EmpSalary", salary);
+            cmd.Parameters.AddWithValue("@Department", did);
+            cmd.Parameters.AddWithValue("@EmpId", empId);
+            cmd.Parameters[4].Direction = ParameterDirection.Output;
+            try
+            {
+                cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+                empId = Convert.ToInt32(cmd.Parameters[4].Value);
+                Console.WriteLine("The EmpId of the newly added Employee is :  "+ empId);
+            }catch(SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            }
 
 
 
