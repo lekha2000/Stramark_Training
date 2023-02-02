@@ -47,4 +47,13 @@ interface IDatacomponent
                 };
             }
         }
+        static void Main(string[] args)
+        {
+            fillRecord();
+            //DisplayEmployee();
+            //Console.WriteLine();
+            //DisplayDepartments();
+            //DisplayEmployeeOfDepartsments("Human Resource");
+
+            IDatacomponent datacomponent = new DisconnectedProgram();
 
