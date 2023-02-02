@@ -57,3 +57,7 @@ interface IDatacomponent
 
             IDatacomponent datacomponent = new DisconnectedProgram();
 
+          string name = Utilities.Prompt("Enter Name : ");
+            string place = Utilities.Prompt("Enter Place : ");
+            int salary = Utilities.GetNumber("Enter Salary : ");
+            int deptid = Utilities.GetNumber("Enter DeptId : ");
