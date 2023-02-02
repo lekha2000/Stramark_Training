@@ -213,4 +213,13 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
             cmd.Parameters.AddWithValue("@salary", salary);
             cmd.Parameters.AddWithValue("@did", deptid);
 
+        try
+            {
+                cmd.Connection.Open();
+                var rowsAff = cmd.ExecuteNonQuery();
+                if(rowsAff != 1)
+                {
+                    throw new Exception("Records not added");
+                }
 
+            }
