@@ -204,6 +204,13 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
                 Console.WriteLine(ex.Message);
             }
         }
-
+        private static void AddNewRecord(string name, string address, int salary, int deptid)
+        {
+            //@name,@address,@salary,@deptid
+            SqlCommand cmd = new SqlCommand(STRINSERT, new SqlConnection(STRCONNECTION));
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@address", address);
+            cmd.Parameters.AddWithValue("@salary", salary);
+            cmd.Parameters.AddWithValue("@did", deptid);
 
 
