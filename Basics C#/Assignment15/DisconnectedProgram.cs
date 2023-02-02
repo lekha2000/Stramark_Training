@@ -30,4 +30,21 @@ interface IDatacomponent
         //const string deptquery = "Select * from Dept";
         static DataSet dataSet = new DataSet("AllRecords");
         static SqlDataAdapter ada = null; 
+        static void fillRecord()
+        {
+            ada = new SqlDataAdapter(query,strcon);
+            SqlCommandBuilder builder = new SqlCommandBuilder(ada);
+            //give name to the table           
+            ada.Fill(dataSet);
+            dataSet.Tables[0].TableName = "Employee";
+            //dataSet.Tables[1].TableName = "Department";
+
+            if(dataSet.Tables[0].PrimaryKey.Length == 0)
+            {
+                dataSet.Tables[0].PrimaryKey = new DataColumn[]
+                {
+                    dataSet.Tables[0].Columns[0]
+                };
+            }
+        }
 
