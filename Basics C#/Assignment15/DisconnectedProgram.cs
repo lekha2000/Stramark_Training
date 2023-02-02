@@ -22,3 +22,12 @@ interface IDatacomponent
         void UpdateEmployee(Employee Emp);
         void DeleteEmployee(int id);
     }
+    
+    class DisconnectedProgram : IDatacomponent
+    {
+        static string strcon = ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString;
+        const string query = "Select * from tblEmployee"; //Select * from Dept;
+        //const string deptquery = "Select * from Dept";
+        static DataSet dataSet = new DataSet("AllRecords");
+        static SqlDataAdapter ada = null; 
+
