@@ -232,4 +232,28 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
             }
             
         }
+        private static void DisplayUsingParameter(string name)
+        {
+            SqlCommand cmd = new SqlCommand(STRQUERY, new SqlConnection(STRCONNECTION));
+            try
+            {
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Connection.Open();
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine($"EmpName: {reader[1]}\nEmpAddress: {reader[2]}\nEmpSalary : {reader[3]}\nDepartment : {reader[4]}");
+                }
+            }catch(SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            
+        }
+    }
+}
 
