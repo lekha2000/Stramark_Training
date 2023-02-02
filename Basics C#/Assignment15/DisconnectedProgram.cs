@@ -16,3 +16,9 @@ namespace SampleDataAccessApp
         public int DeptId { get; set; }
         public int EmpSalary { get; internal set; }
     }
+interface IDatacomponent
+    {
+        void AddEmployees(Employee Emp);
+        void UpdateEmployee(Employee Emp);
+        void DeleteEmployee(int id);
+    }
