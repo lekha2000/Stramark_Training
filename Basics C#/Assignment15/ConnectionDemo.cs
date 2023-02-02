@@ -222,4 +222,14 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
                     throw new Exception("Records not added");
                 }
 
+            }catch(SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            
+        }
+
