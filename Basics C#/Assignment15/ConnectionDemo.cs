@@ -189,6 +189,21 @@ const string STRINSERT = "insert into tblEmployee values(@name,@address,@salary,
                 cmd.Connection.Close();
             }
             }
+            private static void DisplayDept()
+        {
+            try
+            {
+                var table = Database.GetRecords();
+                foreach (DataRow row in table.Rows)
+                {
+                    Console.WriteLine($"DeptName: {row[1]}\t DeptId : {row[0]}");
+                }
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
 
 
 
