@@ -96,3 +96,9 @@ interface IDatacomponent
             dataSet.Tables["Employee"].Rows.Add(newRow);
             ada.Update(dataSet, "Employee");
         }
+        void IDatacomponent.UpdateEmployee(Employee Emp)
+        {
+            foreach (DataRow row in dataSet.Tables[0].Rows)
+            {
+                if(row[0].ToString() == Emp.EmpId.ToString())
+                {
