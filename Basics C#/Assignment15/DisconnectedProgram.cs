@@ -179,4 +179,13 @@ interface IDatacomponent
                     break;
                 }
             }
+            //compares if empid and deptid is same if same then names of Employee will be displayed 
+            foreach (DataRow row in dataSet.Tables["Employee"].Rows)
+            {
+                if(row["EmpId"].ToString() == Deptid.ToString())
+                {
+                    Console.WriteLine(row["EmpName"]);
+                }
+            }
+        }
 
