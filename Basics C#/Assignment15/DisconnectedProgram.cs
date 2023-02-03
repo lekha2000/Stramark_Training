@@ -85,3 +85,14 @@ interface IDatacomponent
             //Console.WriteLine("Eployee Detail successfully deleted");
             //UpdateEployee(id , name, place, salary);
 
+            }
+          void IDatacomponent.AddEmployees(Employee Emp)
+        {
+            var newRow = dataSet.Tables[0].NewRow();
+            newRow[1] = Emp.EmpName;
+            newRow[2] = Emp.EmpAddress;
+            newRow[3] = Emp.salary;
+            newRow[4] = Emp.DeptId;
+            dataSet.Tables["Employee"].Rows.Add(newRow);
+            ada.Update(dataSet, "Employee");
+        }
