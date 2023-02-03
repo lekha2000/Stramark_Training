@@ -102,3 +102,12 @@ interface IDatacomponent
             {
                 if(row[0].ToString() == Emp.EmpId.ToString())
                 {
+                    row[1] = Emp.EmpName;
+                    row[2] = Emp.EmpAddress;
+                    row[3] = Emp.salary;
+                    row[4] = Emp.DeptId;
+                    break;
+                }
+            }
+            ada.Update(dataSet, "Employee");
+        }
