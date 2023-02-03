@@ -188,4 +188,12 @@ interface IDatacomponent
                 }
             }
         }
+        private static void DisplayEmployee()
+        {
+            
+            foreach (DataRow row in dataSet.Tables["Employee"].Rows)
+            {
+                Console.WriteLine(row["EmpName"]);
+            }
+        }
 
