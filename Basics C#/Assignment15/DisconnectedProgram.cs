@@ -124,3 +124,10 @@ interface IDatacomponent
             }
             ada.Update(dataSet, "Employee");
         }
+        //private static void UpdateEployee(int id, string name, string place, int salary)
+        //{
+        //    var fetch = dataSet.Tables[0].Rows.Find(id);
+        //    fetch[1] = name;
+        //    fetch[2] = place;
+        //    fetch[3] = salary;
+        //    ada.Update(dataSet, "Employee");
