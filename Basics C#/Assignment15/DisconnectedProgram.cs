@@ -158,4 +158,13 @@ interface IDatacomponent
         //    ada.Update(dataSet, "Employee");
         //}
 
-
+        //private static void InsertEmployes(string name, string place, int salary, int deptid)
+        //{
+        //    var newR = dataSet.Tables[0].NewRow();
+        //    newR[1] = name;
+        //    newR[2] = place;
+        //    newR[3] = salary;
+        //    newR[4] = deptid;
+        //    dataSet.Tables[0].Rows.Add(newR);
+        //    ada.Update(dataSet, "Employee");
+        //}
