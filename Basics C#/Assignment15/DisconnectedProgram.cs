@@ -168,3 +168,8 @@ interface IDatacomponent
         //    dataSet.Tables[0].Rows.Add(newR);
         //    ada.Update(dataSet, "Employee");
         //}
+        private static void DisplayEmployeeOfDepartsments(string deptName)
+        {
+            int Deptid = 0;
+            foreach (DataRow row in dataSet.Tables["Department"].Rows)
+            {
