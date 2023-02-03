@@ -173,3 +173,10 @@ interface IDatacomponent
             int Deptid = 0;
             foreach (DataRow row in dataSet.Tables["Department"].Rows)
             {
+            if(row["DeptName"].ToString() == deptName)
+                {
+                    Deptid = (int)row["Deptid"];
+                    break;
+                }
+            }
+
