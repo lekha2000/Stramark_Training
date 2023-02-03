@@ -68,3 +68,20 @@ interface IDatacomponent
                 salary = salary,
                 DeptId = deptid
             });
+            //int id = Utilities.GetNumber("Enter ID : ");
+            //datacomponent.UpdateEmployee(new Employee
+            //{
+            //    EmpName = name,
+            //    EmpAddress =place,
+            //    salary = salary,
+            //    DeptId = deptid
+            //});
+            //datacomponent.DeleteEmployee(id);
+
+            //int Deptid = Utilities.GetNumber("Enter DeptId : ");
+            //InsertEmployes(name, place, salary, Deptid);
+            //Console.WriteLine("Eployee Details successfully inserted");
+            //DeleteEmployee(1219);
+            //Console.WriteLine("Eployee Detail successfully deleted");
+            //UpdateEployee(id , name, place, salary);
+
