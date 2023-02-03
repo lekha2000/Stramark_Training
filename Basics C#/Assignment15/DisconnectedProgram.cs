@@ -61,3 +61,10 @@ interface IDatacomponent
             string place = Utilities.Prompt("Enter Place : ");
             int salary = Utilities.GetNumber("Enter Salary : ");
             int deptid = Utilities.GetNumber("Enter DeptId : ");
+            datacomponent.AddEmployees(new Employee
+            {
+                EmpName = name,
+                EmpAddress = place,
+                salary = salary,
+                DeptId = deptid
+            });
