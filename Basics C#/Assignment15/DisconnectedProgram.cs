@@ -196,4 +196,11 @@ interface IDatacomponent
                 Console.WriteLine(row["EmpName"]);
             }
         }
+        private static void DisplayDepartments()
+        {
+            foreach (DataRow row in dataSet.Tables["Department"].Rows)
+            {
+                Console.WriteLine(row["DeptName"]);
+            }
+        }
 
