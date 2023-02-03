@@ -111,3 +111,16 @@ interface IDatacomponent
             }
             ada.Update(dataSet, "Employee");
         }
+        void IDatacomponent.DeleteEmployee(int id)
+        {
+            foreach (DataRow row in dataSet.Tables[0].Rows)
+            {
+                if(row[0].ToString() == id.ToString())
+                {
+                    row.Delete();
+                    break;
+                }
+                
+            }
+            ada.Update(dataSet, "Employee");
+        }
