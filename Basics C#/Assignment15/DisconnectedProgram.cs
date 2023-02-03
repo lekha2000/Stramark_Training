@@ -131,3 +131,15 @@ interface IDatacomponent
         //    fetch[2] = place;
         //    fetch[3] = salary;
         //    ada.Update(dataSet, "Employee");
+        //    //foreach (DataRow row in dataSet.Tables[0].Rows)
+        //    //{
+        //    //    if(row[0].ToString() == id.ToString())
+        //    //    {
+        //    //        row[1] = name;
+        //    //        row[2] = place;
+        //    //        row[3] = salary;
+        //    //    }
+        //    //    ada.Update(dataSet, "Employee");
+        //    //}
+        //}
+
