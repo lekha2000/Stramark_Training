@@ -143,3 +143,19 @@ interface IDatacomponent
         //    //}
         //}
 
+        //private static void DeleteEmployee(int EmpId)
+        //{
+        //    foreach (DataRow row in dataSet.Tables[0].Rows)
+        //    {
+        //        if(row[0].ToString() == EmpId.ToString())
+        //        {
+        //            //Delete is an inbuilt function which automatically deletes in table
+        //            row.Delete();
+        //            break;
+        //        }
+        //    }
+        //    //after deleting in table on doinf update it will delete in sqlTable also
+        //    ada.Update(dataSet, "Employee");
+        //}
+
+
