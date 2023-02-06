@@ -28,3 +28,9 @@ namespace SampleDataAccessApp
             public int ActorAge { get; set; }
             public string ActorDesc { get; set; }
         }
+        class Director
+        {
+            public int DirectorId { get; set; }
+            public string DirectorName { get; set; }
+            public int DirectorAge { get; set; }
+        }
