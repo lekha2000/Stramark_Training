@@ -21,4 +21,10 @@ namespace SampleDataAccessApp
             public int MovieRating { get; set; }
             public int DirectorId { get; set; }
         }
-
+        class Actor
+        {
+            public int ActorId { get; set; }
+            public string ActorName { get; set; }
+            public int ActorAge { get; set; }
+            public string ActorDesc { get; set; }
+        }
