@@ -76,3 +76,8 @@ namespace SampleDataAccessApp
 
             const string delMovie = "Delete from tblMovie where MovieId = @movieId";
 
+            const string dqMovie = "Select * From tblMovie";
+            const string dqActor = "Select * From tblActor";
+            const string dqDirector = "select * from tblDirector";
+            #endregion
+
