@@ -61,3 +61,13 @@ namespace SampleDataAccessApp
             List<Director> DisplayAllDirectors();
             List<Entry> DisplayAllEntry();
         } 
+        class MovieData : IMovieDatabase
+        {
+            private string strCon = string.Empty;
+
+            #region MySql
+            const string qMovie = "InsertMovie";
+            const string qActor = "InsertActor";
+            const string qDirector = "InDirector";
+            const string qEntry = "InsertEntry";
+
