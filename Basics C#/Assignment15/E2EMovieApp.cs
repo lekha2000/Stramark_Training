@@ -41,3 +41,23 @@ namespace SampleDataAccessApp
             public int MovieId { get; set; }
         }
     }
+    namespace DataLayerMovie{
+        
+        interface IMovieDatabase
+        {
+            void AddMovie(Movie movie);
+            void AddActor(Actor actor);
+            void AddDirector(Director dir);
+
+            void UpateMovie(Movie movie);
+            void UpdateActor(Actor actor);
+            void UpdateDirector(Director director);
+
+            void DeleteMovie(int id);
+            void AddEntry(Entry entry);
+
+            List<Movie> DisplayAllMovies();
+            List<Actor> DisplayAllActor();
+            List<Director> DisplayAllDirectors();
+            List<Entry> DisplayAllEntry();
+        } 
