@@ -73,3 +73,6 @@ namespace SampleDataAccessApp
             const string updateM = "Update tblMovie set MovieTitle = @movieTitle, MovieDuration  = @movieduration, MovieRating = @movieRating where MovieId = @movieId";
             const string updateA = " Update tblActor set ActorName = @actorName,ActorAge = @actorAge,ActorDesc = @actorDesc Where ActorId = @actorId";
             const string updateD = "Update tblDirector set DirectorName = @directorName, DirectorAge = @directorAge";
+
+            const string delMovie = "Delete from tblMovie where MovieId = @movieId";
+
