@@ -81,3 +81,30 @@ namespace SampleDataAccessApp
             const string dqDirector = "select * from tblDirector";
             #endregion
 
+            #region Connection
+            private  void NonQuery(string query, SqlParameter[] par, CommandType type)
+            {
+                SqlConnection con = new SqlConnection(strCon);
+                SqlCommand cmd = new SqlCommand(query,con);
+                cmd.CommandType = type;
+                if(par != null)
+                {
+                    foreach (SqlParameter parameter in par)
+                    {
+                        cmd.Parameters.Add(parameter);
+                    }
+                }
+                try
+                {
+                    cmd.Connection.Open();
+                    cmd.ExecuteNonQuery();
+                }catch(SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    cmd.Connection.Close();
+                }
+            }
+            
