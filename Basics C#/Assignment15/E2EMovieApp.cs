@@ -107,4 +107,16 @@ namespace SampleDataAccessApp
                     cmd.Connection.Close();
                 }
             }
-            
+            private DataTable GetQueryy(string query,SqlParameter[] par, CommandType type = CommandType.Text)
+            {
+                SqlConnection con = new SqlConnection(strCon);
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = type;
+                if (par != null)
+                {
+                    foreach (SqlParameter parameter in par)
+                    {
+                        cmd.Parameters.Add(parameter);
+                    }
+                    
+                }
