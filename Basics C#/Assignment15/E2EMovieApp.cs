@@ -34,3 +34,10 @@ namespace SampleDataAccessApp
             public string DirectorName { get; set; }
             public int DirectorAge { get; set; }
         }
+        class Entry
+        {
+            public int EntryId { get; set; }
+            public int ActorId { get; set; }
+            public int MovieId { get; set; }
+        }
+    }
