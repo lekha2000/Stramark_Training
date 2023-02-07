@@ -210,3 +210,7 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
+            public void DeleteMovie(int id)
+            {
+                throw new NotImplementedException();
+            }
