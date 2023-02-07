@@ -128,3 +128,13 @@ namespace SampleDataAccessApp
                     table.Load(reader);
                     return table;
                 }
+                catch(SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    cmd.Connection.Close();
+                }
+                return null;
+            }
