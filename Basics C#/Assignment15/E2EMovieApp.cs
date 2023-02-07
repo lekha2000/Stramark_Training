@@ -120,3 +120,11 @@ namespace SampleDataAccessApp
                     }
                     
                 }
+                try
+                {
+                    cmd.Connection.Open();
+                    var reader = cmd.ExecuteReader();
+                    DataTable table = new DataTable("Records");
+                    table.Load(reader);
+                    return table;
+                }
