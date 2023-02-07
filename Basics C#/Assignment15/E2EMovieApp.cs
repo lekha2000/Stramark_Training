@@ -169,3 +169,12 @@ namespace SampleDataAccessApp
                 dire.Add(new SqlParameter("@directorName", dir.DirectorName));
                 dire.Add(new SqlParameter("@directorAge", dir.DirectorAge));
                 dire.Add(new SqlParameter("@directorId", dir.DirectorId));
+            try
+                {
+                    NonQuery(qDirector, dire.ToArray(), CommandType.StoredProcedure);
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
