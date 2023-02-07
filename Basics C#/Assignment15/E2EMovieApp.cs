@@ -193,3 +193,11 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
+            public void AddMovie(Movie movie)
+            {
+                List<SqlParameter> movies = new List<SqlParameter>();
+                movies.Add(new SqlParameter("@movieTitle", movie.MovieTitle));
+                movies.Add(new SqlParameter("@movieduration", movie.MovieDuration));
+                movies.Add(new SqlParameter("@movieRating", movie.MovieRating));
+                movies.Add(new SqlParameter("@directorId", movie.DirectorId));
+                movies.Add(new SqlParameter("@movieId", movie.MovieId));
