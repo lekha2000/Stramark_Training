@@ -184,3 +184,12 @@ namespace SampleDataAccessApp
                 ent.Add(new SqlParameter("@movieId", entry.MovieId));
                 ent.Add(new SqlParameter("@actorId", entry.ActorId));
                 ent.Add(new SqlParameter("@entryId", entry.EntryId));
+            try
+                {
+                    NonQuery(qEntry, ent.ToArray(), CommandType.StoredProcedure);
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
