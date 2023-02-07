@@ -138,3 +138,12 @@ namespace SampleDataAccessApp
                 }
                 return null;
             }
+            #endregion
+
+            //constructor
+            public MovieData(string strConnection)
+            {
+                strCon = strConnection;
+            }
+
+            #region Components 
