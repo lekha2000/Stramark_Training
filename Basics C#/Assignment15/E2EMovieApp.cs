@@ -154,3 +154,12 @@ namespace SampleDataAccessApp
                 act.Add(new SqlParameter("@actorAge", actor.ActorAge));
                 act.Add(new SqlParameter("@actorDesc", actor.ActorDesc));
                 act.Add(new SqlParameter("@actorId", actor.ActorId));
+                try
+                {
+                    NonQuery(qActor, act.ToArray(), CommandType.StoredProcedure);
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
