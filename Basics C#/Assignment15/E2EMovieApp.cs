@@ -201,3 +201,12 @@ namespace SampleDataAccessApp
                 movies.Add(new SqlParameter("@movieRating", movie.MovieRating));
                 movies.Add(new SqlParameter("@directorId", movie.DirectorId));
                 movies.Add(new SqlParameter("@movieId", movie.MovieId));
+                try
+                {
+                    NonQuery(qMovie, movies.ToArray(), CommandType.StoredProcedure);
+                }
+                catch(SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
