@@ -214,3 +214,8 @@ namespace SampleDataAccessApp
             {
                 throw new NotImplementedException();
             }
+            public List<Actor> DisplayAllActor()
+            {
+                throw new NotImplementedException();
+            }
+
