@@ -178,3 +178,9 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
+            public void AddEntry(Entry entry)
+            {
+                List<SqlParameter> ent = new List<SqlParameter>();
+                ent.Add(new SqlParameter("@movieId", entry.MovieId));
+                ent.Add(new SqlParameter("@actorId", entry.ActorId));
+                ent.Add(new SqlParameter("@entryId", entry.EntryId));
