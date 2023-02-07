@@ -163,3 +163,9 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
+            public void AddDirector(Director dir)
+            {
+                List<SqlParameter> dire = new List<SqlParameter>();
+                dire.Add(new SqlParameter("@directorName", dir.DirectorName));
+                dire.Add(new SqlParameter("@directorAge", dir.DirectorAge));
+                dire.Add(new SqlParameter("@directorId", dir.DirectorId));
