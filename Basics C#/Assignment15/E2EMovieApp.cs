@@ -147,3 +147,10 @@ namespace SampleDataAccessApp
             }
 
             #region Components 
+            public void AddActor(Actor actor)
+            {
+                List<SqlParameter> act = new List<SqlParameter>();
+                act.Add(new SqlParameter("@actorName", actor.ActorName));
+                act.Add(new SqlParameter("@actorAge", actor.ActorAge));
+                act.Add(new SqlParameter("@actorDesc", actor.ActorDesc));
+                act.Add(new SqlParameter("@actorId", actor.ActorId));
