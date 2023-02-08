@@ -276,5 +276,12 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
+            public List<Entry> DisplayAllEntry()
+            {
+                throw new NotImplementedException();
+            }
+            #endregion
+        }
+    }
 
 
