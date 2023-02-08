@@ -261,6 +261,11 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
-
+            public void UpdateDirector(Director director)
+            {
+                List<SqlParameter> uDir = new List<SqlParameter>();
+                uDir.Add(new SqlParameter("@directorName", director.DirectorName));
+                uDir.Add(new SqlParameter("@directorAge", director.DirectorAge));
+                uDir.Add(new SqlParameter("@directorId", director.DirectorId));
 
 
