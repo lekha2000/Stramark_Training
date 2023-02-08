@@ -305,4 +305,21 @@ namespace SampleDataAccessApp
             //    MovieRating = Utility.Utilities.GetNumber("enter movie rating : "),
             //    DirectorId = Utility.Utilities.GetNumber("enter the director id")
             //});
-            
+            //Console.WriteLine("Movie Added successfully");
+            //component.AddActor(new Actor
+            //{
+            //    ActorName = Utility.Utilities.Prompt("Enter Actor Name"),
+            //    ActorAge = Utility.Utilities.GetNumber("Enter Actor Age"),
+            //    ActorDesc = Utility.Utilities.Prompt("Enter Description"),
+            //});
+            //Console.WriteLine("Actor Added successfully");
+            //component.AddEntry(new Entry
+            //{
+            //    MovieId = Utility.Utilities.GetNumber("Enter Movie Id"),
+            //    ActorId = Utility.Utilities.GetNumber("Enter Actor Id")
+            //});
+            //Console.WriteLine("Entry Added successfully");
+        }
+    }
+}
+
