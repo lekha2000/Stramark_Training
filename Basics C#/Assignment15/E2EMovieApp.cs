@@ -287,4 +287,10 @@ namespace SampleDataAccessApp
     {
         static IMovieDatabase component = null;
         static string connectionString = ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString;
+        static void Main(string[] args)
+        {
+            component = new MovieData(connectionString);
+            //component.AddDirector(new Director
+            //{
+            //    DirectorName = Utility.Utilities.Prompt("Enter The director name :"),
 
