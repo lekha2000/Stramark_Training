@@ -301,3 +301,8 @@ namespace SampleDataAccessApp
             //component.AddMovie(new Movie
             //{
             //    MovieTitle = Utility.Utilities.Prompt("enter movie name : "),
+            //    MovieDuration = Utility.Utilities.Prompt("enter movie duration : "),
+            //    MovieRating = Utility.Utilities.GetNumber("enter movie rating : "),
+            //    DirectorId = Utility.Utilities.GetNumber("enter the director id")
+            //});
+            
