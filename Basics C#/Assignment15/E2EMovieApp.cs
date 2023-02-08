@@ -243,5 +243,14 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
+            
+
+            public void UpdateActor(Actor actor)
+            {
+                List<SqlParameter> uActor = new List<SqlParameter>();
+                uActor.Add(new SqlParameter("@actorName", actor.ActorName));
+                uActor.Add(new SqlParameter("@actorAge", actor.ActorAge));
+                uActor.Add(new SqlParameter("@actorDesc", actor.ActorDesc));
+                uActor.Add(new SqlParameter("@actorId", actor.ActorId));
 
 
