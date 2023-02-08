@@ -218,4 +218,14 @@ namespace SampleDataAccessApp
             {
                 throw new NotImplementedException();
             }
+            public List<Director> DisplayAllDirectors()
+            {
+                throw new NotImplementedException();
+            }
+
+            public List<Movie> DisplayAllMovies()
+            {
+                throw new NotImplementedException();
+            }
+
 
