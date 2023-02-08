@@ -294,3 +294,10 @@ namespace SampleDataAccessApp
             //{
             //    DirectorName = Utility.Utilities.Prompt("Enter The director name :"),
 
+            //    DirectorAge = Utility.Utilities.GetNumber("Entre Age : ")
+            //});
+            //Console.WriteLine("Diretor Added successfully");
+
+            //component.AddMovie(new Movie
+            //{
+            //    MovieTitle = Utility.Utilities.Prompt("enter movie name : "),
