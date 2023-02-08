@@ -252,5 +252,15 @@ namespace SampleDataAccessApp
                 uActor.Add(new SqlParameter("@actorAge", actor.ActorAge));
                 uActor.Add(new SqlParameter("@actorDesc", actor.ActorDesc));
                 uActor.Add(new SqlParameter("@actorId", actor.ActorId));
+                try
+                {
+                    NonQuery(updateA, uActor.ToArray(), CommandType.Text);
+                }
+                catch(SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
 
 
