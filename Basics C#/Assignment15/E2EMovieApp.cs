@@ -283,5 +283,8 @@ namespace SampleDataAccessApp
             #endregion
         }
     }
-
+    class E2EMovieApp
+    {
+        static IMovieDatabase component = null;
+        static string connectionString = ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString;
 
