@@ -232,5 +232,16 @@ namespace SampleDataAccessApp
                 List<SqlParameter> uMovie = new List<SqlParameter>();
                 uMovie.Add(new SqlParameter("@movieTitle", movie.MovieTitle));
                 uMovie.Add(new SqlParameter("@movieduration", movie.MovieDuration));
+            uMovie.Add(new SqlParameter("@movieRating", movie.MovieRating));
+                uMovie.Add(new SqlParameter("@movieId", movie.MovieId));
+                try
+                {
+                    NonQuery(updateM, uMovie.ToArray(), CommandType.Text);
+                }
+                catch(SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
 
 
