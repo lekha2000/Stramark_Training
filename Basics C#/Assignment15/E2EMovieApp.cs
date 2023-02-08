@@ -227,5 +227,10 @@ namespace SampleDataAccessApp
             {
                 throw new NotImplementedException();
             }
+            public void UpateMovie(Movie movie)
+            {
+                List<SqlParameter> uMovie = new List<SqlParameter>();
+                uMovie.Add(new SqlParameter("@movieTitle", movie.MovieTitle));
+                uMovie.Add(new SqlParameter("@movieduration", movie.MovieDuration));
 
 
