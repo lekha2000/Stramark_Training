@@ -267,5 +267,14 @@ namespace SampleDataAccessApp
                 uDir.Add(new SqlParameter("@directorName", director.DirectorName));
                 uDir.Add(new SqlParameter("@directorAge", director.DirectorAge));
                 uDir.Add(new SqlParameter("@directorId", director.DirectorId));
+                try
+                {
+                    NonQuery(updateA, uDir.ToArray(), CommandType.Text);
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
 
 
