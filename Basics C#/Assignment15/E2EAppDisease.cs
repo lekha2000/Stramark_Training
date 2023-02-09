@@ -44,3 +44,5 @@ namespace SampleDataAccessApp
             const string STRUPDATE = "Update tblDisease Set DiseaseName = @disName, DiseaseSeverity = @disSeverity, DiseaseCause = @disCause WHERE DiseaseId = @disId";
             const string STRALL = "SELECT * FROM TBLDISEASE ";
             const string STRALLDEPTS = "SELECT * FROM TBLSYMPTOM";
+            const string STRDELETE = "DELETE FROM TBLDISEASE WHERE DiseaseId = @id";
+            #endregion
