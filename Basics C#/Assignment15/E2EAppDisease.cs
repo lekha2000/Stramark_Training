@@ -85,3 +85,22 @@ namespace SampleDataAccessApp
                         cmd.Parameters.Add(parameter);
                     }
                 }
+                try
+                {
+                    con.Open();
+                    var reader = cmd.ExecuteReader();
+                    DataTable table = new DataTable("DiseaseRecords");
+                    table.Load(reader);
+                    return table;
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+            #endregion
+
