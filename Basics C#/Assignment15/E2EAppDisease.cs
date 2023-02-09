@@ -23,4 +23,14 @@ namespace SampleDataAccessApp
         }
 
     }
+    namespace Dalayer
+    {
+        interface IDataAccessComponent
+        {
+            void AddNewDisease(Disease emp);
+            void UpdateDisease(Disease emp);
+            void DeleteDisease(int id);
+            List<Disease> GetAllDisease();
+            List<Symptom> GetAllSymptoms();
+        }
     
