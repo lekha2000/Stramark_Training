@@ -41,3 +41,6 @@ namespace SampleDataAccessApp
             const string STRINSERT = "Disease";
             //const string STRUPDATE = "Update tblEmployee Set EmpName = @EmpName, EmpAddress = @EmpAddress, EmpSalary = @EmpSalary WHERE EmpId = @EmpId";
 
+            const string STRUPDATE = "Update tblDisease Set DiseaseName = @disName, DiseaseSeverity = @disSeverity, DiseaseCause = @disCause WHERE DiseaseId = @disId";
+            const string STRALL = "SELECT * FROM TBLDISEASE ";
+            const string STRALLDEPTS = "SELECT * FROM TBLSYMPTOM";
