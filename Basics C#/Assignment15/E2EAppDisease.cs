@@ -73,3 +73,15 @@ namespace SampleDataAccessApp
                     con.Close();
                 }
             }
+            private DataTable GetRecords(string query, SqlParameter[] parameters, CommandType type = CommandType.Text)
+            {
+                SqlConnection con = new SqlConnection(strCon);
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = type;
+                if (parameters != null)
+                {
+                    foreach (SqlParameter parameter in parameters)
+                    {
+                        cmd.Parameters.Add(parameter);
+                    }
+                }
