@@ -33,4 +33,11 @@ namespace SampleDataAccessApp
             List<Disease> GetAllDisease();
             List<Symptom> GetAllSymptoms();
         }
-    
+        class DataComponent : IDataAccessComponent
+        {
+            private string strCon = string.Empty;
+
+            #region SqlStatements
+            const string STRINSERT = "Disease";
+            //const string STRUPDATE = "Update tblEmployee Set EmpName = @EmpName, EmpAddress = @EmpAddress, EmpSalary = @EmpSalary WHERE EmpId = @EmpId";
+
