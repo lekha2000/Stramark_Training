@@ -52,3 +52,10 @@ namespace SampleDataAccessApp
                 SqlConnection con = new SqlConnection(strCon);
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.CommandType = type;
+            if (parameters != null)
+                {
+                    foreach (SqlParameter parameter in parameters)
+                    {
+                        cmd.Parameters.Add(parameter);
+                    }
+                }
