@@ -16,3 +16,11 @@ namespace SampleDataAccessApp
             public string DiseaseCause { get; set; }
             public int SymptomId { get; set; }
         }
+        class Symptom
+        {
+            public int SymptomId { get; set; }
+            public string SymptomName { get; set; }
+        }
+
+    }
+    
