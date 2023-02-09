@@ -46,3 +46,9 @@ namespace SampleDataAccessApp
             const string STRALLDEPTS = "SELECT * FROM TBLSYMPTOM";
             const string STRDELETE = "DELETE FROM TBLDISEASE WHERE DiseaseId = @id";
             #endregion
+            #region HELPERS
+            private void NonQueryExecute(string query, SqlParameter[] parameters, CommandType type)
+            {
+                SqlConnection con = new SqlConnection(strCon);
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.CommandType = type;
