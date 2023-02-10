@@ -145,3 +145,7 @@ namespace SampleDataAccessApp
             {
                 List<SqlParameter> parameters = new List<SqlParameter>();
                 parameters.Add(new SqlParameter("@id", id));
+                try
+                {
+                    NonQueryExecute(STRDELETE, parameters.ToArray(), CommandType.Text);
+                }
