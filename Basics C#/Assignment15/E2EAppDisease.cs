@@ -158,3 +158,7 @@ namespace SampleDataAccessApp
             {
                 var table = GetRecords(STRALL, null);
                 List<Disease> dislist = new List<Disease>();
+                foreach (DataRow row in table.Rows)
+                {
+                    //var deptId = (SqlInt32)row[4];
+                    //row.IsNull(4) ? 0 : (int)row[4]
