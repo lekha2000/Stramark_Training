@@ -108,3 +108,11 @@ namespace SampleDataAccessApp
             {
                 strCon = connectionString;
             }
+            public void AddNewDisease(Disease dis)
+            {
+                List<SqlParameter> parameters = new List<SqlParameter>();
+                parameters.Add(new SqlParameter("@disName", dis.DiseaseName));
+                parameters.Add(new SqlParameter("@disSeverity", dis.DiseaseSeverity));
+                parameters.Add(new SqlParameter("@disCause", dis.DiseaseCause));
+                parameters.Add(new SqlParameter("@symptId", dis.SymptomId ));
+                parameters.Add(new SqlParameter("@disId", dis.DiseaseId));
