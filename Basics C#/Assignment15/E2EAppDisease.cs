@@ -132,3 +132,7 @@ namespace SampleDataAccessApp
                 parameters.Add(new SqlParameter("@disSeverity", dis.DiseaseSeverity));
                 parameters.Add(new SqlParameter("@disCause", dis.DiseaseCause));
                 parameters.Add(new SqlParameter("@disId", dis.DiseaseId));
+                try
+                {
+                    NonQueryExecute(STRUPDATE, parameters.ToArray(), CommandType.Text);
+                }
