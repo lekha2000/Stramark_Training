@@ -154,3 +154,7 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
+            public List<Disease> GetAllDisease()
+            {
+                var table = GetRecords(STRALL, null);
+                List<Disease> dislist = new List<Disease>();
