@@ -103,4 +103,8 @@ namespace SampleDataAccessApp
                 }
             }
             #endregion
-
+            #region IDataAccessComponentImpl
+            public DataComponent(string connectionString)
+            {
+                strCon = connectionString;
+            }
