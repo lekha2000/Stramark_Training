@@ -141,3 +141,7 @@ namespace SampleDataAccessApp
                     Console.WriteLine(ex.Message);
                 }
             }
+            public void DeleteDisease(int id)
+            {
+                List<SqlParameter> parameters = new List<SqlParameter>();
+                parameters.Add(new SqlParameter("@id", id));
