@@ -120,3 +120,7 @@ namespace SampleDataAccessApp
                 {
                     NonQueryExecute(STRINSERT, parameters.ToArray(), CommandType.StoredProcedure);
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
