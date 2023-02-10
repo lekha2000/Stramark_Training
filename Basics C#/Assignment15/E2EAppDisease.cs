@@ -149,3 +149,8 @@ namespace SampleDataAccessApp
                 {
                     NonQueryExecute(STRDELETE, parameters.ToArray(), CommandType.Text);
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
