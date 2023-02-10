@@ -136,3 +136,8 @@ namespace SampleDataAccessApp
                 {
                     NonQueryExecute(STRUPDATE, parameters.ToArray(), CommandType.Text);
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
