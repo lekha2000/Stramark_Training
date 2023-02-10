@@ -116,3 +116,7 @@ namespace SampleDataAccessApp
                 parameters.Add(new SqlParameter("@disCause", dis.DiseaseCause));
                 parameters.Add(new SqlParameter("@symptId", dis.SymptomId ));
                 parameters.Add(new SqlParameter("@disId", dis.DiseaseId));
+                try
+                {
+                    NonQueryExecute(STRINSERT, parameters.ToArray(), CommandType.StoredProcedure);
+                }
