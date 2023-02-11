@@ -237,3 +237,8 @@ namespace SampleDataAccessApp
                 var data1 = component.GetAllDisease();
                 foreach (var disease in data1)
                     Console.WriteLine(disease.DiseaseId + "\n" + disease.DiseaseName + "\n" + disease.DiseaseSeverity + "\n" + disease.DiseaseCause + "\n\n");
+                
+            }
+        }
+    }
+}
