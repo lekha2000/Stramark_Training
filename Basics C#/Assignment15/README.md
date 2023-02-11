@@ -18,3 +18,10 @@
     9. Wait for the execution.
     10. User Input will be asked so please enter the asked fields.
     11. According to users input customer records will be displayed
+
+## This File Consist: -
+    1. Connected Model 
+    2. Disconnected Model
+    3. E2EMovieApp
+    4. E2EDisease
+    5. Basic E2EApp
