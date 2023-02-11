@@ -188,3 +188,9 @@ namespace SampleDataAccessApp
                     };
                     syms.Add(sym);
                 }
+                return syms;
+            }
+
+            #endregion
+        }
+    }
