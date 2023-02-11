@@ -215,3 +215,12 @@ namespace SampleDataAccessApp
                     DiseaseCause = Utilities.Prompt("Enter the Disease Cause"),
                     SymptomId = Utilities.GetNumber("Enter the SymptomId")
                 });
+                Console.WriteLine("Disease Successfully Added");
+
+                component.UpdateDisease(new Disease
+                {
+                    DiseaseId = 17,
+                    DiseaseName = "Flu",
+                    DiseaseSeverity = "Low",
+                    DiseaseCause = "Mild Infection"
+                });
