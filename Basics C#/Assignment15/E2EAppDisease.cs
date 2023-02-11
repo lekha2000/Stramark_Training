@@ -228,3 +228,12 @@ namespace SampleDataAccessApp
 
                 component.DeleteDisease(17);
                 Console.WriteLine("Disease Successfully Deleted");
+                Console.WriteLine("Display Symptoms");
+                var data = component.GetAllSymptoms();
+                foreach (var symptom in data)
+                    Console.WriteLine(symptom.SymptomName);
+                Console.WriteLine("\n\n");
+                Console.WriteLine("Display Diseases");
+                var data1 = component.GetAllDisease();
+                foreach (var disease in data1)
+                    Console.WriteLine(disease.DiseaseId + "\n" + disease.DiseaseName + "\n" + disease.DiseaseSeverity + "\n" + disease.DiseaseCause + "\n\n");
