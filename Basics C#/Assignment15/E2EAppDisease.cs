@@ -224,3 +224,7 @@ namespace SampleDataAccessApp
                     DiseaseSeverity = "Low",
                     DiseaseCause = "Mild Infection"
                 });
+                Console.WriteLine("Disease Successfully Updated");
+
+                component.DeleteDisease(17);
+                Console.WriteLine("Disease Successfully Deleted");
