@@ -170,4 +170,8 @@ namespace SampleDataAccessApp
                         DiseaseCause = row[3].ToString(),
                         SymptomId = (int)row[4]
                     };
+                    dislist.Add(dis);
+                }
+                return dislist;
+            }
 
