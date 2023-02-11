@@ -22,6 +22,6 @@
 ## This File Consist: -
     1. Connected Model 
     2. Disconnected Model
-    3. E2EMovieApp
+    3. E2EMovieApp Databse Application
     4. E2EDisease
     5. Basic E2EApp
