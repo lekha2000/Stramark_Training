@@ -162,3 +162,12 @@ namespace SampleDataAccessApp
                 {
                     //var deptId = (SqlInt32)row[4];
                     //row.IsNull(4) ? 0 : (int)row[4]
+                    Disease dis = new Disease
+                    {
+                        DiseaseId = (int)row[0],
+                        DiseaseName = row[1].ToString(),
+                        DiseaseSeverity = row[2].ToString(),
+                        DiseaseCause = row[3].ToString(),
+                        SymptomId = (int)row[4]
+                    };
+
