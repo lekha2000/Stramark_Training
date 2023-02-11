@@ -194,3 +194,24 @@ namespace SampleDataAccessApp
             #endregion
         }
     }
+    namespace UILayer
+    {
+        using SampleDataAccessApp.Dalayer;
+        using System.Configuration;
+        using Utility;
+
+        class E2EAppDisease
+        {
+            static IDataAccessComponent component = null;
+            static string connectionString = ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString;
+            static void Main(string[] args)
+            {
+                component = new DataComponent(connectionString);
+
+                component.AddNewDisease(new Disease
+                {
+                    DiseaseName = Utilities.Prompt("Enter the Disease Name"),
+                    DiseaseSeverity = Utilities.Prompt("Enter the Disease Severity"),
+                    DiseaseCause = Utilities.Prompt("Enter the Disease Cause"),
+                    SymptomId = Utilities.GetNumber("Enter the SymptomId")
+                });
