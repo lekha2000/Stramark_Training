@@ -179,3 +179,12 @@ namespace SampleDataAccessApp
                 var table = GetRecords(STRALLDEPTS, null);
                 List<Symptom> syms = new List<Symptom>();
 
+                foreach (DataRow row in table.Rows)
+                {
+                    Symptom sym = new Symptom
+                    {
+                        SymptomId = Convert.ToInt32(row[0]),
+                        SymptomName = row[1].ToString()
+                    };
+                    syms.Add(sym);
+                }
