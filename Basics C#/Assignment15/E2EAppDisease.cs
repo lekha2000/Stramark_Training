@@ -174,4 +174,8 @@ namespace SampleDataAccessApp
                 }
                 return dislist;
             }
+            public List<Symptom> GetAllSymptoms()
+            {
+                var table = GetRecords(STRALLDEPTS, null);
+                List<Symptom> syms = new List<Symptom>();
 
