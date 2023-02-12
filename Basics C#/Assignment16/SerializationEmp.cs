@@ -49,4 +49,60 @@ namespace Sampleframeworkapp
             fs.Close();
 
         }
+        public static void DeSerialize()
+        {
+            Employee emp = null;
+            FileStream fs = new FileStream("Emp.Bin", FileMode.Open, FileAccess.Read);
+            BinaryFormatter formatter = new BinaryFormatter();
+            emp = formatter.Deserialize(fs) as Employee;
+            fs.Close();
+            Console.WriteLine(emp.ToString());
+        }
+        public static void XmlSerializer()
+        {
+            Employee emp = new Employee
+            {
+                EmpId = 127,
+                EmpName = "Alisha",
+                EmpAddress = "Punjab"
+            };
+            FileStream fs = new FileStream("Emp.xml", FileMode.OpenOrCreate, FileAccess.Write);
+            XmlSerializer serializer = new XmlSerializer(typeof(Employee));
+            serializer.Serialize(fs, emp);
+            fs.Close();
+        }
+        public static void XmlDeSerializer()
+        {
+            Employee emp = null;
+            FileStream fs = new FileStream("Emp.xml", FileMode.Open, FileAccess.Read);
+            XmlSerializer des = new XmlSerializer(typeof(Employee));
+            emp = des.Deserialize(fs) as Employee;
+            fs.Close();
+            Console.WriteLine(emp);
+        }
+        public static void SoapSerializer()
+        {
+            Employee emp = new Employee
+            {
+                EmpId = 127,
+                EmpName = "Alisha",
+                EmpAddress = "Punjab"
+            };
+            FileStream fs = new FileStream("Emp.soap", FileMode.OpenOrCreate, FileAccess.Write);
+            SoapFormatter soap = new SoapFormatter();
+            soap.Serialize(fs, emp);
+            fs.Close();
+        }
+        public static void SoapDeSerializer()
+        {
+            Employee emp = null;
+            FileStream fs = new FileStream("Emp.soap", FileMode.Open, FileAccess.Read);
+            SoapFormatter soap = new SoapFormatter();
+            emp = soap.Deserialize(fs) as Employee;
+            fs.Close();
+            Console.WriteLine(emp);
+
+        }
+    }
+}
 
