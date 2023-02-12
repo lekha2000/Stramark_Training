@@ -1,0 +1,7 @@
+D:\starmark3316\DotNetFiles\SampleFrameWorkApp\Sampleframeworkapp\bin\Debug\Sampleframeworkapp.exe.config
+D:\starmark3316\DotNetFiles\SampleFrameWorkApp\Sampleframeworkapp\bin\Debug\Sampleframeworkapp.exe
+D:\starmark3316\DotNetFiles\SampleFrameWorkApp\Sampleframeworkapp\bin\Debug\Sampleframeworkapp.pdb
+D:\starmark3316\DotNetFiles\SampleFrameWorkApp\Sampleframeworkapp\obj\Debug\Sampleframeworkapp.csprojAssemblyReference.cache
+D:\starmark3316\DotNetFiles\SampleFrameWorkApp\Sampleframeworkapp\obj\Debug\Sampleframeworkapp.csproj.CoreCompileInputs.cache
+D:\starmark3316\DotNetFiles\SampleFrameWorkApp\Sampleframeworkapp\obj\Debug\Sampleframeworkapp.exe
+D:\starmark3316\DotNetFiles\SampleFrameWorkApp\Sampleframeworkapp\obj\Debug\Sampleframeworkapp.pdb
