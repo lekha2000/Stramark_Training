@@ -59,3 +59,7 @@ namespace CSharpAssignments
 
                 // Console.WriteLine(str[i]);
             }
+            Console.WriteLine("Alphabet count : " + alphct);
+            Console.WriteLine(" digit count : " + digtct);
+            Console.WriteLine("Special char : " + specialcnt);
+        }
