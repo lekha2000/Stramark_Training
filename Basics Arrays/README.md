@@ -9,6 +9,7 @@
       4 year(s) ago: 2/29/2012
       5 year(s) ago: 2/28/2011
       */
+  4. Write a program in C# Sharp to count a total number of alphabets, digits and special characters in a string.
 
 
 
