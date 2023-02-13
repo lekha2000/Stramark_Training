@@ -24,3 +24,13 @@ namespace CSharpAssignments
                 Console.WriteLine();
             }
         }
+        static void Date()
+        {
+
+            Console.WriteLine(" Enter the Date as dd/mm/yyy");
+            DateTime dd = DateTime.ParseExact(Console.ReadLine(), "dd/mm/yyyy", null);
+            for (int i = -1; i >= 15; i--)
+            {
+                Console.WriteLine(dd.AddDays(i));
+            }
+        }
