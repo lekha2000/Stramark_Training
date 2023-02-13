@@ -81,3 +81,15 @@ namespace CSharpAssignments
             Console.Write("\n");
 
         }
+                static void Main(string[] args)
+        {
+
+            int[,] arr = { { 1, 2, 3, }, { 4, 5, 6 }, { 7, 8, 9 } };
+            //Trans(arr);
+            Date();
+            //Countstr();
+            //LtoU();
+        }
+    }
+
+}
