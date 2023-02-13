@@ -10,6 +10,7 @@
       5 year(s) ago: 2/28/2011
       */
   4. Write a program in C# Sharp to count a total number of alphabets, digits and special characters in a string.
+  5. Write a program in C# to read a sentence and replace lowercase characters by uppercase and vice-versa.
 
 
 
