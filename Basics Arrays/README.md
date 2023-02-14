@@ -19,7 +19,7 @@
   3. Inside that open Arrays.cs folders solution 
   4. Set the namespace according to ur folder
   5. Left Click on Project in header of VS 2022.
-
+  6. Set the Properties to namesapce.CSharpAssignments
 
 
 
