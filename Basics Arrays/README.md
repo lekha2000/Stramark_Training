@@ -18,6 +18,7 @@
   2. Open the Basic Arrays folder in VS 2022.
   3. Inside that open Arrays.cs folders solution 
   4. Set the namespace according to ur folder
+  5. Left Click on Project in header of VS 2022.
 
 
 
