@@ -15,5 +15,7 @@
 
 ## Steps To Run The File
   1. Download the Basic Arrays Zip file
+  2. Open the Basic Arrays folder in VS 2022.
+
 
 
