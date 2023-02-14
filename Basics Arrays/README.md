@@ -13,5 +13,7 @@
   5. Write a program in C# to read a sentence and replace lowercase characters by uppercase and vice-versa.
 
 
+## Steps To Run The File
+  1. Download the Basic Arrays Zip file
 
 
