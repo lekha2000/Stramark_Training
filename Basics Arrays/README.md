@@ -17,6 +17,7 @@
   1. Download the Basic Arrays Zip file
   2. Open the Basic Arrays folder in VS 2022.
   3. Inside that open Arrays.cs folders solution 
+  4. Set the namespace according to ur folder
 
 
 
