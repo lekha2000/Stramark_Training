@@ -42,3 +42,18 @@ namespace BasicsCsharp
         }
         public abstract void CalculateIntrest();
     }
+    class SBAccount : Account
+    {
+        public override void CalculateIntrest()
+        {
+            var Prinicpal = Balance;
+            var time = 0.25;
+            var rate = 0.05;
+            var intrest = Prinicpal * time * rate;
+            Credit((int)intrest);
+            Console.WriteLine("The current Balance is " + Balance);
+            Console.WriteLine("The current Intrest is " + intrest);
+
+        }
+
+    }
