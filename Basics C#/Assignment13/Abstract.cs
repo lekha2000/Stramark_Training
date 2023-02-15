@@ -75,3 +75,21 @@ namespace BasicsCsharp
             Console.WriteLine("The current Maturity Amount is " + MaturityAmount);
         }
     }
+    class RDAccount : Account
+    {
+        public override void CalculateIntrest()
+        {
+            //Compound Interest = Principal amount (1 + InterestRate/Years) ^ (Years * number of times). S
+            var Prinicpal = Balance;
+            var time = 3;
+            var rate = 0.05;
+            var numberofyears = 5;
+            var value = numberofyears * time;
+            var result = Prinicpal * (1 + (rate / numberofyears));
+
+            var Amount = Math.Pow(result, value); ;
+            Credit((int)Amount);
+            Console.WriteLine("The current balance is " + Balance);
+            Console.WriteLine("The current Amount is " + Amount);
+        }
+    }
