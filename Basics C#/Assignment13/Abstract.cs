@@ -93,3 +93,24 @@ namespace BasicsCsharp
             Console.WriteLine("The current Amount is " + Amount);
         }
     }
+    class Abstract
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the Account Type: ");
+            string type = Console.ReadLine();
+           
+            Account acc = AccountFactory.CreditType((AccountType)Enum.Parse(typeof(AccountType), type));
+            acc.CalculateIntrest();
+
+            /*Account acc = new SBAccount();
+            acc.AccNo = 123;
+            acc.Name = "Lekha";
+            acc.Credit(56000);
+            acc.CalculateIntrest();
+            Console.WriteLine("The current balance is " + acc.Balance);*/
+        }
+
+
+    }
+}
