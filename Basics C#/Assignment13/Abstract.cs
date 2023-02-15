@@ -57,3 +57,21 @@ namespace BasicsCsharp
         }
 
     }
+    class FDAccount : Account
+    {
+        public override void CalculateIntrest()
+        {
+            //Compound Interest = Principal amount (1 + InterestRate/Years) ^ (Years * number of times). S
+            var Prinicpal = Balance;
+            var time = 2;
+            var rate = 0.05;
+            var numberofyears = 3;
+            var value = numberofyears * time;
+            var result = Prinicpal * (1 + (rate / numberofyears));
+           
+            var MaturityAmount = Math.Pow(result, value); ;
+            Credit((int)MaturityAmount);
+            Console.WriteLine("The current balance is " + Balance);
+            Console.WriteLine("The current Maturity Amount is " + MaturityAmount);
+        }
+    }
