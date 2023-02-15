@@ -1,0 +1,7 @@
+D:\starmark3316\DotNetFiles\BasicsCsharp\BasicsCsharp\bin\Debug\BasicsCsharp.exe.config
+D:\starmark3316\DotNetFiles\BasicsCsharp\BasicsCsharp\bin\Debug\BasicsCsharp.exe
+D:\starmark3316\DotNetFiles\BasicsCsharp\BasicsCsharp\bin\Debug\BasicsCsharp.pdb
+D:\starmark3316\DotNetFiles\BasicsCsharp\BasicsCsharp\obj\Debug\BasicsCsharp.csprojAssemblyReference.cache
+D:\starmark3316\DotNetFiles\BasicsCsharp\BasicsCsharp\obj\Debug\BasicsCsharp.csproj.CoreCompileInputs.cache
+D:\starmark3316\DotNetFiles\BasicsCsharp\BasicsCsharp\obj\Debug\BasicsCsharp.exe
+D:\starmark3316\DotNetFiles\BasicsCsharp\BasicsCsharp\obj\Debug\BasicsCsharp.pdb
