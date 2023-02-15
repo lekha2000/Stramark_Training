@@ -26,3 +26,10 @@ namespace BasicsCsharp
             }
         }
     }
+    abstract class Account
+    {
+        public int AccNo { get; set; }
+        public string Name { get; set; }
+        public int Balance { get; private set; } = 12000000;
+        public void Credit(int amt) => Balance += amt;
+        public void Debit(int amt)
