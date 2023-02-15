@@ -33,3 +33,12 @@ namespace BasicsCsharp
         public int Balance { get; private set; } = 12000000;
         public void Credit(int amt) => Balance += amt;
         public void Debit(int amt)
+        {
+            if(amt > Balance)
+            {
+                throw new Exception("Insufficient Funds");
+            }
+            Balance -= amt;
+        }
+        public abstract void CalculateIntrest();
+    }
