@@ -7,3 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+namespace ProductApp
+{
+    using System;
+    using System.Data.Entity;
+    using System.Data.Entity.Infrastructure;
+    
+    public partial class Entities : DbContext
+    {
+        public Entities()
+            : base("name=Entities")
+        {
+        }
