@@ -19,3 +19,11 @@ namespace ProductApp
             : base("name=Entities")
         {
         }
+protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            throw new UnintentionalCodeFirstException();
+        }
+    
+        public virtual DbSet<tblProduct> tblProducts { get; set; }
+    }
+}
