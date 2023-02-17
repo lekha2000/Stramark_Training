@@ -14,3 +14,7 @@ namespace ProductApp
         void DeleteProduct(int id);
         List<tblProduct> GetProducts();
     }
+    public static class ProductFactory
+    {
+        public static IProduct GetComponenet() => new ProductDB();
+    }
