@@ -1,0 +1,11 @@
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\bin\Debug\ProductApp.dll.config
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\bin\Debug\ProductApp.dll
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\bin\Debug\ProductApp.pdb
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\bin\Debug\EntityFramework.dll
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\bin\Debug\EntityFramework.SqlServer.dll
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\bin\Debug\EntityFramework.xml
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\bin\Debug\EntityFramework.SqlServer.xml
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\obj\Debug\ProductApp.csproj.CoreCompileInputs.cache
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\obj\Debug\ProductApp.csproj.CopyComplete
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\obj\Debug\ProductApp.dll
+D:\starmark3316\DotNetFiles\ProductApp\ProductApp\obj\Debug\ProductApp.pdb
