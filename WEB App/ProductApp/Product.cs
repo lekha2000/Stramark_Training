@@ -37,3 +37,7 @@ namespace ProductApp
             var data = context.tblProducts.ToList();
             return data;
         }
+        public void UpdateProduct(tblProduct product)
+        {
+            var found = context.tblProducts.First((p) => p.ProductId == product.ProductId);
+            if (found == null)
