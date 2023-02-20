@@ -32,3 +32,8 @@ namespace ProductApp
             context.tblProducts.Remove(found);
             context.SaveChanges();
         }
+        public List<tblProduct> GetProducts()
+        {
+            var data = context.tblProducts.ToList();
+            return data;
+        }
