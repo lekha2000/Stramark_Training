@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainSheet.Master.cs" Inherits="ProductWebApp.MasterPages.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="row">
+                <h1>Welcome to ASP.NET Training</h1>
+                <hr />
+                <asp:Menu runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Home" NavigateUrl="~/HomePage.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Calc Program" NavigateUrl="~/MyFirstCalcApp.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Entity Class" NavigateUrl="~/ProductApplication.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Database App" NavigateUrl=""></asp:MenuItem>
+                        <asp:MenuItem Text="Validations" NavigateUrl=""></asp:MenuItem>                      
+                        <asp:MenuItem Text="State Management" NavigateUrl="~/StateManagement.aspx">
+                              <asp:MenuItem Text="MainPage" NavigateUrl="~/InputPage.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Recipiant Page" NavigateUrl="~/RecipiantPage.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Shopping Cart" NavigateUrl=""></asp:MenuItem>
+                            </asp:MenuItem>
+                        <asp:MenuItem Text="Caching" />
+                        <asp:MenuItem Text="Login Controls" />
+                    </Items>
+                </asp:Menu>
+
+       
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <asp:ContentPlaceHolder runat="server" ID="mainContent"></asp:ContentPlaceHolder>
+                </div>
+                <div class="col-md-3">
+                    <div class="container-fluid">
+                        <br /><br />
+                        <div class="row">
+                            <asp:AdRotator Width="100%" Height="150px"  runat="server" />
+                        </div>
+                        <br /><br /><br />
+                        <div class="row">
+                            <asp:Calendar runat="server" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p style="text-align:center">
+                    <i>Copyrights LekhaRaju  
+                        <asp:Label Text="" ID="lblYear" runat="server"></asp:Label>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
