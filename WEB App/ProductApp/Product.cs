@@ -41,3 +41,6 @@ namespace ProductApp
         {
             var found = context.tblProducts.First((p) => p.ProductId == product.ProductId);
             if (found == null)
+            {
+                Console.WriteLine("Product id not found");
+            }
