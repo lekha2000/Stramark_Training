@@ -49,3 +49,6 @@ namespace ProductApp
             found.ProductPrice = product.ProductPrice;
             found.Quantity = product.Quantity;
             context.SaveChanges();
+                    }
+    }
+}
