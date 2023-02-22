@@ -42,3 +42,7 @@
             <p style="text-align: center; font-family: 'Comic Sans MS'; background-color: #CCCCFF;">
                 <asp:Label ID="lblDisplay" runat="server" />
             </p>
+            </div>
+    </form>
+</body>
+</html>
