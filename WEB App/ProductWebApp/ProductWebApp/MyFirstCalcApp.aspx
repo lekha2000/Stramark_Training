@@ -15,3 +15,9 @@
             <h1 style="text-align: center; color: #000000; background-color: #CCCCFF; font-family: 'Comic Sans MS';">
                 Calcuator Application
             </h1>
+            <div style="color: #000000; text-align: center; background-color: #CCCCFF;">
+
+            <p style="font-family: 'Comic Sans MS'; font-size: large">
+                Enter First Number: 
+                <asp:TextBox runat="server" ID ="textFirstNo"/>
+            </p>
