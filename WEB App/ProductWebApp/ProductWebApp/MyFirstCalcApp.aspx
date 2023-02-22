@@ -39,3 +39,6 @@
             <p style="text-align: center; background-color: #CCCCFF; font-family: 'Comic Sans MS';">
                 <asp:Button Text="Click Me" runat ="server" BorderStyle="Double" OnClick="Unnamed1_Click" style="background-color: #FFFFFF" />
             </p>
+            <p style="text-align: center; font-family: 'Comic Sans MS'; background-color: #CCCCFF;">
+                <asp:Label ID="lblDisplay" runat="server" />
+            </p>
