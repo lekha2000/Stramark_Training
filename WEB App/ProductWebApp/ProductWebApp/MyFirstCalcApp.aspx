@@ -9,3 +9,9 @@
         }
     </style>
 </head>
+    <body>
+    <form id="form1" runat="server">
+        <div>
+            <h1 style="text-align: center; color: #000000; background-color: #CCCCFF; font-family: 'Comic Sans MS';">
+                Calcuator Application
+            </h1>
