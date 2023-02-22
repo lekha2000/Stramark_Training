@@ -21,3 +21,12 @@
                 Enter First Number: 
                 <asp:TextBox runat="server" ID ="textFirstNo"/>
             </p>
+            <p style="font-size: large; font-family: 'Comic Sans MS';">
+                Select Options:
+                <asp:DropDownList runat ="server" ID ="dpList">
+                    <asp:ListItem Text="Add"/>
+                    <asp:ListItem Text="Subtract" />
+                    <asp:ListItem Text="Multiply" />
+                    <asp:ListItem Text="Divide" />
+                    </asp:DropDownList>
+            </p>
