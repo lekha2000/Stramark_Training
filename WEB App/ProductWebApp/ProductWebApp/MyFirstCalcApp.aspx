@@ -30,3 +30,8 @@
                     <asp:ListItem Text="Divide" />
                     </asp:DropDownList>
             </p>
+            <p style="font-family: 'Comic Sans MS'; font-size: large;">
+                <span class="auto-style1">Enter Second Number: 
+                </span> 
+                <asp:TextBox runat="server" ID ="textSecondNo" CssClass="auto-style1"/>
+            </p>
