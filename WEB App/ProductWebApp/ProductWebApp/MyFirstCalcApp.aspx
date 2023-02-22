@@ -35,3 +35,7 @@
                 </span> 
                 <asp:TextBox runat="server" ID ="textSecondNo" CssClass="auto-style1"/>
             </p>
+            </div>
+            <p style="text-align: center; background-color: #CCCCFF; font-family: 'Comic Sans MS';">
+                <asp:Button Text="Click Me" runat ="server" BorderStyle="Double" OnClick="Unnamed1_Click" style="background-color: #FFFFFF" />
+            </p>
