@@ -13,3 +13,10 @@ namespace ASPDotNetExample
         public int Price { get; set; }
         public int Quantity { get; set; }
     }
+    public static class ProductRepo
+    {
+        private static List<Product> _repo = new List<Product>();
+        static ProductRepo()
+        {
+            getAll();
+        }
