@@ -20,3 +20,4 @@ namespace ASPDotNetExample
         {
             getAll();
         }
+         public static List<Product> AllProducts => _repo;
