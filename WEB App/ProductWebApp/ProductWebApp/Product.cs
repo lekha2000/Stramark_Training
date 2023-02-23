@@ -20,4 +20,14 @@ namespace ASPDotNetExample
         {
             getAll();
         }
-         public static List<Product> AllProducts => _repo;
+        public static List<Product> AllProducts => _repo;
+        private static void getAll()
+        {
+            //List<Product> _repo = new List<Product>();
+            _repo.Add(new Product
+            {
+                ProductId = 1,
+                ProductName = "Iphone 14 Pro Max",
+                Price = 1200000,
+                ProductImage = @".\Images\Iphone14promax.jfif"
+            });
