@@ -29,3 +29,8 @@ namespace ASPDotNetExample
                 case "Multiply":return number1 * number2;
                 case "Divide":return number1 / number2;
                 default: break;
+            }
+            return 0;
+        }
+    }
+}
