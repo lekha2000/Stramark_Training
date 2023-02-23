@@ -20,3 +20,7 @@ namespace ASPDotNetExample
             var result = getrecord(number1, number2, option);
             lblDisplay.Text = "The Result Is: " + result;
         }
+        private double getrecord(double number1, double number2, string option)
+        {
+            switch (option)
+            {
