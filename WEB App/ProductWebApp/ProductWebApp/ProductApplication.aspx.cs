@@ -33,3 +33,16 @@ namespace ASPDotNetExample
             txtPrice.Text = selected.Price.ToString();
             imgPic.ImageUrl = selected.ProductImage;
         }
+        protected void btnEdit_Click(object sender,EventArgs e)
+        {
+               var product = new Product
+            {
+                ProductImage = imgPic.ImageUrl,
+                Price = int.Parse(txtPrice.Text),
+                ProductId = int.Parse(txtId.Text),
+                ProductName = txtName.Text,
+                Quantity = int.Parse(dpQuantity.Text)
+            };
+            ProductRepo.UpdateProduct(product);
+            Response.Redirect("ProductApplication.aspx");
+        }
