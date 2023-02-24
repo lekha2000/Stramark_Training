@@ -64,3 +64,6 @@ namespace ASPDotNetExample
             ProductRepo.AddNewProduct(product);
             Response.Redirect("ProductApplication.aspx");
         }
+        
+}
+}
