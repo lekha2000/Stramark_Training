@@ -31,3 +31,10 @@ namespace ASPDotNetExample
                 Price = 1200000,
                 ProductImage = @".\Images\Iphone14promax.jfif"
             });
+            _repo.Add(new Product
+            {
+                ProductId = 2,
+                ProductName = "Nokia",
+                Price = 12000,
+                ProductImage = @".\Images\Nokia.jfif"
+            });
