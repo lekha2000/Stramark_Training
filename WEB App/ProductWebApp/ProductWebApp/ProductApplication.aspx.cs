@@ -23,3 +23,13 @@ namespace ASPDotNetExample
                 }
               }
         }
+        protected void lstProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtId.Enabled = false;
+            var id = int.Parse(lstProduct.SelectedValue);
+            var selected = ProductRepo.AllProducts.FirstOrDefault((p) => p.ProductId == id);
+            txtId.Text = selected.ProductId.ToString();
+            txtName.Text = selected.ProductName;
+            txtPrice.Text = selected.Price.ToString();
+            imgPic.ImageUrl = selected.ProductImage;
+        }
