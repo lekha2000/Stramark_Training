@@ -67,3 +67,11 @@ namespace ASPDotNetExample
             found.ProductName = product.ProductName;
             found.Price = product.Price;
         }
+        public static void DeleteProduct(int id)
+        {
+            var found = _repo.Find((p) => p.ProductId == id);
+            _repo.Remove(found);
+        }
+        internal static void AddNewProduct(Product product) => _repo.Add(product);
+    }
+}
