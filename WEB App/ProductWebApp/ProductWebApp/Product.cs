@@ -61,3 +61,9 @@ namespace ASPDotNetExample
             });
             //return _repo;
            }
+         public static void UpdateProduct(Product product)
+        {
+            var found = _repo.Find((p) => p.ProductId == product.ProductId);
+            found.ProductName = product.ProductName;
+            found.Price = product.Price;
+        }
