@@ -46,3 +46,8 @@ namespace ASPDotNetExample
             ProductRepo.UpdateProduct(product);
             Response.Redirect("ProductApplication.aspx");
         }
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            ProductRepo.DeleteProduct(int.Parse(txtId.Text));
+            Response.Redirect("ProductApplication.aspx");
+        }
