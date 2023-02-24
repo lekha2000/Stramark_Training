@@ -51,3 +51,16 @@ namespace ASPDotNetExample
             ProductRepo.DeleteProduct(int.Parse(txtId.Text));
             Response.Redirect("ProductApplication.aspx");
         }
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            var product = new Product
+            {
+                ProductImage = imgPic.ImageUrl,
+                Price = int.Parse(txtPrice.Text),
+                ProductId = int.Parse(txtId.Text),
+                ProductName = txtName.Text,
+                Quantity = int.Parse(dpQuantity.Text)
+            };
+            ProductRepo.AddNewProduct(product);
+            Response.Redirect("ProductApplication.aspx");
+        }
