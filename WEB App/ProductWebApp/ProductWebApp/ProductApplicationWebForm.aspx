@@ -30,3 +30,9 @@
                             <p>Product Id: <asp:TextBox runat="server" CssClass="form-control" ID="txtId"/></p>
                             <p>Name: <asp:TextBox CssClass="form-control" runat="server" ID="txtName"></asp:TextBox></p>
                             <p>Price: <asp:TextBox CssClass="form-control" runat="server" ID="txtPrice"></asp:TextBox></p>
+<p>Quantity: 
+                                <asp:DropDownList CssClass="form-control" runat="server" ID="dpQuantity">
+                                    <asp:ListItem> 1 </asp:ListItem> 
+                                    <asp:ListItem>2</asp:ListItem>
+                                    <asp:ListItem>3</asp:ListItem>
+                                    <asp:ListItem>4</asp:ListItem>
