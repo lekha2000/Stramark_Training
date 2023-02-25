@@ -26,3 +26,7 @@
                             <asp:Image ID="imgPic" runat="server" Height="208px" Width="266px"/>
                             <asp:FileUpload runat="server" ID="fileUploader" />
                         </div>
+<div class="col-md-4">
+                            <p>Product Id: <asp:TextBox runat="server" CssClass="form-control" ID="txtId"/></p>
+                            <p>Name: <asp:TextBox CssClass="form-control" runat="server" ID="txtName"></asp:TextBox></p>
+                            <p>Price: <asp:TextBox CssClass="form-control" runat="server" ID="txtPrice"></asp:TextBox></p>
