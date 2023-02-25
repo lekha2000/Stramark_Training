@@ -22,3 +22,10 @@ namespace ProductWebApp
                 lstProduct.DataBind();
             }
         }
+protected void lstProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var component = ProductFactory.GetComponenet();
+            var pId = int.Parse(lstProduct.SelectedItem.Value);
+            var selectedProduct = component.GetProducts().Find((p) => p.ProductId == pId);
+            populateData(selectedProduct);
+        }
