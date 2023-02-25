@@ -38,3 +38,8 @@ private void populateData(tblProduct product)
             dpQuantity.Text = product.Quantity.ToString();
 
         }
+protected void btnEdit_click(object sender,EventArgs e)
+        {
+            var componenet = ProductFactory.GetComponenet();
+            var products = new tblProduct
+            {
