@@ -29,3 +29,12 @@ protected void lstProduct_SelectedIndexChanged(object sender, EventArgs e)
             var selectedProduct = component.GetProducts().Find((p) => p.ProductId == pId);
             populateData(selectedProduct);
         }
+private void populateData(tblProduct product)
+        {
+            txtId.Text = product.ProductId.ToString();
+            txtName.Text = product.ProductName;
+            txtPrice.Text = product.ProductPrice.ToString();
+            imgPic.ImageUrl = product.ProductImage;
+            dpQuantity.Text = product.Quantity.ToString();
+
+        }
