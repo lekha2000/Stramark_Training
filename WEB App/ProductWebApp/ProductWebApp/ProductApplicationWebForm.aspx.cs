@@ -50,4 +50,7 @@ protected void btnEdit_click(object sender,EventArgs e)
                 Quantity = int.Parse(dpQuantity.Text)
 
             };
-            
+            componenet.UpdateProduct(products);
+            Response.Redirect("ProductAppWebForm.aspx");
+        }
+
