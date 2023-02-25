@@ -43,3 +43,11 @@ protected void btnEdit_click(object sender,EventArgs e)
             var componenet = ProductFactory.GetComponenet();
             var products = new tblProduct
             {
+                ProductImage = uploadFile(),
+                ProductPrice = int.Parse(txtPrice.Text),
+                ProductId = int.Parse(txtId.Text),
+                ProductName = txtName.Text,
+                Quantity = int.Parse(dpQuantity.Text)
+
+            };
+            
