@@ -77,3 +77,7 @@ protected void btnAdd_click(object sender, EventArgs e)
                 Quantity = int.Parse(dpQuantity.Text)
 
             };
+var componenet = ProductFactory.GetComponenet();
+            componenet.AddProduct(product);
+            Response.Redirect("ProductAppWebForm.aspx");
+        }
