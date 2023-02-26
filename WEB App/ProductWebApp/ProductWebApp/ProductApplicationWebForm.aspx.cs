@@ -53,4 +53,8 @@ protected void btnEdit_click(object sender,EventArgs e)
             componenet.UpdateProduct(products);
             Response.Redirect("ProductAppWebForm.aspx");
         }
+        private string uploadFile()
+        {
+            string imgName = string.Empty;
+            string imgPath = string.Empty;
 
