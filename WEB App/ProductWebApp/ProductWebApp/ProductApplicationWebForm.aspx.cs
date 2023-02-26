@@ -58,3 +58,11 @@ protected void btnEdit_click(object sender,EventArgs e)
             string imgName = string.Empty;
             string imgPath = string.Empty;
 
+if(fileUploader.PostedFile.FileName != String.Empty)
+            {
+                imgName = fileUploader.PostedFile.FileName;
+                imgPath = @".\Images\" + imgName;
+                fileUploader.SaveAs(Server.MapPath(imgPath));
+            }
+            return imgPath;
+        }
