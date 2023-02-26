@@ -81,3 +81,11 @@ var componenet = ProductFactory.GetComponenet();
             componenet.AddProduct(product);
             Response.Redirect("ProductAppWebForm.aspx");
         }
+        
+        protected void btnDelete_click(object sender, EventArgs e)
+        {
+            var msg = "Product deleted Successfully";
+            var alert = $"alert({msg})";
+            var component = ProductFactory.GetComponenet();
+            component.DeleteProduct(int.Parse(txtId.Text));
+
