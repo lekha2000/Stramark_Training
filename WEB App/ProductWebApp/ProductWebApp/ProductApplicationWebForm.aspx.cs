@@ -89,3 +89,10 @@ var componenet = ProductFactory.GetComponenet();
             var component = ProductFactory.GetComponenet();
             component.DeleteProduct(int.Parse(txtId.Text));
 
+Page.ClientScript.RegisterClientScriptBlock(typeof(tblProduct), "Alert", alert, true);
+            Response.Redirect("/ProductAppWebForm.aspx");
+
+        }
+
+    }
+}
