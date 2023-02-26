@@ -66,3 +66,7 @@ if(fileUploader.PostedFile.FileName != String.Empty)
             }
             return imgPath;
         }
+protected void btnAdd_click(object sender, EventArgs e)
+        {
+            var imgPath = uploadFile();
+            var product = new tblProduct
