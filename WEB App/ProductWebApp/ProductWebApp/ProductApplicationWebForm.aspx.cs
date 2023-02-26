@@ -70,3 +70,10 @@ protected void btnAdd_click(object sender, EventArgs e)
         {
             var imgPath = uploadFile();
             var product = new tblProduct
+{
+                ProductImage = imgPath,
+                ProductPrice = int.Parse(txtPrice.Text),
+                ProductName = txtName.Text,
+                Quantity = int.Parse(dpQuantity.Text)
+
+            };
