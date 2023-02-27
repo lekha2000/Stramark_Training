@@ -28,3 +28,9 @@ namespace ProductWebApp
             // Create switch URL from the route, e.g. ~/__FriendlyUrls_SwitchView/Mobile?ReturnUrl=/Page
             var switchViewRouteName = "AspNet.FriendlyUrls.SwitchView";
             var switchViewRoute = RouteTable.Routes[switchViewRouteName];
+            if (switchViewRoute == null)
+            {
+                // Friendly URLs is not enabled or the name of the switch view route is out of sync
+                this.Visible = false;
+                return;
+            }
