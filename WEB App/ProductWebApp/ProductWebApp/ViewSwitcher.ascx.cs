@@ -34,3 +34,9 @@ namespace ProductWebApp
                 this.Visible = false;
                 return;
             }
+            var url = GetRouteUrl(switchViewRouteName, new { view = AlternateView, __FriendlyUrls_SwitchViews = true });
+            url += "?ReturnUrl=" + HttpUtility.UrlEncode(Request.RawUrl);
+            SwitchUrl = url;
+        }
+    }
+}
