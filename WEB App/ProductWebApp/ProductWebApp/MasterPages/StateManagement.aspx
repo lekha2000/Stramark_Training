@@ -34,5 +34,13 @@
                     <hr />
                     <p>Product ID: <asp:Label Text='<%#Eval("ProductId") %>' runat="server" />
                         </p>
+                            <p>Quantity: <%#Eval("Quantity")%></p>
+                </div>--%>
+
+            </div>
+        </ItemTemplate>
+                    <FooterTemplate>
+            </div>
+        </FooterTemplate>
 
             
