@@ -66,4 +66,13 @@
         </div>
         <div class="row">
             <asp:DataList ID="lstRecentList" runat="server" RepeatColumns="5">
-  
+                <ItemTemplate>
+                    <div class="row item">
+                        <div class="col-md-8">
+                            <h2><%#Eval("ProductName")%></h2>
+                            <asp:Image ImageUrl=<%#Eval("Image")%> runat="server" />
+                            <p>Price: <%#Eval("Price") %></p>
+                        </div>
+                </ItemTemplate>
+            
+        
