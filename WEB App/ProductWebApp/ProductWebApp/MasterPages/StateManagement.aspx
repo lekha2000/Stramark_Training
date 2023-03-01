@@ -49,5 +49,14 @@
                 <div>
                     <asp:TextBox ID="txtProductId" runat="server" Enabled="false" />
                 </div>
-
+                <div>
+                    <asp:TextBox ID="txtProductName" runat="server" Enabled="false" />
+                </div>
+                <div>
+                    <asp:TextBox ID="txtProductCost" runat="server" Enabled="false" />
+                </div>
+                <div>
+                    <asp:TextBox runat="server" ID="txtQuantity" Enabled="false" />   
+                </div>
+                
             
