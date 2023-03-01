@@ -74,5 +74,9 @@
                             <p>Price: <%#Eval("Price") %></p>
                         </div>
                 </ItemTemplate>
+                </asp:DataList>
+        </div>
+    </div>
+</asp:Content>
             
         
