@@ -42,5 +42,12 @@
                     <FooterTemplate>
             </div>
         </FooterTemplate>
+        </asp:Repeater>
+            </div>
+            <div class =" col-md-5">
+                <h2>Details of the selected Product</h2>
+                <div>
+                    <asp:TextBox ID="txtProductId" runat="server" Enabled="false" />
+                </div>
 
             
