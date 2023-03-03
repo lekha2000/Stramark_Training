@@ -23,3 +23,16 @@ else
             }
             lblYear.Text = DateTime.Now.Year.ToString();
         }
+protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (FormsAuthentication.Authenticate(txtName.Text, txtpass.Text)){
+                FormsAuthentication.RedirectFromLoginPage(txtName.Text, false);
+
+            }
+            else
+            {
+                lblError.Text = "Login Failed";
+            }
+        }
+    }
+}
