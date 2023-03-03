@@ -26,4 +26,10 @@ namespace ProductWebApp.MasterPages
             cookie.Values.Add("phone", txtContact.Text);
             Response.Cookies.Add(cookie);
             Response.Redirect("RecipiantPage.aspx");
+            ///////////View State/////////////////////////////
 
+            //ViewState["Hits"] = count;
+            //Response.Write("The Hits: " + ViewState["Hits"].ToString());
+        }
+    }
+}
