@@ -17,3 +17,9 @@ namespace ProductWebApp.MasterPages
                 lblUSerInfo.Text = "Welcome  " + Page.User.Identity.Name;
             }
 
+else
+            {
+                lblUSerInfo.Text = "Welcome Anoymous User";
+            }
+            lblYear.Text = DateTime.Now.Year.ToString();
+        }
