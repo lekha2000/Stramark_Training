@@ -19,5 +19,11 @@ namespace ProductWebApp.MasterPages
             ///////////QueryString////////////////////
             //string url = $"RecipiantPage.aspx?name={txtName.Text} &email={txtEmail.Text} &contact={txtContact.Text}";
             //Response.Redirect(url);
-
+        ////////////Cookies//////////////////
+            HttpCookie cookie = new HttpCookie("MyUserInfo");
+            cookie.Values.Add("name", txtName.Text);
+            cookie.Values.Add("email", txtEmail.Text);
+            cookie.Values.Add("phone", txtContact.Text);
+            Response.Cookies.Add(cookie);
+            Response.Redirect("RecipiantPage.aspx");
 
