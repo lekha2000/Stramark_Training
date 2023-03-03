@@ -15,3 +15,9 @@
         <p>            
             <asp:Button Text="Login" runat="server" ID="btnLogin" OnClick="btnLogin_Click"></asp:Button>
         </p>
+        <p>
+            <asp:Label Text="" runat="server" ID="lblError"></asp:Label>
+        </p>
+        <p>
+            <asp:Label Text="" runat="server" ID="lblUSerInfo"></asp:Label>
+        </p>
