@@ -14,3 +14,10 @@ namespace ProductWebApp.MasterPages
         {
             count++;
         }
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            ///////////QueryString////////////////////
+            //string url = $"RecipiantPage.aspx?name={txtName.Text} &email={txtEmail.Text} &contact={txtContact.Text}";
+            //Response.Redirect(url);
+
+
