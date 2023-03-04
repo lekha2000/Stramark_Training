@@ -30,4 +30,21 @@
                     </Items>
                 </asp:Menu>
 
-       
+       <hr />
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <asp:ContentPlaceHolder runat="server" ID="mainContent"></asp:ContentPlaceHolder>
+                </div>
+                <div class="col-md-3">
+                    <div class="container-fluid">
+                        <br /><br />
+                        <div class="row">
+                            <asp:AdRotator Width="100%" Height="150px"  runat="server" />
+                        </div>
+                        <br /><br /><br />
+                        <div class="row">
+                            <asp:Calendar runat="server" />
+                        </div>
+                    </div>
+                </div>
