@@ -24,3 +24,10 @@
 <asp:MenuItem Text="MainPage" NavigateUrl="~/MasterPages/InputPage.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="RecipiantPage" NavigateUrl="~/MasterPages/RecipiantPage.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="ShoppingCart" NavigateUrl=""></asp:MenuItem>
+ </asp:MenuItem>
+                        <asp:MenuItem Text="Caching" NavigateUrl="~/MasterPages/Caching.aspx"/>
+                        <asp:MenuItem Text="Login Controls" NavigateUrl="~/MasterPages/LoginPage.aspx" />
+                    </Items>
+                </asp:Menu>
+
+       
