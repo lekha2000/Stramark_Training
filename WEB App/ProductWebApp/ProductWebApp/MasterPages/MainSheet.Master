@@ -1,4 +1,5 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainSheet.Master.cs" Inherits="ProductWebApp.MasterPages.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainSheet.Master.cs" Inherits="ProductWebApp.MasterPages.Site1" %>
+
 <!DOCTYPE html>
 
 <html>
@@ -13,7 +14,7 @@
             <div class="row">
                 <h1>Welcome to ASP.NET Training</h1>
                 <hr />
-<asp:Menu runat="server" Orientation="Horizontal">
+                <asp:Menu runat="server" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem Text="Home" NavigateUrl="~/MasterPages/Home.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="CalcProgram" NavigateUrl="~/MasterPages/MyFirstCalcApp.aspx"></asp:MenuItem>
@@ -21,16 +22,17 @@
                         <asp:MenuItem Text="DatabaseApp" NavigateUrl=""></asp:MenuItem>
                         <asp:MenuItem Text="Validations" NavigateUrl=""></asp:MenuItem>                      
                         <asp:MenuItem Text="State Management">
-<asp:MenuItem Text="MainPage" NavigateUrl="~/MasterPages/InputPage.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="MainPage" NavigateUrl="~/MasterPages/InputPage.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="RecipiantPage" NavigateUrl="~/MasterPages/RecipiantPage.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="ShoppingCart" NavigateUrl=""></asp:MenuItem>
- </asp:MenuItem>
+                            </asp:MenuItem>
                         <asp:MenuItem Text="Caching" NavigateUrl="~/MasterPages/Caching.aspx"/>
                         <asp:MenuItem Text="Login Controls" NavigateUrl="~/MasterPages/LoginPage.aspx" />
                     </Items>
                 </asp:Menu>
 
-       <hr />
+       
+                <hr />
             </div>
             <div class="row">
                 <div class="col-md-8">
@@ -48,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-</div>
+            </div>
             <div class="row">
                 <p style="text-align:center">
                     <i>Copyrights LekhaRaju  
