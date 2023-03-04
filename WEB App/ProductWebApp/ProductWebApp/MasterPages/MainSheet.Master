@@ -13,3 +13,11 @@
             <div class="row">
                 <h1>Welcome to ASP.NET Training</h1>
                 <hr />
+<asp:Menu runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Home" NavigateUrl="~/MasterPages/Home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="CalcProgram" NavigateUrl="~/MasterPages/MyFirstCalcApp.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="EntityClass" NavigateUrl="~/MasterPages/ProductApplication.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="DatabaseApp" NavigateUrl=""></asp:MenuItem>
+                        <asp:MenuItem Text="Validations" NavigateUrl=""></asp:MenuItem>                      
+                        <asp:MenuItem Text="State Management">
