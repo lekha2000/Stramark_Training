@@ -25,3 +25,13 @@
                 <asp:TextBox runat="server" ID ="txtSecondNo" CssClass="auto-style1"/>
             </p>   
             </div>
+<p style="text-align: left; background-color: #CCCCFF; font-family: 'Comic Sans MS';">
+                <asp:Button Text="Click Me" runat ="server" BorderStyle="Double" OnClick="Unnamed1_Click" style="background-color: #FFFFFF; text-align: left;" />
+            </p>
+            <p style="text-align: left; font-family: 'Comic Sans MS'; background-color: #CCCCFF;">
+                <asp:Label ID="lblDisplay" runat="server" />
+            </p>
+
+        </div>
+
+</asp:Content>
