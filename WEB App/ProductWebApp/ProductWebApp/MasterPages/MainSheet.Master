@@ -48,3 +48,15 @@
                         </div>
                     </div>
                 </div>
+</div>
+            <div class="row">
+                <p style="text-align:center">
+                    <i>Copyrights LekhaRaju  
+                        <asp:Label Text="" ID="lblYear" runat="server"></asp:Label>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
