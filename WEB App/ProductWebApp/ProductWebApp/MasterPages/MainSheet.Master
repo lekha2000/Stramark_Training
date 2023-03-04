@@ -21,3 +21,6 @@
                         <asp:MenuItem Text="DatabaseApp" NavigateUrl=""></asp:MenuItem>
                         <asp:MenuItem Text="Validations" NavigateUrl=""></asp:MenuItem>                      
                         <asp:MenuItem Text="State Management">
+<asp:MenuItem Text="MainPage" NavigateUrl="~/MasterPages/InputPage.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="RecipiantPage" NavigateUrl="~/MasterPages/RecipiantPage.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ShoppingCart" NavigateUrl=""></asp:MenuItem>
