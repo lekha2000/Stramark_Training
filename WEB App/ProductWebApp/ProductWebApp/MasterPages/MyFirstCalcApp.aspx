@@ -6,3 +6,5 @@
                 Calcuator Application
             </h1>
             <div style="color: #000000; text-align: center; background-color: #CCCCFF;">
+<p style="font-family: 'Comic Sans MS'; font-size: large; text-align: left;">
+                Enter First Number: 
