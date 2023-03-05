@@ -57,4 +57,18 @@
                             <button  class="btn btn-danger m-2" onserverclick="btnAdd_Click"  runat="server" >
                             <i class="fa fa-plus-circle"></i>
                             </button>
+                            <%--<asp:Button Text="Edit" runat="server" CssClass="btn btn-danger my-3" />
+                            <i class="fa fa-trash-o"></i>
+                            <asp:Button Text="Delete" runat="server" CssClass="btn btn-danger my-3" />
+                            <i class="fa fa-trash-o"></i>
+                            <asp:Button Text="Add" runat="server" CssClass="btn btn-danger my-3" />
+                            <i class="fa fa-plus-circle"></i>--%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
 
