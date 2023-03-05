@@ -28,3 +28,10 @@
                     <asp:ListBox ID="lstProduct" runat="server" Height="386px" Width="213px"  AutoPostBack="True" OnSelectedIndexChanged="lstProduct_SelectedIndexChanged">                      
                     </asp:ListBox>
                 </div>
+                <div class ="col-md-7">
+                    <h2>Display of the Products</h2>
+                    <div >
+                        <div style="width: 318px" >
+                            <asp:Image ID="imgPic" runat="server" Height="208px" Width="266px"/>
+                        </div>
+                        <div >
