@@ -31,4 +31,7 @@ namespace ProductWebApp.MasterPages
                 case "Divide":return number1 / number2;
                 default: break;
             }
-
+        return 0;
+        }
+    }
+}
