@@ -41,4 +41,10 @@
                             <p>Quantity: 
                                 <asp:DropDownList CssClass="form-control" runat="server" ID="dpQuantity">
                                     <asp:ListItem> 1 </asp:ListItem> 
-                                    
+                                    <asp:ListItem>2</asp:ListItem>
+                                    <asp:ListItem>3</asp:ListItem>
+                                    <asp:ListItem>4</asp:ListItem>
+                                    </asp:DropDownList>
+                            </p>
+                        </div>
+
