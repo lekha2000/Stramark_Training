@@ -13,3 +13,11 @@ namespace ProductWebApp.MasterPages
         {
 
         }
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            var number1 = double.Parse(txtFirstNo.Text);
+            var number2 = double.Parse(txtSecondNo.Text);
+            var option = dpList.SelectedValue;
+            var result = getrecord(number1, number2, option);
+            lblDisplay.Text = "The Result Is: " + result;
+        }
