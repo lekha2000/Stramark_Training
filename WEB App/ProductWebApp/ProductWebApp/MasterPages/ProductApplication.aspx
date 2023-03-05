@@ -47,4 +47,14 @@
                                     </asp:DropDownList>
                             </p>
                         </div>
+                        <div class="col-md-1 align-items-center">
+                            <button  class="btn btn-info m-2" onserverclick="btnEdit_Click"  runat="server" >
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                            <button  class="btn btn-danger m-2" onserverclick="btnDelete_Click"  runat="server" >
+                            <i class="fa fa-trash-o"></i>
+                            </button>
+                            <button  class="btn btn-danger m-2" onserverclick="btnAdd_Click"  runat="server" >
+                            <i class="fa fa-plus-circle"></i>
+                            </button>
 
