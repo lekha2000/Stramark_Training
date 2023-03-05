@@ -25,3 +25,10 @@ namespace ProductWebApp.MasterPages
         {
             switch (option)
             {
+                case "Add": return number1 + number2;
+                case "Subtract":return number1 - number2;
+                case "Multiply":return number1 * number2;
+                case "Divide":return number1 / number2;
+                default: break;
+            }
+
