@@ -16,3 +16,15 @@
             width: 141px;
         }
     </style>
+    </head>
+<body>
+    <h1 class="h1 text-danger">Product Database</h1>
+    <hr />
+
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <asp:ListBox ID="lstProduct" runat="server" Height="386px" Width="213px"  AutoPostBack="True" OnSelectedIndexChanged="lstProduct_SelectedIndexChanged">                      
+                    </asp:ListBox>
+                </div>
