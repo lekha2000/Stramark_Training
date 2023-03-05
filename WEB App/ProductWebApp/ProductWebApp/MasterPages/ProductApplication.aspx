@@ -35,3 +35,10 @@
                             <asp:Image ID="imgPic" runat="server" Height="208px" Width="266px"/>
                         </div>
                         <div >
+                        <p style="width: 290px">Product Id: <asp:TextBox runat="server" CssClass="form-control" ID="txtId"/></p>
+                            <p style="width: 288px">Name: <asp:TextBox CssClass="form-control" runat="server" ID="txtName"></asp:TextBox></p>
+                            <p style="width: 182px">Price: <asp:TextBox CssClass="form-control" runat="server" ID="txtPrice"></asp:TextBox></p>
+                            <p>Quantity: 
+                                <asp:DropDownList CssClass="form-control" runat="server" ID="dpQuantity">
+                                    <asp:ListItem> 1 </asp:ListItem> 
+                                    
