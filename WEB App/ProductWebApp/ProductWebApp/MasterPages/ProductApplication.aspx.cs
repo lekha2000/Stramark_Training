@@ -39,4 +39,10 @@ namespace ProductWebApp.MasterPages
         {
                var product = new Product
             {
-
+                ProductImage = imgPic.ImageUrl,
+                Price = int.Parse(txtPrice.Text),
+                ProductId = int.Parse(txtId.Text),
+                ProductName = txtName.Text,
+                Quantity = int.Parse(dpQuantity.Text)
+            };
+            
