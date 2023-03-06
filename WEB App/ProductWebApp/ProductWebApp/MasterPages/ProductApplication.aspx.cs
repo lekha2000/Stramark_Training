@@ -35,4 +35,8 @@ namespace ProductWebApp.MasterPages
             txtPrice.Text = selected.Price.ToString();
             imgPic.ImageUrl = selected.ProductImage;
         }
+        protected void btnEdit_Click(object sender,EventArgs e)
+        {
+               var product = new Product
+            {
 
