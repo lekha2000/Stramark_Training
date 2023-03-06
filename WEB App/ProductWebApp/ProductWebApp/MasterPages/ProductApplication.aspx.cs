@@ -25,3 +25,5 @@ namespace ProductWebApp.MasterPages
                 }
             }
         }
+        protected void lstProduct_SelectedIndexChanged(object sender, EventArgs e)
+        {
