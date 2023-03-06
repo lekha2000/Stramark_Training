@@ -45,4 +45,7 @@ namespace ProductWebApp.MasterPages
                 ProductName = txtName.Text,
                 Quantity = int.Parse(dpQuantity.Text)
             };
+        ProductRepo.UpdateProduct(product);
+            Response.Redirect("ProductApplication.aspx");
+        }
             
