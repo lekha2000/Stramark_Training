@@ -63,4 +63,8 @@ namespace ProductWebApp.MasterPages
                 ProductName = txtName.Text,
                 Quantity = int.Parse(dpQuantity.Text)
             };
-
+        ProductRepo.AddNewProduct(product);
+            Response.Redirect("ProductApplication.aspx");
+        }
+}
+}
