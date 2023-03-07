@@ -42,4 +42,8 @@ namespace ProductWebApp.MasterPages
                         $"The Email Entered is {Request.QueryString["emial"]}<br/> The Contact No is {Request.QueryString["contact"]}";
                     lblMessage.Text = msg;
                 }
+                catch (NullReferenceException)
+                {
+                    lblMessage.Text = "Querystring keys are not correct";
+                }
 
