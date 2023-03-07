@@ -46,4 +46,11 @@ namespace ProductWebApp.MasterPages
                 {
                     lblMessage.Text = "Querystring keys are not correct";
                 }
-
+                catch (FormatException)
+                {
+                    lblMessage.Text = "String want populated properly";
+                }
+            }
+        }
+    }
+}
