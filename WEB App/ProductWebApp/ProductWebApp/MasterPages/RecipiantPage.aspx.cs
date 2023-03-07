@@ -28,4 +28,12 @@ namespace ProductWebApp.MasterPages
                 lblMessage.Text = msg;
             }
         }
+        private void queryStringExample()
+        {
+            if(Request.QueryString.Count == 0)
+            {
+                lblMessage.Text = "This Page doesnt contain any user information. Please visit the InputPage first";
+            }
+            else
+            {
 
