@@ -14,3 +14,12 @@ namespace ProductWebApp.MasterPages
             queryStringExample();
             cookiesExample();
         }
+        private void cookiesExample()
+        {
+            var cookie = Request.Cookies["MyUserInfo"];
+            if(cookie == null)
+            {
+                lblMessage.Text = "This Page doesnt contain any user information. Please visit the InputPage first";
+            }
+            else
+            {
