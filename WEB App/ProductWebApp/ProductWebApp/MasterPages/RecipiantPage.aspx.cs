@@ -23,3 +23,9 @@ namespace ProductWebApp.MasterPages
             }
             else
             {
+                string msg = $"The Name Entered is {cookie.Values["name"]}<br/>" +
+                        $"The Email Entered is {cookie.Values["email"]}<br/> The Contact No is {cookie.Values["phone"]}";
+                lblMessage.Text = msg;
+            }
+        }
+
