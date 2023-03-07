@@ -36,4 +36,10 @@ namespace ProductWebApp.MasterPages
             }
             else
             {
+                try
+                {
+                    string msg = $"The Name Entered is {Request.QueryString["name"]}<br/>" +
+                        $"The Email Entered is {Request.QueryString["emial"]}<br/> The Contact No is {Request.QueryString["contact"]}";
+                    lblMessage.Text = msg;
+                }
 
