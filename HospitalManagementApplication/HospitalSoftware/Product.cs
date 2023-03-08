@@ -46,5 +46,14 @@ namespace ProductApp
             {
                 Console.WriteLine("Product id not found");
             }
+            found.ProductImage = product.ProductImage;
+            found.ProductName = product.ProductName;
+            found.ProductPrice = product.ProductPrice;
+            found.Quantity = product.Quantity;
+            context.SaveChanges();
+        }
+    }
+}
+
 
 
