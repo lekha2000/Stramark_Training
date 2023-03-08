@@ -27,3 +27,9 @@ namespace ProductApp
             context.tblProducts.Add(product);
             context.SaveChanges();
         }
+        public void DeleteProduct(int id)
+        {
+            var found = context.tblProducts.First((p) => p.ProductId == id);
+            context.tblProducts.Remove(found);
+            context.SaveChanges();
+        }
