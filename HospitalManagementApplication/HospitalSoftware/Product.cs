@@ -19,3 +19,11 @@ namespace ProductApp
         public static IProduct GetComponenet() => new ProductDB();
     }
 
+    class ProductDB : IProduct
+    {
+        static Entities context = new Entities();
+        public void AddProduct(tblProduct product)
+        {
+            context.tblProducts.Add(product);
+            context.SaveChanges();
+        }
