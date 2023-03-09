@@ -1,0 +1,290 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01BBC0F5-DCE0-4A79-9E7A-F6911E4E9372}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HostitalSoftware</RootNamespace>
+    <AssemblyName>HostitalSoftware</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\ProductApp\ProductApp\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\ProductApp\ProductApp\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ProductApp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ProductApp\ProductApp\bin\Debug\ProductApp.dll</HintPath>
+    </Reference>
+    <Reference Include="SampleLib">
+      <HintPath>..\..\SampleFrameWorkApp\Sampleframeworkapp\Sampleframeworkapp\SampleLib\bin\Debug\SampleLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Antlr3.Runtime.dll" />
+    <Content Include="Antlr3.Runtime.pdb" />
+    <Content Include="AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="Contents\bootstrap-theme.css" />
+    <Content Include="Contents\bootstrap-theme.min.css" />
+    <Content Include="Contents\bootstrap.css" />
+    <Content Include="Contents\bootstrap.min.css" />
+    <Content Include="Contents\font-awesome.css" />
+    <Content Include="Contents\font-awesome.min.css" />
+    <Content Include="Contents\Site.css" />
+    <Content Include="CustomTime\WebUserControl1.ascx" />
+    <Content Include="EntityFramework.dll" />
+    <Content Include="EntityFramework.SqlServer.dll" />
+    <Content Include="EntityFramework.SqlServer.xml" />
+    <Content Include="EntityFramework.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="Microsoft.Web.Infrastructure.dll" />
+    <Content Include="Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.xml" />
+    <Content Include="ProductApp.csproj" />
+    <Content Include="ProductApp.dll" />
+    <Content Include="ProductApp.pdb" />
+    <Content Include="ProductEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ProductEntity.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProductEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ProductEntity1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config" />
+    <Content Include="WebForms\Billing.aspx" />
+    <Content Include="WebForms\Caching.aspx" />
+    <Content Include="WebForms\DataCaching.aspx" />
+    <Content Include="WebForms\DoctorView.aspx" />
+    <Content Include="WebForms\Home.aspx" />
+    <Content Include="WebForms\LoginPage.aspx" />
+    <Content Include="WebForms\RegPatient.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomTime\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomTime\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Interface\IPatientRepo.cs" />
+    <Compile Include="Models\Entities.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductEntity.Context.cs" />
+    <Compile Include="ProductEntity.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductEntity.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductEntity.cs" />
+    <Compile Include="ProductEntity.Designer.cs" />
+    <Compile Include="ProductEntity1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductEntity1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductEntity.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\DataComponents.cs" />
+    <Compile Include="tblProduct.cs">
+      <DependentUpon>ProductEntity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Billing.aspx.cs">
+      <DependentUpon>Billing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Billing.aspx.designer.cs">
+      <DependentUpon>Billing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Caching.aspx.cs">
+      <DependentUpon>Caching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Caching.aspx.designer.cs">
+      <DependentUpon>Caching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\DataCaching.aspx.cs">
+      <DependentUpon>DataCaching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\DataCaching.aspx.designer.cs">
+      <DependentUpon>DataCaching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\DoctorView.aspx.cs">
+      <DependentUpon>DoctorView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\DoctorView.aspx.designer.cs">
+      <DependentUpon>DoctorView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\RegPatient.aspx.cs">
+      <DependentUpon>RegPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\RegPatient.aspx.designer.cs">
+      <DependentUpon>RegPatient.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Contents\bootstrap-theme.css.map" />
+    <Content Include="Contents\bootstrap-theme.min.css.map" />
+    <Content Include="Contents\bootstrap.css.map" />
+    <Content Include="Contents\bootstrap.min.css.map" />
+    <Content Include="App.Config" />
+    <None Include="packages.config" />
+    <Content Include="ProductApp.dll.config" />
+    <EntityDeploy Include="ProductEntity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProductEntity1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ProductEntity.edmx.diagram" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WebForms\Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54254</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54254/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
