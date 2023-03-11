@@ -91,4 +91,10 @@ namespace HostitalSoftware.Service
             billing.BillAmount = getFees(patientInfo.DoctorId);
             bills.Add(billing);
         }
-
+        private int getFees(int docId)
+        {
+            var DoctorRepo = new DoctorRepo();
+            var doc = DoctorRepo.AllDoctors.Find((d) => d.DoctorId == docId);
+            return doc.Fees;
+        }
+        
