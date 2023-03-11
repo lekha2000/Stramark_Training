@@ -49,4 +49,10 @@ namespace HostitalSoftware.Service
         public Patient FindPatient(int PatientId) => patients.Find((p) => p.PatientId == PatientId);
         
         public List<Patient> GetPatients(int DocId) => patients.FindAll((p) => p.DoctorId == DocId);
+        public void RegisterNewPatient(Patient patient)
+        {
+            var id = 1;
+            if(patients.Count != 0)
+            {
+                var lastid = patients[patients.Count - 1].PatientId;
 
