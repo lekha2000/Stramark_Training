@@ -55,4 +55,12 @@ namespace HostitalSoftware.Service
             if(patients.Count != 0)
             {
                 var lastid = patients[patients.Count - 1].PatientId;
+                id = ++lastid;
+            }
+            patient.PatientId = id;
+            patients.Add(patient);
+        }
+
+        public void UpdatePatient(Patient patient)
+        {
 
