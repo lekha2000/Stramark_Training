@@ -82,3 +82,13 @@ namespace HostitalSoftware.Service
             bills = oldrecords;
         }
         
+        public void AddBill(Patient patientInfo)
+        {
+            int billNo = bills.LastOrDefault().BillNo;
+            Billing billing = new Billing();
+            billing.BillNo = ++billNo;
+            billing.PatientId = patientInfo.PatientId;
+            billing.BillAmount = getFees(patientInfo.DoctorId);
+            bills.Add(billing);
+        }
+
