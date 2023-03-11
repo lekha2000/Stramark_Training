@@ -46,3 +46,7 @@ namespace HostitalSoftware.Service
         {
             patients = oldRecords;
         }
+        public Patient FindPatient(int PatientId) => patients.Find((p) => p.PatientId == PatientId);
+        
+        public List<Patient> GetPatients(int DocId) => patients.FindAll((p) => p.DoctorId == DocId);
+
