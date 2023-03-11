@@ -63,4 +63,15 @@ namespace HostitalSoftware.Service
 
         public void UpdatePatient(Patient patient)
         {
+            var select = FindPatient(patient.PatientId);
+            if(select == null)
+            {
+                throw new Exception("Patient id not found");
+            }
+            select.PatientMobile = patient.PatientMobile;
+            select.PatientName = patient.PatientName;
+            select.DateofBirth = patient.DateofBirth;
+            select.DoctorId = patient.DoctorId;
+        }
+    }
 
