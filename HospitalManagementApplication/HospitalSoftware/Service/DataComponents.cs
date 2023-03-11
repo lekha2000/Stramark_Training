@@ -97,4 +97,8 @@ namespace HostitalSoftware.Service
             var doc = DoctorRepo.AllDoctors.Find((d) => d.DoctorId == docId);
             return doc.Fees;
         }
-        
+        public List<Billing> AllBills => bills;
+    }
+}
+
+
