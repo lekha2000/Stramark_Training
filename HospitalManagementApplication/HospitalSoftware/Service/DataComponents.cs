@@ -33,3 +33,16 @@ namespace HostitalSoftware.Service
             }
         };
     }
+    public class PatientRepo : IPatientRepo
+    {
+        private List<Patient> patients = new List<Patient>();
+
+        public PatientRepo()
+        {
+
+        }
+
+        public PatientRepo(List<Patient> oldRecords)
+        {
+            patients = oldRecords;
+        }
