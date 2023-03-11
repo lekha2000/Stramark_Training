@@ -74,4 +74,11 @@ namespace HostitalSoftware.Service
             select.DoctorId = patient.DoctorId;
         }
     }
-
+    public class BillingRepo
+    {
+        private List<Billing> bills;
+        public BillingRepo(List<Billing> oldrecords)
+        {
+            bills = oldrecords;
+        }
+        
