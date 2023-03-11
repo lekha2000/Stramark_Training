@@ -17,3 +17,19 @@ namespace HostitalSoftware.Service
                 Fees = 4500,
                 Specialization = "Heart Surgeon"
             },
+            new Doctor
+            {
+                DoctorId = 2,
+                DoctorName = "Kiran Kair",
+                Fees = 3500,
+                Specialization = "Gynecologist"
+            },
+            new Doctor
+            {
+                DoctorId = 3,
+                DoctorName = "Anitha",
+                Fees = 1500,
+                Specialization = "Dermatology."
+            }
+        };
+    }
