@@ -38,3 +38,10 @@
                         <p>
                             Our Hospital has the best doctors of the Field to treat you with .........<br />
                         </p>--%>
+                    </asp:ContentPlaceHolder>
+                </div>           
+            </div>
+        </div>
+    </form>
+</body>
+</html>
