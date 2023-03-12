@@ -11,3 +11,10 @@
         }
     </style>
 </head>
+
+<body style="background-color: #CCCCFF">
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="row">
+                <h1 style="text-align: center; background-color: #CCCCFF; font-family: Cambria;" class="auto-style1">Hospital Management System</h1>
+            </div>
