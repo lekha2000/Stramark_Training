@@ -23,3 +23,8 @@
                     <asp:Menu runat="server" style="background-color: #CCCCFF" BorderColor="#9966FF" Font-Bold="False">
                     <Items>
                         <asp:MenuItem Text="Home" NavigateUrl="~/WebForms/Home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Patient" NavigateUrl="~/WebForms/RegPatient.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Doctor" NavigateUrl="~/WebForms/DoctorView.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Billing" NavigateUrl="~/WebForms/Billing.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Caching" NavigateUrl="~/WebForms/Caching.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="LoginPage" 
