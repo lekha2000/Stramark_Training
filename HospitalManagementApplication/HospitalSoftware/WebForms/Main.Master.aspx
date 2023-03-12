@@ -27,4 +27,14 @@
                         <asp:MenuItem Text="Doctor" NavigateUrl="~/WebForms/DoctorView.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Billing" NavigateUrl="~/WebForms/Billing.aspx"></asp:MenuItem>
                         <asp:MenuItem Text="Caching" NavigateUrl="~/WebForms/Caching.aspx"></asp:MenuItem>
-                        <asp:MenuItem Text="LoginPage" 
+                        <asp:MenuItem Text="LoginPage" NavigateUrl="~/WebForms/LoginPage.aspx"></asp:MenuItem>
+                    </Items>
+                        <StaticMenuStyle Height="500px" Width="100px" />
+                </asp:Menu>
+                </div>
+                <div class="col-md-9">
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                        <%--<h1>Home Page</h1>
+                        <p>
+                            Our Hospital has the best doctors of the Field to treat you with .........<br />
+                        </p>--%>
