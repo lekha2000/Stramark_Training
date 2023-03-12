@@ -18,3 +18,8 @@
             <div class="row">
                 <h1 style="text-align: center; background-color: #CCCCFF; font-family: Cambria;" class="auto-style1">Hospital Management System</h1>
             </div>
+            <div class="row" >
+                <div class="col-md-3">
+                    <asp:Menu runat="server" style="background-color: #CCCCFF" BorderColor="#9966FF" Font-Bold="False">
+                    <Items>
+                        <asp:MenuItem Text="Home" NavigateUrl="~/WebForms/Home.aspx"></asp:MenuItem>
