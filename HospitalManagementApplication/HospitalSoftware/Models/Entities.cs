@@ -21,3 +21,12 @@ namespace HostitalSoftware.Models
         public int Age => DateTime.Now.Year - DateofBirth.Year;
         public int DoctorId { get; set; }
     }
+    public class Billing
+    {
+        public int BillNo { get; set; }
+        public DateTime BillDate { get; set; } = DateTime.Now;
+        public int PatientId { get; set; }
+        public int BillAmount { get; set; }
+    }
+
+}
