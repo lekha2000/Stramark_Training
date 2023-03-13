@@ -22,3 +22,11 @@
                     Date of Birth :
                     <asp:TextBox TextMode="Date" runat="server" Width="300px" ID="txtDob" CssClass="form-control"></asp:TextBox>
                 </p>
+                <p style="font-family: Cambria">
+                    Doctor Name :
+                    <asp:DropDownList runat="server" Width="300px" ID="dpDoctors" CssClass="form-control"></asp:DropDownList>
+                </p>
+                <p>
+                    <asp:Button Text="Register" Width="300px" runat="server" CssClass="btn btn-danger" OnClick="Unnamed1_Click"  />
+                </p>
+                
