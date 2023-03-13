@@ -18,3 +18,7 @@
                     Mobile No :
                     <asp:TextBox runat="server" Width="300px" ID="txtMobile" CssClass="form-control"></asp:TextBox>
                 </p>
+                <p style="font-family: Cambria">
+                    Date of Birth :
+                    <asp:TextBox TextMode="Date" runat="server" Width="300px" ID="txtDob" CssClass="form-control"></asp:TextBox>
+                </p>
