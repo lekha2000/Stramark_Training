@@ -10,3 +10,11 @@
                     Patient Id :
                     <asp:TextBox runat="server" Width="300px" ID="txtId" CssClass="form-control" PlaceHolder="Auto Generated" Enabled="false"></asp:TextBox>
                 </p>
+                <p style="font-family: Cambria">
+                    Patient Name :
+                    <asp:TextBox runat="server" Width="300px" ID="txtName" CssClass="form-control"></asp:TextBox>
+                </p>
+                <p style="font-family: Cambria">
+                    Mobile No :
+                    <asp:TextBox runat="server" Width="300px" ID="txtMobile" CssClass="form-control"></asp:TextBox>
+                </p>
