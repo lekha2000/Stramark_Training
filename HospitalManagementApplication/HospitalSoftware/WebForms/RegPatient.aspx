@@ -29,4 +29,11 @@
                 <p>
                     <asp:Button Text="Register" Width="300px" runat="server" CssClass="btn btn-danger" OnClick="Unnamed1_Click"  />
                 </p>
-                
+                <p>
+                    <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+                </p>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
