@@ -20,4 +20,18 @@ namespace HostitalSoftware.WebForms
             }
 
         }
-
+protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            var repo = Application["Patients"] as PatientRepo;
+            var pat = new Patient
+            {
+                DateofBirth = DateTime.Parse(txtDob.Text),
+                DoctorId = int.Parse(dpDoctors.SelectedValue),
+                PatientMobile = long.Parse(txtMobile.Text),
+                PatientName = txtName.Text
+            };
+            repo.RegisterNewPatient(pat);
+            lblMessage.Text = "Patient Added Successfully";
+        }
+    }
+}
