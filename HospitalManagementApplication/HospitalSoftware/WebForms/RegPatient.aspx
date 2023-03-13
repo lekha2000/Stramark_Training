@@ -3,3 +3,10 @@
 
 <h1 class="auto-style1" style="font-family: Cambria">Patient Registration Form</h1>
     <hr />
+<div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <p style="font-family: Cambria">
+                    Patient Id :
+                    <asp:TextBox runat="server" Width="300px" ID="txtId" CssClass="form-control" PlaceHolder="Auto Generated" Enabled="false"></asp:TextBox>
+                </p>
